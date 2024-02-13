@@ -42,8 +42,8 @@ http {
   # the duration of your experiment and keepalive_requests
   # is greateer than the total number of requests sent from
   # the workload generator
-  keepalive_timeout  120s;
-  keepalive_requests 100000;
+  keepalive_timeout  0s;
+  keepalive_requests 0;
 
   # Docker default hostname resolver. Set valid timeout to prevent unlimited
   # ttl for resolver caching.
