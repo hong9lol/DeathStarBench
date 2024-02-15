@@ -45,13 +45,18 @@ spec:
         - {{ $arg }}
         {{- end -}}
         {{- end }}
-        {{- if .resources }}  
+        {% comment %} {{- if .resources }}   {% endcomment %}
         resources:
-          {{ tpl .resources $ | nindent 10 | trim }}
+          {% comment %} {{ tpl .resources $ | nindent 10 | trim }}
         {{- else if hasKey $.Values.global "resources" }}           
         resources:
           {{ tpl $.Values.global.resources $ | nindent 10 | trim }}
-        {{- end }}  
+        {{- end }}   {% endcomment %}
+          requests:
+            cpu: {{ .requestCpu | default $.Values.global.requestCcpu }}
+            memory: {{ .requestMemory | default $.Values.global.requestMemory }}
+          limits:
+            cpu: {{ .limitCpu | default $.Values.global.limitCpu }}
         {{- if $.Values.configMaps }}        
         volumeMounts: 
         {{- range $configMap := $.Values.configMaps }}
