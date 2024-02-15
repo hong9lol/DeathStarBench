@@ -42,13 +42,6 @@ spec:
         - {{ $arg }}
         {{- end -}}
         {{- end }}
-        {{- if .resources }}  
-        resources:
-          {{ tpl .resources $ | nindent 10 | trim }}
-        {{- else if hasKey $.Values.global "resources" }}           
-        resources:
-          {{ tpl $.Values.global.resources $ | nindent 10 | trim }}
-        {{- end }}  
         {{- if $.Values.configMaps }}        
         volumeMounts: 
         {{- range $configMap := $.Values.configMaps }}
@@ -72,13 +65,6 @@ spec:
         command: 
         - {{ .command }}
         {{- end -}}
-        {{- if .resources }}
-        resources:
-          {{ tpl .resources $ | nindent 10 | trim }}
-        {{- else if hasKey $.Values.global "resources" }}
-        resources:
-          {{ tpl $.Values.global.resources $ | nindent 10 | trim }}
-        {{- end }}
         {{- if .env }}
         env:
         {{- range $e := .env}}

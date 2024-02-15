@@ -1,5 +1,5 @@
 {{- define "socialnetwork.templates.baseHPA" }}
-apiVersion: autoscaling/v1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   annotations:
@@ -16,7 +16,6 @@ spec:
         target:
           type: Utilization
           averageUtilization: {{ .Values.targetCPUUtilization | default .Values.global.hpa.targetCPUUtilization }}
-  {% comment %} targetCPUUtilizationPercentage: {{ .Values.tcu | default .Values.global.hpa.targetCPUUtilization }} {% endcomment %}
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment

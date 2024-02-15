@@ -45,15 +45,9 @@ spec:
         - {{ $arg }}
         {{- end -}}
         {{- end }}
-        {% comment %} {{- if .resources }}   {% endcomment %}
         resources:
-          {% comment %} {{ tpl .resources $ | nindent 10 | trim }}
-        {{- else if hasKey $.Values.global "resources" }}           
-        resources:
-          {{ tpl $.Values.global.resources $ | nindent 10 | trim }}
-        {{- end }}   {% endcomment %}
           requests:
-            cpu: {{ .requestCpu | default $.Values.global.requestCcpu }}
+            cpu: {{ .requestCpu | default $.Values.global.requestCpu }}
             memory: {{ .requestMemory | default $.Values.global.requestMemory }}
           limits:
             cpu: {{ .limitCpu | default $.Values.global.limitCpu }}

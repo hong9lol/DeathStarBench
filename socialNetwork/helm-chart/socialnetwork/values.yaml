@@ -49,6 +49,7 @@ global:
         samplerParam: 0.1
         disabled: false
         logSpans: false
+        enabled: false # 이 서브차트는 설치에서 제외됩니다.
 
 mongodb-sharded:
     fullnameOverride: mongodb-sharded
