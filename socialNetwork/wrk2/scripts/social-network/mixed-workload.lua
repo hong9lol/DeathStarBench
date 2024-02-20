@@ -3,6 +3,24 @@ local time = socket.gettime()*1000
 math.randomseed(time)
 math.random(); math.random(); math.random()
 
+-- 파일 경로
+local file_path = "target_url.txt"
+-- 파일 열기
+local file = io.open(file_path, "r")
+if file then
+    -- 파일 내용 읽기
+    host_url = file:read("*line")
+    -- 파일 내용 출력
+    print("Host URL:" .. host_url)
+    -- 파일 닫기
+    file:close()
+else
+    -- 파일이 열리지 않을 경우 에러 메시지 출력
+    print("can not open the file.")
+end
+
+
+
 local charset = {'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's',
   'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Q',
   'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H',
@@ -66,7 +84,7 @@ local function compose_post()
   media_types = media_types:sub(1, #media_types - 1) .. "]"
 
   local method = "POST"
-  local path = "http://localhost:8080/wrk2-api/post/compose"
+  local path = "http://" .. host_url .. ":8080/wrk2-api/post/compose"
   local headers = {}
   local body
   headers["Content-Type"] = "application/x-www-form-urlencoded"
@@ -91,7 +109,7 @@ local function read_user_timeline()
   local method = "GET"
   local headers = {}
   headers["Content-Type"] = "application/x-www-form-urlencoded"
-  local path = "http://localhost:8080/wrk2-api/user-timeline/read?" .. args
+  local path = "http://" .. host_url .. ":8080/wrk2-api/user-timeline/read?" .. args
   return wrk.format(method, path, headers, nil)
 end
 
@@ -104,7 +122,7 @@ local function read_home_timeline()
     local method = "GET"
     local headers = {}
     headers["Content-Type"] = "application/x-www-form-urlencoded"
-    local path = "http://localhost:8080/wrk2-api/home-timeline/read?" .. args
+    local path = "http://" .. host_url .. ":8080/wrk2-api/home-timeline/read?" .. args
     return wrk.format(method, path, headers, nil)
   end
 
