@@ -75,5 +75,6 @@ spec:
       {{- end }}
       hostname: {{ $.Values.name }}
       restartPolicy: {{ .Values.restartPolicy | default .Values.global.restartPolicy}}
-
+      imagePullSecrets:
+        - name: {{ $.Values.global.secretName }}
   {{- end}}

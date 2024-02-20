@@ -55,6 +55,8 @@ spec:
         {{- end }}
         {{- end }}
       {{- end }}
+      imagePullSecrets:
+        - name: {{ $.Values.global.secretName }}
 
       initContainers:
       {{- with .Values.initContainer }}

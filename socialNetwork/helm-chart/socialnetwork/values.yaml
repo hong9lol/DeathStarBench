@@ -10,6 +10,7 @@ global:
     requestMemory: '64Mi'
     limitCpu: '50m'
     limitmemory: '128Mi'
+    secretName: 'secret-jake'
     hpa:
         maxReplicas: 30
         minReplicas: 1
