@@ -8,15 +8,20 @@ kubectl get svc | grep nginx-thrift |  awk '/[[:space:]]/ {print $4}' > target_u
 
 numOfThreads=10
 connections=30
-testDuration=60
-requestPerSecond=( 100 200 300 400 )
+testDuration=10
+requestPerSecond=(
+        100	    100	    100	    100	    100	    100	    #0
+        120	    120	    140	    160	    180	    200	    #20
+        200	    240	    280	    320	    360	    400	    #40
+        400	    460	    520	    580	    640	    700	    #60
+    )
 
 targetIP=`cat target_url.txt`
 hostPath="http://$targetIP:8080"
 
 echo ====== Social Benchmark Start ======
 
-timestamp=`date`
+timestamp=`date`k
 echo [Result] $timestamp >> $logPath/output.log
 echo [Ratio] ${ratio[0]} ${ratio[1]} ${ratio[2]} >> $logPath/output.log
 echo Current Pod Status >> $logPath/output.log
@@ -32,7 +37,7 @@ do
     echo " " >> $logPath/output.log
 
     timestamp=`date`
-    echo [Test ${i}] $timestamp >> $logPath/output.log
+    echo [Test ${testCnt}] $timestamp >> $logPath/output.log
 
     echo Threads: $numOfThreads
     echo "Test Duration(s)": $testDuration
