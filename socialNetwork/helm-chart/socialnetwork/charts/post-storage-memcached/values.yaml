@@ -1,22 +1,26 @@
 name: post-storage-memcached
 
 ports:
-  - name: 11211
-    port: 11211
-    targetPort: 11211
+    - name: 11211
+      port: 11211
+      targetPort: 11211
 
 container:
-  image: library/memcached
-  imageVersion: 1.6.7
-  name: post-storage-memcached
-  ports: 
-  - containerPort: 11211
+    image: library/memcached
+    imageVersion: 1.6.7
+    name: post-storage-memcached
+    ports:
+        - containerPort: 11211
+    requestCpu: 200m
+    requestMemory: 64Mi
+    limitCpu: 400m
+    limitmemory: 256Mi
 
 configMaps:
-  - name: jaeger-config.yml
-    mountPath: /social-network-microservices/config/jaeger-config.yml
-    value: jaeger-config
+    - name: jaeger-config.yml
+      mountPath: /social-network-microservices/config/jaeger-config.yml
+      value: jaeger-config
 
-  - name: service-config.json
-    mountPath: /social-network-microservices/config/service-config.json
-    value: service-config
+    - name: service-config.json
+      mountPath: /social-network-microservices/config/service-config.json
+      value: service-config

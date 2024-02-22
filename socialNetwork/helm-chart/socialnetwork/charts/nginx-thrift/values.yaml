@@ -69,3 +69,4 @@ configMaps:
       value: nginx
 
 type: LoadBalancer
+replicas: 3

@@ -1,19 +1,23 @@
 name: social-graph-redis
 
 ports:
-  - port: 6379
-    targetPort: 6379
+    - port: 6379
+      targetPort: 6379
 
 container:
-  args: 
-  - /social-network-microservices/config/redis.conf
-  image: library/redis
-  imageVersion: 6.2.4
-  name: social-graph-redis
-  ports: 
-  - containerPort: 6379
+    args:
+        - /social-network-microservices/config/redis.conf
+    image: library/redis
+    imageVersion: 6.2.4
+    name: social-graph-redis
+    ports:
+        - containerPort: 6379
+    requestCpu: 200m
+    requestMemory: 64Mi
+    limitCpu: 400m
+    limitmemory: 256Mi
 
 configMaps:
-  - name: redis.conf
-    mountPath: /social-network-microservices/config/redis.conf
-    value: redis
+    - name: redis.conf
+      mountPath: /social-network-microservices/config/redis.conf
+      value: redis

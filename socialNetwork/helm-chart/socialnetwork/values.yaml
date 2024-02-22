@@ -1,14 +1,14 @@
 global:
-    replicas: 1
+    replicas: 10
     imagePullPolicy: 'IfNotPresent'
     restartPolicy: Always
     serviceType: ClusterIP
     dockerRegistry: docker.io
     defaultImageVersion: latest
     resources: True
-    requestCpu: '30m'
+    requestCpu: '20m'
     requestMemory: '64Mi'
-    limitCpu: '50m'
+    limitCpu: '40m'
     limitmemory: '128Mi'
     secretName: 'secret-jake'
     hpa:
