@@ -1,90 +1,84 @@
 global:
-    replicas: 1
-    imagePullPolicy: 'IfNotPresent'
-    restartPolicy: Always
-    serviceType: ClusterIP
-    dockerRegistry: docker.io
-    defaultImageVersion: latest
-    resources: True
-    requestCpu: '20m'
-    requestMemory: '64Mi'
-    limitCpu: '40m'
-    limitmemory: '128Mi'
-    secretName: 'secret-jake'
-    hpa:
-        maxReplicas: 30
-        minReplicas: 1
-        targetCPUUtilization: 80
-    redis:
-        cluster:
-            enabled: false
-        standalone:
-            enabled: true
-        replication:
-            primary: redis-master
-            replica: redis-replicas
-            enabled: false
-    memcached:
-        cluster:
-            enabled: false
-            port: &memcached-cluster-port 5000
-        standalone:
-            enabled: true
-    mongodb:
-        standalone:
-            enabled: true
-        sharding:
-            enabled: false
-            svc:
-                name: 'mongodb-sharded'
-                user: 'root'
-                password: &mongodb-sharded-password 'password'
-                port: 27017
-    nginx:
-        resolverName: kube-dns.kube-system.svc.cluster.local
-    jaeger:
-        localAgentHostPort: jaeger:6831
-        queueSize: 1000000
-        bufferFlushInterval: 10
-        samplerType: probabilistic
-        samplerParam: 0.1
-        disabled: false
-        logSpans: false
-        enabled: false # 이 서브차트는 설치에서 제외됩니다.
-
-mongodb-sharded:
-    fullnameOverride: mongodb-sharded
-    auth:
-        rootPassword: *mongodb-sharded-password
-    shards: 3
-    shardsvr:
-        dataNode:
-            replicaCount: 3
-
+  defaultImageVersion: 0.3.0
+  dockerRegistry: docker.io
+  hpa:
+    maxReplicas: 30
+    minReplicas: 1
+    targetCPUUtilization: 80
+  imagePullPolicy: Never
+  jaeger:
+    bufferFlushInterval: 10
+    disabled: false
+    enabled: false
+    localAgentHostPort: jaeger:6831
+    logSpans: false
+    queueSize: 1000000
+    samplerParam: 0.1
+    samplerType: probabilistic
+  limitCpu: 90m
+  limitmemory: 128Mi
+  memcached:
+    cluster:
+      enabled: false
+      port: 5000
+    standalone:
+      enabled: true
+  mongodb:
+    sharding:
+      enabled: false
+      svc:
+        name: mongodb-sharded
+        password: password
+        port: 27017
+        user: root
+    standalone:
+      enabled: true
+  nginx:
+    resolverName: kube-dns.kube-system.svc.cluster.local
+  redis:
+    cluster:
+      enabled: false
+    replication:
+      enabled: false
+      primary: redis-master
+      replica: redis-replicas
+    standalone:
+      enabled: true
+  replicas: 1
+  requestCpu: 30m
+  requestMemory: 64Mi
+  resources: true
+  restartPolicy: Always
+  secretName: secret-jake
+  serviceType: ClusterIP
 mcrouter:
-    controller: statefulset
-    memcached:
-        replicaCount: 3
-    mcrouterCommandParams.port: *memcached-cluster-port
-
-redis-cluster:
-    usePassword: false
-    redis:
-        # default readiness / liveness probes are causing issues, rising timeouts/delays might help
-        # cluster health check will be handled by post-commit hook
-        readinessProbe:
-            enabled: false
-        livenessProbe:
-            enabled: false
-
+  controller: statefulset
+  mcrouterCommandParams.port: 5000
+  memcached:
+    replicaCount: 3
+mongodb-sharded:
+  auth:
+    rootPassword: password
+  fullnameOverride: mongodb-sharded
+  shards: 3
+  shardsvr:
+    dataNode:
+      replicaCount: 3
 redis:
-    fullnameOverride: 'redis'
-    auth:
-        enabled: false
-    master:
-        persistence:
-            enabled: false
-    replica:
-        persistence:
-            enabled: false
-        replicaCount: 6
+  auth:
+    enabled: false
+  fullnameOverride: redis
+  master:
+    persistence:
+      enabled: false
+  replica:
+    persistence:
+      enabled: false
+    replicaCount: 6
+redis-cluster:
+  redis:
+    livenessProbe:
+      enabled: false
+    readinessProbe:
+      enabled: false
+  usePassword: false

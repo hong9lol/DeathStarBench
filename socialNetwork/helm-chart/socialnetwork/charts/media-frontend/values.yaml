@@ -19,7 +19,7 @@ container:
 
 initContainer:
     image: alpine/git
-    imageVersion: latest
+    imageVersion: 2.43.0
     name: alpine-container
     volumeMounts:
         - name: lua-scripts
