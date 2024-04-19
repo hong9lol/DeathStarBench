@@ -5,7 +5,7 @@ global:
     maxReplicas: 30
     minReplicas: 1
     targetCPUUtilization: 80
-  imagePullPolicy: Never
+  imagePullPolicy: IfNotPresent
   jaeger:
     bufferFlushInterval: 10
     disabled: false
