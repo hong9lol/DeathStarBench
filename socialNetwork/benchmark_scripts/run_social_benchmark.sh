@@ -6,22 +6,22 @@ logPath=$1
 # set target IP
 kubectl get svc | grep nginx-thrift |  awk '/[[:space:]]/ {print $4}' > target_url.txt
 
-numOfThreads=10
-connections=30
+numOfThreads=30
+connections=50
 testDuration=10
-#requestPerSecond=(
-#        100	    100	    100	    100	    100	    100	    #0
-#        120	    120	    140	    160	    180	    200	    #20
-#        200	    240	    280	    320	    360	    400	    #40
-#        400	    460	    520	    580	    640	    700	    #60
-#    )
+requestPerSecond=(
+        100	    100	    100	    100	    100	    100	    #0
+        120	    120	    140	    160	    180	    200	    #20
+        200	    240	    280	    320	    360	    400	    #40
+        400	    460	    520	    580	    640	    700	    #60
+    )
 
-requestPerSecond=( 
-        100 100 100 100 100 100 
-        200 200 200 200 200 200 
-        400 400 400 400 400 400 
-        700 700 700 700 700 700
-)
+#requestPerSecond=( 
+#        100 100 100 100 100 100 
+#        200 200 200 200 200 200 
+#        400 400 400 400 400 400 
+#        700 700 700 700 700 700
+#)
 
 targetIP=`cat target_url.txt`
 hostPath="http://$targetIP:8080"
@@ -50,7 +50,7 @@ do
     echo "Test Duration(s)": $testDuration
     echo Connections: $connections
     echo Request per Second: $rps
-    ../../wrk2/wrk -D fixed -t ${numOfThreads} -c ${connections} -d ${testDuration}s -R ${rps} -r -s ./../wrk2/scripts/social-network/mixed-workload.lua ${hostPath} --latency -H 'Connection: close' >> $logPath/output.log 
+    ../../wrk2/wrk -D fixed -t ${numOfThreads} -c ${connections} -d ${testDuration}s -R ${rps} -T 10s  -r -s ./../wrk2/scripts/social-network/mixed-workload.lua ${hostPath} --latency -H 'Connection: close' >> $logPath/output.log 
 
     echo "///////////////////////////////////////////" >> $logPath/output.log
     kubectl top pod >> $logPath/output.log 

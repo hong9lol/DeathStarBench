@@ -1,0 +1,2811 @@
+[Result] Sun Apr 21 01:23:20 UTC 2024k
+[Ratio]
+Current Pod Status
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          3m58s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          3m56s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          3m58s
+media-service-5496988558-728cv           1/1     Running   0          3m58s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          3m57s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          3m57s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          3m57s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          3m59s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          3m59s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          3m57s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          3m58s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          3m56s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m
+text-service-64d6d4f459-7mktm            1/1     Running   0          3m59s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          3m59s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          3m57s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          3m57s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          3m56s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          3m59s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          3m58s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m
+ 
+[Test 1] Sun Apr 21 01:23:20 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 738.499ms, rate sampling interval: 1934ms
+  Thread calibration: mean lat.: 981.098ms, rate sampling interval: 2046ms
+  Thread calibration: mean lat.: 968.882ms, rate sampling interval: 2537ms
+  Thread calibration: mean lat.: 1040.475ms, rate sampling interval: 3135ms
+  Thread calibration: mean lat.: 1174.182ms, rate sampling interval: 2873ms
+  Thread calibration: mean lat.: 1180.251ms, rate sampling interval: 2678ms
+  Thread calibration: mean lat.: 648.884ms, rate sampling interval: 1460ms
+  Thread calibration: mean lat.: 896.514ms, rate sampling interval: 2101ms
+  Thread calibration: mean lat.: 1229.189ms, rate sampling interval: 3121ms
+  Thread calibration: mean lat.: 1081.142ms, rate sampling interval: 3131ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  882 requests in 10.00s, 168.50KB read
+Requests/sec:     88.16  
+Transfer/sec:     16.84KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    1m           0Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     2m           6Mi             
+home-timeline-service-76974b884d-rfcn6   1m           0Mi             
+jaeger-67c87b4489-rdzkh                  1m           9Mi             
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           4m           60Mi            
+media-service-5496988558-728cv           1m           0Mi             
+nginx-thrift-6d9d7c98df-j8cq2            1m           19Mi            
+nginx-thrift-6d9d7c98df-x5926            1m           19Mi            
+nginx-thrift-6d9d7c98df-xgrm6            1m           19Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           3Mi             
+post-storage-mongodb-867b76d74f-fzlpn    4m           62Mi            
+post-storage-service-77d88b64fc-m9zjp    1m           1Mi             
+social-graph-mongodb-69859bd677-7754g    5m           63Mi            
+social-graph-redis-59bc4b57bd-929hf      2m           5Mi             
+social-graph-service-755b8ff647-tn22w    1m           1Mi             
+text-service-64d6d4f459-7mktm            1m           0Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           0Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     5m           65Mi            
+url-shorten-service-5b9598b6c4-sshcm     1m           1Mi             
+user-memcached-d6f8954b4-wkhd5           1m           3Mi             
+user-mention-service-7d55b6d565-grgfh    1m           1Mi             
+user-mongodb-6ddd645944-ffzww            5m           63Mi            
+user-service-6dfb9d6759-w2mqq            1m           1Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   5m           63Mi            
+user-timeline-redis-7f767bdff5-jbw2z     2m           6Mi             
+user-timeline-service-f75795664-psfx2    1m           1Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    3%/80%    1         30        1          3m52s
+home-timeline-service   Deployment/home-timeline-service   3%/80%    1         30        1          3m52s
+media-service           Deployment/media-service           3%/80%    1         30        1          3m52s
+post-storage-service    Deployment/post-storage-service    3%/80%    1         30        1          3m52s
+social-graph-service    Deployment/social-graph-service    3%/80%    1         30        1          3m52s
+text-service            Deployment/text-service            3%/80%    1         30        1          3m52s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          3m51s
+url-shorten-service     Deployment/url-shorten-service     3%/80%    1         30        1          3m51s
+user-mention-service    Deployment/user-mention-service    3%/80%    1         30        1          3m51s
+user-service            Deployment/user-service            3%/80%    1         30        1          3m51s
+user-timeline-service   Deployment/user-timeline-service   3%/80%    1         30        1          3m51s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m10s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m10s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m10s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m10s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          4m8s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m6s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          4m8s
+media-service-5496988558-728cv           1/1     Running   0          4m8s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m7s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m7s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m7s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          4m9s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          4m9s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m7s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          4m8s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m6s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m10s
+text-service-64d6d4f459-7mktm            1/1     Running   0          4m9s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          4m9s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m7s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m7s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m6s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          4m9s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m10s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m10s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m10s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m10s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          4m8s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m10s
+ 
+[Test 2] Sun Apr 21 01:23:30 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 187.436ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 165.496ms, rate sampling interval: 721ms
+  Thread calibration: mean lat.: 177.745ms, rate sampling interval: 735ms
+  Thread calibration: mean lat.: 79.225ms, rate sampling interval: 237ms
+  Thread calibration: mean lat.: 79.238ms, rate sampling interval: 234ms
+  Thread calibration: mean lat.: 93.863ms, rate sampling interval: 465ms
+  Thread calibration: mean lat.: 241.296ms, rate sampling interval: 868ms
+  Thread calibration: mean lat.: 371.561ms, rate sampling interval: 1358ms
+  Thread calibration: mean lat.: 314.468ms, rate sampling interval: 866ms
+  Thread calibration: mean lat.: 231.165ms, rate sampling interval: 1313ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  967 requests in 10.00s, 185.63KB read
+Requests/sec:     96.67  
+Transfer/sec:     18.56KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    1m           0Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     2m           6Mi             
+home-timeline-service-76974b884d-rfcn6   1m           0Mi             
+jaeger-67c87b4489-rdzkh                  1m           9Mi             
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           4m           60Mi            
+media-service-5496988558-728cv           1m           0Mi             
+nginx-thrift-6d9d7c98df-j8cq2            1m           19Mi            
+nginx-thrift-6d9d7c98df-x5926            1m           19Mi            
+nginx-thrift-6d9d7c98df-xgrm6            1m           19Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           3Mi             
+post-storage-mongodb-867b76d74f-fzlpn    4m           62Mi            
+post-storage-service-77d88b64fc-m9zjp    1m           1Mi             
+social-graph-mongodb-69859bd677-7754g    5m           63Mi            
+social-graph-redis-59bc4b57bd-929hf      2m           5Mi             
+social-graph-service-755b8ff647-tn22w    1m           1Mi             
+text-service-64d6d4f459-7mktm            1m           0Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           0Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     5m           65Mi            
+url-shorten-service-5b9598b6c4-sshcm     1m           1Mi             
+user-memcached-d6f8954b4-wkhd5           1m           3Mi             
+user-mention-service-7d55b6d565-grgfh    1m           1Mi             
+user-mongodb-6ddd645944-ffzww            5m           63Mi            
+user-service-6dfb9d6759-w2mqq            1m           1Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   5m           63Mi            
+user-timeline-redis-7f767bdff5-jbw2z     2m           6Mi             
+user-timeline-service-f75795664-psfx2    1m           1Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    3%/80%    1         30        1          4m2s
+home-timeline-service   Deployment/home-timeline-service   3%/80%    1         30        1          4m2s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m2s
+post-storage-service    Deployment/post-storage-service    3%/80%    1         30        1          4m2s
+social-graph-service    Deployment/social-graph-service    3%/80%    1         30        1          4m2s
+text-service            Deployment/text-service            3%/80%    1         30        1          4m2s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m1s
+url-shorten-service     Deployment/url-shorten-service     3%/80%    1         30        1          4m1s
+user-mention-service    Deployment/user-mention-service    3%/80%    1         30        1          4m1s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m1s
+user-timeline-service   Deployment/user-timeline-service   3%/80%    1         30        1          4m1s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m21s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m21s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m21s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m21s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          4m19s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m17s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          4m19s
+media-service-5496988558-728cv           1/1     Running   0          4m19s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m18s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m18s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m18s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          4m20s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          4m20s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m18s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          4m19s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m17s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m21s
+text-service-64d6d4f459-7mktm            1/1     Running   0          4m20s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          4m20s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m18s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m18s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m17s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          4m20s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m21s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m21s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m21s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m21s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          4m19s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m21s
+ 
+[Test 3] Sun Apr 21 01:23:41 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 78.946ms, rate sampling interval: 223ms
+  Thread calibration: mean lat.: 173.516ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 117.399ms, rate sampling interval: 504ms
+  Thread calibration: mean lat.: 238.083ms, rate sampling interval: 753ms
+  Thread calibration: mean lat.: 154.371ms, rate sampling interval: 729ms
+  Thread calibration: mean lat.: 100.715ms, rate sampling interval: 484ms
+  Thread calibration: mean lat.: 227.901ms, rate sampling interval: 738ms
+  Thread calibration: mean lat.: 158.286ms, rate sampling interval: 731ms
+  Thread calibration: mean lat.: 156.584ms, rate sampling interval: 734ms
+  Thread calibration: mean lat.: 134.072ms, rate sampling interval: 719ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  966 requests in 10.00s, 186.03KB read
+Requests/sec:     96.56  
+Transfer/sec:     18.60KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    1m           0Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     2m           6Mi             
+home-timeline-service-76974b884d-rfcn6   1m           0Mi             
+jaeger-67c87b4489-rdzkh                  1m           9Mi             
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           4m           60Mi            
+media-service-5496988558-728cv           1m           0Mi             
+nginx-thrift-6d9d7c98df-j8cq2            1m           19Mi            
+nginx-thrift-6d9d7c98df-x5926            1m           19Mi            
+nginx-thrift-6d9d7c98df-xgrm6            1m           19Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           3Mi             
+post-storage-mongodb-867b76d74f-fzlpn    4m           62Mi            
+post-storage-service-77d88b64fc-m9zjp    1m           1Mi             
+social-graph-mongodb-69859bd677-7754g    5m           63Mi            
+social-graph-redis-59bc4b57bd-929hf      2m           5Mi             
+social-graph-service-755b8ff647-tn22w    1m           1Mi             
+text-service-64d6d4f459-7mktm            1m           0Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           0Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     5m           65Mi            
+url-shorten-service-5b9598b6c4-sshcm     1m           1Mi             
+user-memcached-d6f8954b4-wkhd5           1m           3Mi             
+user-mention-service-7d55b6d565-grgfh    1m           1Mi             
+user-mongodb-6ddd645944-ffzww            5m           63Mi            
+user-service-6dfb9d6759-w2mqq            1m           1Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   5m           63Mi            
+user-timeline-redis-7f767bdff5-jbw2z     2m           6Mi             
+user-timeline-service-f75795664-psfx2    1m           1Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    3%/80%    1         30        1          4m13s
+home-timeline-service   Deployment/home-timeline-service   3%/80%    1         30        1          4m13s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m13s
+post-storage-service    Deployment/post-storage-service    3%/80%    1         30        1          4m13s
+social-graph-service    Deployment/social-graph-service    3%/80%    1         30        1          4m13s
+text-service            Deployment/text-service            3%/80%    1         30        1          4m13s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m12s
+url-shorten-service     Deployment/url-shorten-service     3%/80%    1         30        1          4m12s
+user-mention-service    Deployment/user-mention-service    3%/80%    1         30        1          4m12s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m12s
+user-timeline-service   Deployment/user-timeline-service   3%/80%    1         30        1          4m12s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m31s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m31s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m31s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m31s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          4m29s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m27s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          4m29s
+media-service-5496988558-728cv           1/1     Running   0          4m29s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m28s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m28s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m28s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          4m30s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          4m30s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m28s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          4m29s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m27s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m31s
+text-service-64d6d4f459-7mktm            1/1     Running   0          4m30s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          4m30s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m28s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m28s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m27s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          4m30s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m31s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m31s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m31s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m31s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          4m29s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m31s
+ 
+[Test 4] Sun Apr 21 01:23:51 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 75.796ms, rate sampling interval: 139ms
+  Thread calibration: mean lat.: 78.388ms, rate sampling interval: 226ms
+  Thread calibration: mean lat.: 139.855ms, rate sampling interval: 714ms
+  Thread calibration: mean lat.: 163.668ms, rate sampling interval: 824ms
+  Thread calibration: mean lat.: 145.224ms, rate sampling interval: 731ms
+  Thread calibration: mean lat.: 184.047ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 84.051ms, rate sampling interval: 239ms
+  Thread calibration: mean lat.: 82.851ms, rate sampling interval: 230ms
+  Thread calibration: mean lat.: 100.328ms, rate sampling interval: 473ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency   138.56ms  130.26ms 539.14ms   81.44%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%   65.92ms
+ 75.000%  237.82ms
+ 90.000%  357.63ms
+ 99.000%  539.14ms
+ 99.900%  557.57ms
+ 99.990%  557.57ms
+ 99.999%  557.57ms
+100.000%  557.57ms
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      47.615     0.000000            1         1.00
+      56.063     0.100000           10         1.11
+      56.575     0.200000           21         1.25
+      59.967     0.300000           30         1.43
+      65.215     0.400000           40         1.67
+      65.919     0.500000           50         2.00
+      67.647     0.550000           55         2.22
+      69.311     0.600000           59         2.50
+      89.663     0.650000           64         2.86
+     107.647     0.700000           68         3.33
+     237.823     0.750000           75         4.00
+     238.719     0.775000           76         4.44
+     243.199     0.800000           78         5.00
+     296.191     0.825000           81         5.71
+     348.927     0.850000           83         6.67
+     355.839     0.875000           86         8.00
+     357.631     0.887500           87         8.89
+     365.311     0.900000           88        10.00
+     366.079     0.912500           89        11.43
+     367.871     0.925000           91        13.33
+     367.871     0.937500           91        16.00
+     368.383     0.943750           92        17.78
+     369.407     0.950000           93        20.00
+     369.407     0.956250           93        22.86
+     379.391     0.962500           94        26.67
+     379.391     0.968750           94        32.00
+     533.503     0.971875           95        35.56
+     533.503     0.975000           95        40.00
+     533.503     0.978125           95        45.71
+     539.135     0.981250           96        53.33
+     539.135     0.984375           96        64.00
+     539.135     0.985938           96        71.11
+     539.135     0.987500           96        80.00
+     539.135     0.989062           96        91.43
+     557.567     0.990625           97       106.67
+     557.567     1.000000           97          inf
+#[Mean    =      138.557, StdDeviation   =      130.260]
+#[Max     =      557.056, Total count    =           97]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  978 requests in 10.00s, 186.83KB read
+Requests/sec:     97.77  
+Transfer/sec:     18.68KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    8m           8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     4m           6Mi             
+home-timeline-service-76974b884d-rfcn6   9m           7Mi             
+jaeger-67c87b4489-rdzkh                  2m           14Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           60Mi            
+media-service-5496988558-728cv           1m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            14m          42Mi            
+nginx-thrift-6d9d7c98df-x5926            9m           42Mi            
+nginx-thrift-6d9d7c98df-xgrm6            12m          41Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           4Mi             
+post-storage-mongodb-867b76d74f-fzlpn    5m           90Mi            
+post-storage-service-77d88b64fc-m9zjp    6m           4Mi             
+social-graph-mongodb-69859bd677-7754g    6m           64Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    4m           1Mi             
+text-service-64d6d4f459-7mktm            5m           3Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     7m           90Mi            
+url-shorten-service-5b9598b6c4-sshcm     3m           4Mi             
+user-memcached-d6f8954b4-wkhd5           2m           3Mi             
+user-mention-service-7d55b6d565-grgfh    3m           2Mi             
+user-mongodb-6ddd645944-ffzww            7m           64Mi            
+user-service-6dfb9d6759-w2mqq            1m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   13m          89Mi            
+user-timeline-redis-7f767bdff5-jbw2z     4m           5Mi             
+user-timeline-service-f75795664-psfx2    10m          8Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          4m23s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          4m23s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m23s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          4m23s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          4m23s
+text-service            Deployment/text-service            16%/80%   1         30        1          4m23s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m22s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          4m22s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          4m22s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m22s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          4m22s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m41s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m41s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m41s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m41s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          4m39s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m37s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          4m39s
+media-service-5496988558-728cv           1/1     Running   0          4m39s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m38s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m38s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m38s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          4m40s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          4m40s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m38s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          4m39s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m37s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m41s
+text-service-64d6d4f459-7mktm            1/1     Running   0          4m40s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          4m40s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m38s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m38s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m37s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          4m40s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m41s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m41s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m41s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m41s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          4m39s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m41s
+ 
+[Test 5] Sun Apr 21 01:24:01 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 83.422ms, rate sampling interval: 471ms
+  Thread calibration: mean lat.: 80.069ms, rate sampling interval: 266ms
+  Thread calibration: mean lat.: 305.818ms, rate sampling interval: 1332ms
+  Thread calibration: mean lat.: 243.990ms, rate sampling interval: 1253ms
+  Thread calibration: mean lat.: 81.640ms, rate sampling interval: 216ms
+  Thread calibration: mean lat.: 105.598ms, rate sampling interval: 698ms
+  Thread calibration: mean lat.: 132.525ms, rate sampling interval: 713ms
+  Thread calibration: mean lat.: 169.282ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 79.002ms, rate sampling interval: 216ms
+  Thread calibration: mean lat.: 186.346ms, rate sampling interval: 731ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  972 requests in 10.00s, 185.54KB read
+Requests/sec:     97.17  
+Transfer/sec:     18.55KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    8m           8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     4m           6Mi             
+home-timeline-service-76974b884d-rfcn6   9m           7Mi             
+jaeger-67c87b4489-rdzkh                  2m           14Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           60Mi            
+media-service-5496988558-728cv           1m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            14m          42Mi            
+nginx-thrift-6d9d7c98df-x5926            9m           42Mi            
+nginx-thrift-6d9d7c98df-xgrm6            12m          41Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           4Mi             
+post-storage-mongodb-867b76d74f-fzlpn    5m           90Mi            
+post-storage-service-77d88b64fc-m9zjp    6m           4Mi             
+social-graph-mongodb-69859bd677-7754g    6m           64Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    4m           1Mi             
+text-service-64d6d4f459-7mktm            5m           3Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     7m           90Mi            
+url-shorten-service-5b9598b6c4-sshcm     3m           4Mi             
+user-memcached-d6f8954b4-wkhd5           2m           3Mi             
+user-mention-service-7d55b6d565-grgfh    3m           2Mi             
+user-mongodb-6ddd645944-ffzww            7m           64Mi            
+user-service-6dfb9d6759-w2mqq            1m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   13m          89Mi            
+user-timeline-redis-7f767bdff5-jbw2z     4m           5Mi             
+user-timeline-service-f75795664-psfx2    10m          8Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          4m33s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          4m33s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m33s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          4m33s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          4m33s
+text-service            Deployment/text-service            16%/80%   1         30        1          4m33s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m32s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          4m32s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          4m32s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m32s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          4m32s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          4m51s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          4m51s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          4m51s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          4m51s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          4m49s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m47s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          4m49s
+media-service-5496988558-728cv           1/1     Running   0          4m49s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m48s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m48s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m48s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          4m50s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          4m50s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m48s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          4m49s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m47s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          4m51s
+text-service-64d6d4f459-7mktm            1/1     Running   0          4m50s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          4m50s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m48s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m48s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m47s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          4m50s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          4m51s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          4m51s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          4m51s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          4m51s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          4m49s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          4m51s
+ 
+[Test 6] Sun Apr 21 01:24:11 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 182.646ms, rate sampling interval: 733ms
+  Thread calibration: mean lat.: 111.673ms, rate sampling interval: 643ms
+  Thread calibration: mean lat.: 177.686ms, rate sampling interval: 730ms
+  Thread calibration: mean lat.: 175.113ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 139.269ms, rate sampling interval: 729ms
+  Thread calibration: mean lat.: 74.641ms, rate sampling interval: 169ms
+  Thread calibration: mean lat.: 70.288ms, rate sampling interval: 169ms
+  Thread calibration: mean lat.: 116.072ms, rate sampling interval: 713ms
+  Thread calibration: mean lat.: 158.069ms, rate sampling interval: 732ms
+  Thread calibration: mean lat.: 242.335ms, rate sampling interval: 1319ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 990 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  974 requests in 10.00s, 188.30KB read
+Requests/sec:     97.36  
+Transfer/sec:     18.82KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    8m           8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     4m           6Mi             
+home-timeline-service-76974b884d-rfcn6   9m           7Mi             
+jaeger-67c87b4489-rdzkh                  2m           14Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           60Mi            
+media-service-5496988558-728cv           1m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            14m          42Mi            
+nginx-thrift-6d9d7c98df-x5926            9m           42Mi            
+nginx-thrift-6d9d7c98df-xgrm6            12m          41Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           4Mi             
+post-storage-mongodb-867b76d74f-fzlpn    5m           90Mi            
+post-storage-service-77d88b64fc-m9zjp    6m           4Mi             
+social-graph-mongodb-69859bd677-7754g    6m           64Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    4m           1Mi             
+text-service-64d6d4f459-7mktm            5m           3Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     7m           90Mi            
+url-shorten-service-5b9598b6c4-sshcm     3m           4Mi             
+user-memcached-d6f8954b4-wkhd5           2m           3Mi             
+user-mention-service-7d55b6d565-grgfh    3m           2Mi             
+user-mongodb-6ddd645944-ffzww            7m           64Mi            
+user-service-6dfb9d6759-w2mqq            1m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   13m          89Mi            
+user-timeline-redis-7f767bdff5-jbw2z     4m           5Mi             
+user-timeline-service-f75795664-psfx2    10m          8Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          4m44s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          4m44s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m44s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          4m44s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          4m44s
+text-service            Deployment/text-service            16%/80%   1         30        1          4m44s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m43s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          4m43s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          4m43s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m43s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          4m43s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m2s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m2s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m2s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m2s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m
+media-memcached-74df6744db-mx7kb         1/1     Running   0          4m58s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m
+media-service-5496988558-728cv           1/1     Running   0          5m
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          4m59s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          4m59s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          4m59s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m1s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m1s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          4m59s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          4m58s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m2s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m1s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m1s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          4m59s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          4m59s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          4m58s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m1s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m2s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m2s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m2s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m2s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m2s
+ 
+[Test 7] Sun Apr 21 01:24:22 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 203.991ms, rate sampling interval: 1068ms
+  Thread calibration: mean lat.: 185.680ms, rate sampling interval: 1116ms
+  Thread calibration: mean lat.: 332.514ms, rate sampling interval: 1131ms
+  Thread calibration: mean lat.: 110.843ms, rate sampling interval: 574ms
+  Thread calibration: mean lat.: 155.011ms, rate sampling interval: 633ms
+  Thread calibration: mean lat.: 259.710ms, rate sampling interval: 1114ms
+  Thread calibration: mean lat.: 259.488ms, rate sampling interval: 1131ms
+  Thread calibration: mean lat.: 118.964ms, rate sampling interval: 617ms
+  Thread calibration: mean lat.: 372.743ms, rate sampling interval: 1228ms
+  Thread calibration: mean lat.: 238.767ms, rate sampling interval: 712ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1192 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1135 requests in 10.00s, 220.54KB read
+Requests/sec:    113.46  
+Transfer/sec:     22.05KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    8m           8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     4m           6Mi             
+home-timeline-service-76974b884d-rfcn6   9m           7Mi             
+jaeger-67c87b4489-rdzkh                  2m           14Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           60Mi            
+media-service-5496988558-728cv           1m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            14m          42Mi            
+nginx-thrift-6d9d7c98df-x5926            9m           42Mi            
+nginx-thrift-6d9d7c98df-xgrm6            12m          41Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           4Mi             
+post-storage-mongodb-867b76d74f-fzlpn    5m           90Mi            
+post-storage-service-77d88b64fc-m9zjp    6m           4Mi             
+social-graph-mongodb-69859bd677-7754g    6m           64Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    4m           1Mi             
+text-service-64d6d4f459-7mktm            5m           3Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     7m           90Mi            
+url-shorten-service-5b9598b6c4-sshcm     3m           4Mi             
+user-memcached-d6f8954b4-wkhd5           2m           3Mi             
+user-mention-service-7d55b6d565-grgfh    3m           2Mi             
+user-mongodb-6ddd645944-ffzww            7m           64Mi            
+user-service-6dfb9d6759-w2mqq            1m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   13m          89Mi            
+user-timeline-redis-7f767bdff5-jbw2z     4m           5Mi             
+user-timeline-service-f75795664-psfx2    10m          8Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          4m54s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          4m54s
+media-service           Deployment/media-service           3%/80%    1         30        1          4m54s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          4m54s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          4m54s
+text-service            Deployment/text-service            16%/80%   1         30        1          4m54s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          4m53s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          4m53s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          4m53s
+user-service            Deployment/user-service            3%/80%    1         30        1          4m53s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          4m53s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m12s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m12s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m12s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m12s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m10s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          5m8s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m10s
+media-service-5496988558-728cv           1/1     Running   0          5m10s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          5m9s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          5m9s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          5m9s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m11s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m11s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          5m9s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m10s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          5m8s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m12s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m11s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m11s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          5m9s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          5m9s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          5m8s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m11s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m12s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m12s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m12s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m12s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m10s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m12s
+ 
+[Test 8] Sun Apr 21 01:24:32 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 161.736ms, rate sampling interval: 633ms
+  Thread calibration: mean lat.: 247.583ms, rate sampling interval: 1128ms
+  Thread calibration: mean lat.: 124.532ms, rate sampling interval: 617ms
+  Thread calibration: mean lat.: 191.417ms, rate sampling interval: 717ms
+  Thread calibration: mean lat.: 328.167ms, rate sampling interval: 1133ms
+  Thread calibration: mean lat.: 318.336ms, rate sampling interval: 2096ms
+  Thread calibration: mean lat.: 281.020ms, rate sampling interval: 767ms
+  Thread calibration: mean lat.: 252.739ms, rate sampling interval: 1185ms
+  Thread calibration: mean lat.: 232.329ms, rate sampling interval: 968ms
+  Thread calibration: mean lat.: 367.008ms, rate sampling interval: 1633ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1193 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1123 requests in 10.00s, 219.75KB read
+Requests/sec:    112.25  
+Transfer/sec:     21.97KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    8m           8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     4m           6Mi             
+home-timeline-service-76974b884d-rfcn6   9m           7Mi             
+jaeger-67c87b4489-rdzkh                  2m           14Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           60Mi            
+media-service-5496988558-728cv           1m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            14m          42Mi            
+nginx-thrift-6d9d7c98df-x5926            9m           42Mi            
+nginx-thrift-6d9d7c98df-xgrm6            12m          41Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           4Mi             
+post-storage-mongodb-867b76d74f-fzlpn    5m           90Mi            
+post-storage-service-77d88b64fc-m9zjp    6m           4Mi             
+social-graph-mongodb-69859bd677-7754g    6m           64Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    4m           1Mi             
+text-service-64d6d4f459-7mktm            5m           3Mi             
+unique-id-service-7cbcbc74db-8fbm9       1m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     7m           90Mi            
+url-shorten-service-5b9598b6c4-sshcm     3m           4Mi             
+user-memcached-d6f8954b4-wkhd5           2m           3Mi             
+user-mention-service-7d55b6d565-grgfh    3m           2Mi             
+user-mongodb-6ddd645944-ffzww            7m           64Mi            
+user-service-6dfb9d6759-w2mqq            1m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   13m          89Mi            
+user-timeline-redis-7f767bdff5-jbw2z     4m           5Mi             
+user-timeline-service-f75795664-psfx2    10m          8Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          5m4s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          5m4s
+media-service           Deployment/media-service           3%/80%    1         30        1          5m4s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          5m4s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          5m4s
+text-service            Deployment/text-service            16%/80%   1         30        1          5m4s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          5m3s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          5m3s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          5m3s
+user-service            Deployment/user-service            3%/80%    1         30        1          5m3s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          5m3s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m22s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m22s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m22s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m22s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m20s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          5m18s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m20s
+media-service-5496988558-728cv           1/1     Running   0          5m20s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          5m19s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          5m19s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          5m19s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m21s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m21s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          5m19s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m20s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          5m18s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m22s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m21s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m21s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          5m19s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          5m19s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          5m18s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m21s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m22s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m22s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m22s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m22s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m20s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m22s
+ 
+[Test 9] Sun Apr 21 01:24:42 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 480.321ms, rate sampling interval: 1814ms
+  Thread calibration: mean lat.: 756.290ms, rate sampling interval: 2275ms
+  Thread calibration: mean lat.: 738.077ms, rate sampling interval: 2686ms
+  Thread calibration: mean lat.: 557.576ms, rate sampling interval: 1847ms
+  Thread calibration: mean lat.: 547.726ms, rate sampling interval: 2254ms
+  Thread calibration: mean lat.: 461.975ms, rate sampling interval: 1868ms
+  Thread calibration: mean lat.: 479.621ms, rate sampling interval: 1830ms
+  Thread calibration: mean lat.: 498.149ms, rate sampling interval: 1831ms
+  Thread calibration: mean lat.: 384.110ms, rate sampling interval: 1422ms
+  Thread calibration: mean lat.: 603.693ms, rate sampling interval: 2275ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1380 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1251 requests in 10.00s, 244.41KB read
+Requests/sec:    125.05  
+Transfer/sec:     24.43KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    26%/80%   1         30        1          5m15s
+home-timeline-service   Deployment/home-timeline-service   30%/80%   1         30        1          5m15s
+media-service           Deployment/media-service           3%/80%    1         30        1          5m15s
+post-storage-service    Deployment/post-storage-service    20%/80%   1         30        1          5m15s
+social-graph-service    Deployment/social-graph-service    13%/80%   1         30        1          5m15s
+text-service            Deployment/text-service            16%/80%   1         30        1          5m15s
+unique-id-service       Deployment/unique-id-service       3%/80%    1         30        1          5m14s
+url-shorten-service     Deployment/url-shorten-service     10%/80%   1         30        1          5m14s
+user-mention-service    Deployment/user-mention-service    10%/80%   1         30        1          5m14s
+user-service            Deployment/user-service            3%/80%    1         30        1          5m14s
+user-timeline-service   Deployment/user-timeline-service   33%/80%   1         30        1          5m14s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m33s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m33s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m33s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m33s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m31s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          5m29s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m31s
+media-service-5496988558-728cv           1/1     Running   0          5m31s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          5m30s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          5m30s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          5m30s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m32s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m32s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          5m30s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m31s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          5m29s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m33s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m32s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m32s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          5m30s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          5m30s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          5m29s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m32s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m33s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m33s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m33s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m33s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m31s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m33s
+ 
+[Test 10] Sun Apr 21 01:24:53 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 596.095ms, rate sampling interval: 2363ms
+  Thread calibration: mean lat.: 569.391ms, rate sampling interval: 2738ms
+  Thread calibration: mean lat.: 293.588ms, rate sampling interval: 1082ms
+  Thread calibration: mean lat.: 566.683ms, rate sampling interval: 2527ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1590 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency   424.18ms  378.65ms   1.56s    81.78%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%  266.24ms
+ 75.000%  621.05ms
+ 90.000%    1.00s 
+ 99.000%    1.56s 
+ 99.900%    1.69s 
+ 99.990%    1.85s 
+ 99.999%    1.85s 
+100.000%    1.85s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      47.679     0.000000            1         1.00
+      57.823     0.100000           87         1.11
+      65.663     0.200000          176         1.25
+     113.279     0.300000          257         1.43
+     245.887     0.400000          344         1.67
+     266.239     0.500000          428         2.00
+     431.103     0.550000          473         2.22
+     433.407     0.600000          516         2.50
+     440.575     0.650000          558         2.86
+     470.527     0.700000          600         3.33
+     621.055     0.750000          643         4.00
+     628.735     0.775000          664         4.44
+     667.647     0.800000          685         5.00
+     807.423     0.825000          711         5.71
+     817.663     0.850000          728         6.67
+     993.791     0.875000          750         8.00
+     995.327     0.887500          761         8.89
+    1002.495     0.900000          773        10.00
+    1003.519     0.912500          782        11.43
+    1035.775     0.925000          792        13.33
+    1182.719     0.937500          804        16.00
+    1189.887     0.943750          809        17.78
+    1191.935     0.950000          817        20.00
+    1200.127     0.956250          819        22.86
+    1361.919     0.962500          824        26.67
+    1371.135     0.968750          830        32.00
+    1378.303     0.971875          832        35.56
+    1379.327     0.975000          835        40.00
+    1382.399     0.978125          838        45.71
+    1431.551     0.981250          840        53.33
+    1545.215     0.984375          843        64.00
+    1548.287     0.985938          844        71.11
+    1557.503     0.987500          846        80.00
+    1558.527     0.989062          847        91.43
+    1559.551     0.990625          848       106.67
+    1560.575     0.992188          850       128.00
+    1560.575     0.992969          850       142.22
+    1565.695     0.993750          852       160.00
+    1565.695     0.994531          852       182.86
+    1565.695     0.995313          852       213.33
+    1587.199     0.996094          853       256.00
+    1587.199     0.996484          853       284.44
+    1618.943     0.996875          854       320.00
+    1618.943     0.997266          854       365.71
+    1618.943     0.997656          854       426.67
+    1685.503     0.998047          855       512.00
+    1685.503     0.998242          855       568.89
+    1685.503     0.998437          855       640.00
+    1685.503     0.998633          855       731.43
+    1685.503     0.998828          855       853.33
+    1852.415     0.999023          856      1024.00
+    1852.415     1.000000          856          inf
+#[Mean    =      424.178, StdDeviation   =      378.652]
+#[Max     =     1851.392, Total count    =          856]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1430 requests in 10.00s, 277.80KB read
+Requests/sec:    142.93  
+Transfer/sec:     27.77KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    90%/80%    1         30        1          5m25s
+home-timeline-service   Deployment/home-timeline-service   73%/80%    1         30        1          5m25s
+media-service           Deployment/media-service           6%/80%     1         30        1          5m25s
+post-storage-service    Deployment/post-storage-service    56%/80%    1         30        1          5m25s
+social-graph-service    Deployment/social-graph-service    26%/80%    1         30        1          5m25s
+text-service            Deployment/text-service            46%/80%    1         30        1          5m25s
+unique-id-service       Deployment/unique-id-service       6%/80%     1         30        1          5m24s
+url-shorten-service     Deployment/url-shorten-service     20%/80%    1         30        1          5m24s
+user-mention-service    Deployment/user-mention-service    23%/80%    1         30        1          5m24s
+user-service            Deployment/user-service            6%/80%     1         30        1          5m24s
+user-timeline-service   Deployment/user-timeline-service   113%/80%   1         30        1          5m24s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          9s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m43s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m43s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m43s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m43s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m41s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          5m39s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m41s
+media-service-5496988558-728cv           1/1     Running   0          5m41s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          5m40s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          5m40s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          5m40s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m42s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m42s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          5m40s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m41s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          5m39s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m43s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m42s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m42s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          5m40s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          5m40s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          5m39s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m42s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m43s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m43s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m43s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m43s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m41s
+user-timeline-service-f75795664-66288    1/1     Running   0          9s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m43s
+ 
+[Test 11] Sun Apr 21 01:25:03 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 703.002ms, rate sampling interval: 2127ms
+  Thread calibration: mean lat.: 866.203ms, rate sampling interval: 2797ms
+  Thread calibration: mean lat.: 512.382ms, rate sampling interval: 2447ms
+  Thread calibration: mean lat.: 703.554ms, rate sampling interval: 2781ms
+  Thread calibration: mean lat.: 205.072ms, rate sampling interval: 1115ms
+  Thread calibration: mean lat.: 606.420ms, rate sampling interval: 2111ms
+  Thread calibration: mean lat.: 476.292ms, rate sampling interval: 1908ms
+  Thread calibration: mean lat.: 544.235ms, rate sampling interval: 2463ms
+  Thread calibration: mean lat.: 476.511ms, rate sampling interval: 1276ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1791 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     1.00s   466.46ms   1.76s    67.11%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    1.22s 
+ 75.000%    1.25s 
+ 90.000%    1.48s 
+ 99.000%    1.76s 
+ 99.900%    1.78s 
+ 99.990%    1.78s 
+ 99.999%    1.78s 
+100.000%    1.78s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      48.127     0.000000            1         1.00
+     231.551     0.100000           15         1.11
+     413.695     0.200000           30         1.25
+     892.415     0.300000           45         1.43
+    1068.031     0.400000           60         1.67
+    1223.679     0.500000           83         2.00
+    1223.679     0.550000           83         2.22
+    1226.751     0.600000           90         2.50
+    1231.871     0.650000           97         2.86
+    1233.919     0.700000          106         3.33
+    1252.351     0.750000          113         4.00
+    1279.999     0.775000          116         4.44
+    1324.031     0.800000          120         5.00
+    1381.375     0.825000          123         5.71
+    1391.615     0.850000          128         6.67
+    1402.879     0.875000          131         8.00
+    1453.055     0.887500          133         8.89
+    1498.111     0.900000          135        10.00
+    1548.287     0.912500          136        11.43
+    1566.719     0.925000          139        13.33
+    1575.935     0.937500          140        16.00
+    1603.583     0.943750          141        17.78
+    1604.607     0.950000          142        20.00
+    1627.135     0.956250          143        22.86
+    1662.975     0.962500          144        26.67
+    1684.479     0.968750          145        32.00
+    1684.479     0.971875          145        35.56
+    1725.439     0.975000          146        40.00
+    1725.439     0.978125          146        45.71
+    1743.871     0.981250          147        53.33
+    1743.871     0.984375          147        64.00
+    1743.871     0.985938          147        71.11
+    1755.135     0.987500          148        80.00
+    1755.135     0.989062          148        91.43
+    1755.135     0.990625          148       106.67
+    1755.135     0.992188          148       128.00
+    1755.135     0.992969          148       142.22
+    1775.615     0.993750          149       160.00
+    1775.615     1.000000          149          inf
+#[Mean    =     1003.171, StdDeviation   =      466.463]
+#[Max     =     1774.592, Total count    =          149]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1587 requests in 10.00s, 310.67KB read
+Requests/sec:    158.65  
+Transfer/sec:     31.06KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    90%/80%    1         30        2          5m35s
+home-timeline-service   Deployment/home-timeline-service   73%/80%    1         30        1          5m35s
+media-service           Deployment/media-service           6%/80%     1         30        1          5m35s
+post-storage-service    Deployment/post-storage-service    56%/80%    1         30        1          5m35s
+social-graph-service    Deployment/social-graph-service    26%/80%    1         30        1          5m35s
+text-service            Deployment/text-service            46%/80%    1         30        1          5m35s
+unique-id-service       Deployment/unique-id-service       6%/80%     1         30        1          5m34s
+url-shorten-service     Deployment/url-shorten-service     20%/80%    1         30        1          5m34s
+user-mention-service    Deployment/user-mention-service    23%/80%    1         30        1          5m34s
+user-service            Deployment/user-service            6%/80%     1         30        1          5m34s
+user-timeline-service   Deployment/user-timeline-service   113%/80%   1         30        2          5m34s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          19s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          5m53s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          5m53s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          5m53s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          5m53s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          5m51s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          5m49s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          5m51s
+media-service-5496988558-728cv           1/1     Running   0          5m51s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          5m50s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          5m50s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          5m50s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          5m52s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          5m52s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          5m50s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          5m51s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          5m49s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          5m53s
+text-service-64d6d4f459-7mktm            1/1     Running   0          5m52s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          5m52s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          5m50s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          5m50s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          5m49s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          5m52s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          5m53s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          5m53s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          5m53s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          5m53s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          5m51s
+user-timeline-service-f75795664-66288    1/1     Running   0          19s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          5m53s
+ 
+[Test 12] Sun Apr 21 01:25:13 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 798.973ms, rate sampling interval: 3420ms
+  Thread calibration: mean lat.: 832.162ms, rate sampling interval: 3989ms
+  Thread calibration: mean lat.: 820.625ms, rate sampling interval: 2836ms
+  Thread calibration: mean lat.: 792.343ms, rate sampling interval: 3479ms
+  Thread calibration: mean lat.: 803.622ms, rate sampling interval: 3135ms
+  Thread calibration: mean lat.: 1045.624ms, rate sampling interval: 3715ms
+  Thread calibration: mean lat.: 982.059ms, rate sampling interval: 3418ms
+  Thread calibration: mean lat.: 1072.489ms, rate sampling interval: 3663ms
+  Thread calibration: mean lat.: 997.198ms, rate sampling interval: 4001ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1980 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency   736.29ms  460.91ms   1.64s    64.67%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%  657.41ms
+ 75.000%    1.11s 
+ 90.000%    1.28s 
+ 99.000%    1.64s 
+ 99.900%    1.82s 
+ 99.990%    1.82s 
+ 99.999%    1.82s 
+100.000%    1.82s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      48.447     0.000000            1         1.00
+      65.599     0.100000           17         1.11
+     349.183     0.200000           34         1.25
+     368.383     0.300000           51         1.43
+     510.463     0.400000           67         1.67
+     657.407     0.500000           84         2.00
+     814.591     0.550000           92         2.22
+     965.631     0.600000          101         2.50
+    1008.639     0.650000          109         2.86
+    1106.943     0.700000          122         3.33
+    1108.991     0.750000          126         4.00
+    1116.159     0.775000          134         4.44
+    1116.159     0.800000          134         5.00
+    1118.207     0.825000          138         5.71
+    1249.279     0.850000          142         6.67
+    1266.687     0.875000          149         8.00
+    1266.687     0.887500          149         8.89
+    1310.719     0.900000          151        10.00
+    1405.951     0.912500          153        11.43
+    1442.815     0.925000          155        13.33
+    1505.279     0.937500          157        16.00
+    1506.303     0.943750          158        17.78
+    1539.071     0.950000          159        20.00
+    1564.671     0.956250          161        22.86
+    1564.671     0.962500          161        26.67
+    1565.695     0.968750          163        32.00
+    1565.695     0.971875          163        35.56
+    1565.695     0.975000          163        40.00
+    1566.719     0.978125          164        45.71
+    1566.719     0.981250          164        53.33
+    1639.423     0.984375          165        64.00
+    1639.423     0.985938          165        71.11
+    1639.423     0.987500          165        80.00
+    1645.567     0.989062          166        91.43
+    1645.567     0.990625          166       106.67
+    1645.567     0.992188          166       128.00
+    1645.567     0.992969          166       142.22
+    1645.567     0.993750          166       160.00
+    1820.671     0.994531          167       182.86
+    1820.671     1.000000          167          inf
+#[Mean    =      736.291, StdDeviation   =      460.907]
+#[Max     =     1819.648, Total count    =          167]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1643 requests in 10.00s, 319.09KB read
+Requests/sec:    164.24  
+Transfer/sec:     31.90KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    90%/80%    1         30        2          5m46s
+home-timeline-service   Deployment/home-timeline-service   73%/80%    1         30        1          5m46s
+media-service           Deployment/media-service           6%/80%     1         30        1          5m46s
+post-storage-service    Deployment/post-storage-service    56%/80%    1         30        1          5m46s
+social-graph-service    Deployment/social-graph-service    26%/80%    1         30        1          5m46s
+text-service            Deployment/text-service            46%/80%    1         30        1          5m46s
+unique-id-service       Deployment/unique-id-service       6%/80%     1         30        1          5m45s
+url-shorten-service     Deployment/url-shorten-service     20%/80%    1         30        1          5m45s
+user-mention-service    Deployment/user-mention-service    23%/80%    1         30        1          5m45s
+user-service            Deployment/user-service            6%/80%     1         30        1          5m45s
+user-timeline-service   Deployment/user-timeline-service   113%/80%   1         30        2          5m45s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          30s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          6m4s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          6m4s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          6m4s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          6m4s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          6m2s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          6m
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          6m2s
+media-service-5496988558-728cv           1/1     Running   0          6m2s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          6m1s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          6m1s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          6m1s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          6m3s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          6m3s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          6m1s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          6m2s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          6m
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          6m4s
+text-service-64d6d4f459-7mktm            1/1     Running   0          6m3s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          6m3s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          6m1s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          6m1s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          6m
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          6m3s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          6m4s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          6m4s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          6m4s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          6m4s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          6m2s
+user-timeline-service-f75795664-66288    1/1     Running   0          30s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          6m4s
+ 
+[Test 13] Sun Apr 21 01:25:24 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 965.197ms, rate sampling interval: 3588ms
+  Thread calibration: mean lat.: 767.239ms, rate sampling interval: 2813ms
+  Thread calibration: mean lat.: 882.604ms, rate sampling interval: 3469ms
+  Thread calibration: mean lat.: 635.535ms, rate sampling interval: 2861ms
+  Thread calibration: mean lat.: 1350.116ms, rate sampling interval: 4386ms
+  Thread calibration: mean lat.: 736.330ms, rate sampling interval: 2832ms
+  Thread calibration: mean lat.: 1008.513ms, rate sampling interval: 4370ms
+  Thread calibration: mean lat.: 1414.066ms, rate sampling interval: 4192ms
+  Thread calibration: mean lat.: 1029.752ms, rate sampling interval: 4583ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 1980 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency   687.92ms  541.66ms   1.89s    63.41%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%  516.86ms
+ 75.000%    1.21s 
+ 90.000%    1.42s 
+ 99.000%    1.89s 
+ 99.900%    2.17s 
+ 99.990%    2.17s 
+ 99.999%    2.17s 
+100.000%    2.17s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      48.671     0.000000            1         1.00
+      66.367     0.100000           17         1.11
+     206.847     0.200000           34         1.25
+     216.703     0.300000           50         1.43
+     294.655     0.400000           66         1.67
+     516.863     0.500000           82         2.00
+     686.079     0.550000           91         2.22
+     807.423     0.600000           99         2.50
+     899.583     0.650000          107         2.86
+    1106.943     0.700000          115         3.33
+    1206.271     0.750000          123         4.00
+    1256.447     0.775000          129         4.44
+    1258.495     0.800000          132         5.00
+    1266.687     0.825000          138         5.71
+    1284.095     0.850000          140         6.67
+    1407.999     0.875000          145         8.00
+    1415.167     0.887500          146         8.89
+    1417.215     0.900000          148        10.00
+    1432.575     0.912500          150        11.43
+    1497.087     0.925000          152        13.33
+    1540.095     0.937500          154        16.00
+    1558.527     0.943750          155        17.78
+    1565.695     0.950000          156        20.00
+    1585.151     0.956250          157        22.86
+    1587.199     0.962500          158        26.67
+    1657.855     0.968750          159        32.00
+    1685.503     0.971875          160        35.56
+    1685.503     0.975000          160        40.00
+    1709.055     0.978125          161        45.71
+    1709.055     0.981250          161        53.33
+    1885.183     0.984375          162        64.00
+    1885.183     0.985938          162        71.11
+    1885.183     0.987500          162        80.00
+    2138.111     0.989062          163        91.43
+    2138.111     0.990625          163       106.67
+    2138.111     0.992188          163       128.00
+    2138.111     0.992969          163       142.22
+    2138.111     0.993750          163       160.00
+    2166.783     0.994531          164       182.86
+    2166.783     1.000000          164          inf
+#[Mean    =      687.925, StdDeviation   =      541.660]
+#[Max     =     2164.736, Total count    =          164]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1619 requests in 10.00s, 322.66KB read
+Requests/sec:    161.83  
+Transfer/sec:     32.25KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    90%/80%    1         30        2          5m56s
+home-timeline-service   Deployment/home-timeline-service   73%/80%    1         30        1          5m56s
+media-service           Deployment/media-service           6%/80%     1         30        1          5m56s
+post-storage-service    Deployment/post-storage-service    56%/80%    1         30        1          5m56s
+social-graph-service    Deployment/social-graph-service    26%/80%    1         30        1          5m56s
+text-service            Deployment/text-service            46%/80%    1         30        1          5m56s
+unique-id-service       Deployment/unique-id-service       6%/80%     1         30        1          5m55s
+url-shorten-service     Deployment/url-shorten-service     20%/80%    1         30        1          5m55s
+user-mention-service    Deployment/user-mention-service    23%/80%    1         30        1          5m55s
+user-service            Deployment/user-service            6%/80%     1         30        1          5m55s
+user-timeline-service   Deployment/user-timeline-service   113%/80%   1         30        2          5m55s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          40s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          6m14s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          6m14s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          6m14s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          6m14s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          6m12s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          6m10s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          6m12s
+media-service-5496988558-728cv           1/1     Running   0          6m12s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          6m11s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          6m11s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          6m11s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          6m13s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          6m13s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          6m11s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          6m12s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          6m10s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          6m14s
+text-service-64d6d4f459-7mktm            1/1     Running   0          6m13s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          6m13s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          6m11s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          6m11s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          6m10s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          6m13s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          6m14s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          6m14s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          6m14s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          6m14s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          6m12s
+user-timeline-service-f75795664-66288    1/1     Running   0          40s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          6m14s
+ 
+[Test 14] Sun Apr 21 01:25:34 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 1292.410ms, rate sampling interval: 4882ms
+  Thread calibration: mean lat.: 1254.749ms, rate sampling interval: 4550ms
+  Thread calibration: mean lat.: 1388.461ms, rate sampling interval: 4370ms
+  Thread calibration: mean lat.: 1111.799ms, rate sampling interval: 3614ms
+  Thread calibration: mean lat.: 1234.556ms, rate sampling interval: 4122ms
+  Thread calibration: mean lat.: 1210.579ms, rate sampling interval: 4134ms
+  Thread calibration: mean lat.: 1147.947ms, rate sampling interval: 4366ms
+  Thread calibration: mean lat.: 1017.911ms, rate sampling interval: 4280ms
+  Thread calibration: mean lat.: 1073.693ms, rate sampling interval: 4130ms
+  Thread calibration: mean lat.: 1027.929ms, rate sampling interval: 3620ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 2392 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1836 requests in 10.00s, 370.05KB read
+Requests/sec:    183.53  
+Transfer/sec:     36.99KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-bmbc5    27m          8Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     7m           6Mi             
+home-timeline-service-76974b884d-rfcn6   22m          8Mi             
+jaeger-67c87b4489-rdzkh                  4m           23Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           2m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            27m          52Mi            
+nginx-thrift-6d9d7c98df-x5926            21m          53Mi            
+nginx-thrift-6d9d7c98df-xgrm6            23m          53Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           7Mi             
+post-storage-mongodb-867b76d74f-fzlpn    8m           91Mi            
+post-storage-service-77d88b64fc-m9zjp    17m          4Mi             
+social-graph-mongodb-69859bd677-7754g    10m          65Mi            
+social-graph-redis-59bc4b57bd-929hf      3m           6Mi             
+social-graph-service-755b8ff647-tn22w    8m           2Mi             
+text-service-64d6d4f459-7mktm            14m          2Mi             
+unique-id-service-7cbcbc74db-8fbm9       2m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     10m          91Mi            
+url-shorten-service-5b9598b6c4-sshcm     6m           5Mi             
+user-memcached-d6f8954b4-wkhd5           4m           3Mi             
+user-mention-service-7d55b6d565-grgfh    7m           2Mi             
+user-mongodb-6ddd645944-ffzww            9m           64Mi            
+user-service-6dfb9d6759-w2mqq            2m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   25m          90Mi            
+user-timeline-redis-7f767bdff5-jbw2z     9m           5Mi             
+user-timeline-service-f75795664-psfx2    34m          9Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    90%/80%    1         30        2          6m6s
+home-timeline-service   Deployment/home-timeline-service   73%/80%    1         30        1          6m6s
+media-service           Deployment/media-service           6%/80%     1         30        1          6m6s
+post-storage-service    Deployment/post-storage-service    56%/80%    1         30        1          6m6s
+social-graph-service    Deployment/social-graph-service    26%/80%    1         30        1          6m6s
+text-service            Deployment/text-service            46%/80%    1         30        1          6m6s
+unique-id-service       Deployment/unique-id-service       6%/80%     1         30        1          6m5s
+url-shorten-service     Deployment/url-shorten-service     20%/80%    1         30        1          6m5s
+user-mention-service    Deployment/user-mention-service    23%/80%    1         30        1          6m5s
+user-service            Deployment/user-service            6%/80%     1         30        1          6m5s
+user-timeline-service   Deployment/user-timeline-service   113%/80%   1         30        2          6m5s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          50s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          6m24s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          6m24s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          6m24s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          6m24s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          6m22s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          6m20s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          6m22s
+media-service-5496988558-728cv           1/1     Running   0          6m22s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          6m21s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          6m21s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          6m21s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          6m23s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          6m23s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          6m21s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          6m22s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          6m20s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          6m24s
+text-service-64d6d4f459-7mktm            1/1     Running   0          6m23s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          6m23s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          6m21s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          6m21s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          6m20s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          6m23s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          6m24s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          6m24s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          6m24s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          6m24s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          6m22s
+user-timeline-service-f75795664-66288    1/1     Running   0          50s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          6m24s
+ 
+[Test 15] Sun Apr 21 01:25:44 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 1303.890ms, rate sampling interval: 4419ms
+  Thread calibration: mean lat.: 1283.539ms, rate sampling interval: 4616ms
+  Thread calibration: mean lat.: 985.068ms, rate sampling interval: 3629ms
+  Thread calibration: mean lat.: 1286.039ms, rate sampling interval: 4812ms
+  Thread calibration: mean lat.: 1332.847ms, rate sampling interval: 5058ms
+  Thread calibration: mean lat.: 1515.877ms, rate sampling interval: 5275ms
+  Thread calibration: mean lat.: 1557.112ms, rate sampling interval: 5058ms
+  Thread calibration: mean lat.: 1308.834ms, rate sampling interval: 4038ms
+  Thread calibration: mean lat.: 1279.899ms, rate sampling interval: 4407ms
+  Thread calibration: mean lat.: 1405.202ms, rate sampling interval: 4636ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 2790 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  2054 requests in 10.00s, 418.85KB read
+Requests/sec:    205.31  
+Transfer/sec:     41.87KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-8nkfj    15m          5Mi             
+compose-post-service-79b4f4448b-bmbc5    29m          5Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     10m          5Mi             
+home-timeline-service-76974b884d-rfcn6   31m          10Mi            
+jaeger-67c87b4489-rdzkh                  5m           33Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           3m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            39m          55Mi            
+nginx-thrift-6d9d7c98df-x5926            28m          58Mi            
+nginx-thrift-6d9d7c98df-xgrm6            34m          56Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           8Mi             
+post-storage-mongodb-867b76d74f-fzlpn    10m          93Mi            
+post-storage-service-77d88b64fc-m9zjp    25m          6Mi             
+social-graph-mongodb-69859bd677-7754g    12m          64Mi            
+social-graph-redis-59bc4b57bd-929hf      4m           6Mi             
+social-graph-service-755b8ff647-tn22w    11m          2Mi             
+text-service-64d6d4f459-7mktm            20m          4Mi             
+unique-id-service-7cbcbc74db-8fbm9       3m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     13m          93Mi            
+url-shorten-service-5b9598b6c4-sshcm     9m           4Mi             
+user-memcached-d6f8954b4-wkhd5           5m           3Mi             
+user-mention-service-7d55b6d565-grgfh    11m          2Mi             
+user-mongodb-6ddd645944-ffzww            12m          66Mi            
+user-service-6dfb9d6759-w2mqq            3m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   37m          91Mi            
+user-timeline-redis-7f767bdff5-jbw2z     13m          5Mi             
+user-timeline-service-f75795664-66288    20m          7Mi             
+user-timeline-service-f75795664-psfx2    38m          6Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    96%/80%    1         30        2          6m16s
+home-timeline-service   Deployment/home-timeline-service   103%/80%   1         30        1          6m16s
+media-service           Deployment/media-service           10%/80%    1         30        1          6m16s
+post-storage-service    Deployment/post-storage-service    83%/80%    1         30        1          6m16s
+social-graph-service    Deployment/social-graph-service    36%/80%    1         30        1          6m16s
+text-service            Deployment/text-service            66%/80%    1         30        1          6m16s
+unique-id-service       Deployment/unique-id-service       10%/80%    1         30        1          6m15s
+url-shorten-service     Deployment/url-shorten-service     30%/80%    1         30        1          6m15s
+user-mention-service    Deployment/user-mention-service    36%/80%    1         30        1          6m15s
+user-service            Deployment/user-service            10%/80%    1         30        1          6m15s
+user-timeline-service   Deployment/user-timeline-service   126%/80%   1         30        2          6m15s
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running             0          61s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running             0          6m35s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running             0          6m35s
+home-timeline-service-76974b884d-4kwvn   0/1     ContainerCreating   0          1s
+home-timeline-service-76974b884d-rfcn6   1/1     Running             0          6m35s
+jaeger-67c87b4489-rdzkh                  1/1     Running             0          6m35s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running             0          6m33s
+media-memcached-74df6744db-mx7kb         1/1     Running             0          6m31s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running             0          6m33s
+media-service-5496988558-728cv           1/1     Running             0          6m33s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running             0          6m32s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running             0          6m32s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running             0          6m32s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running             0          6m34s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running             0          6m34s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running             0          6m32s
+social-graph-mongodb-69859bd677-7754g    1/1     Running             0          6m33s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running             0          6m31s
+social-graph-service-755b8ff647-tn22w    1/1     Running             0          6m35s
+text-service-64d6d4f459-7mktm            1/1     Running             0          6m34s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running             0          6m34s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running             0          6m32s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running             0          6m32s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running             0          6m31s
+user-memcached-d6f8954b4-wkhd5           1/1     Running             0          6m34s
+user-mention-service-7d55b6d565-grgfh    1/1     Running             0          6m35s
+user-mongodb-6ddd645944-ffzww            1/1     Running             0          6m35s
+user-service-6dfb9d6759-w2mqq            1/1     Running             0          6m35s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running             0          6m35s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running             0          6m33s
+user-timeline-service-f75795664-66288    1/1     Running             0          61s
+user-timeline-service-f75795664-psfx2    1/1     Running             0          6m35s
+ 
+[Test 16] Sun Apr 21 01:25:55 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 1229.385ms, rate sampling interval: 4255ms
+  Thread calibration: mean lat.: 1280.592ms, rate sampling interval: 5009ms
+  Thread calibration: mean lat.: 1778.977ms, rate sampling interval: 5746ms
+  Thread calibration: mean lat.: 1154.689ms, rate sampling interval: 4171ms
+  Thread calibration: mean lat.: 1661.854ms, rate sampling interval: 5967ms
+  Thread calibration: mean lat.: 1757.606ms, rate sampling interval: 6684ms
+  Thread calibration: mean lat.: 1600.320ms, rate sampling interval: 5554ms
+  Thread calibration: mean lat.: 1829.491ms, rate sampling interval: 6696ms
+  Thread calibration: mean lat.: 1717.501ms, rate sampling interval: 5386ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 3180 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     1.07s   711.96ms   2.40s    59.58%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    1.01s 
+ 75.000%    1.65s 
+ 90.000%    2.13s 
+ 99.000%    2.40s 
+ 99.900%    2.49s 
+ 99.990%    2.49s 
+ 99.999%    2.49s 
+100.000%    2.49s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      56.319     0.000000            1         1.00
+     151.167     0.100000           24         1.11
+     329.983     0.200000           48         1.25
+     534.527     0.300000           73         1.43
+     732.159     0.400000           96         1.67
+    1009.663     0.500000          120         2.00
+    1183.743     0.550000          132         2.22
+    1297.407     0.600000          145         2.50
+    1374.207     0.650000          156         2.86
+    1473.535     0.700000          168         3.33
+    1648.639     0.750000          180         4.00
+    1659.903     0.775000          186         4.44
+    1745.919     0.800000          193         5.00
+    1753.087     0.825000          198         5.71
+    1930.239     0.850000          204         6.67
+    1943.551     0.875000          210         8.00
+    2113.535     0.887500          213         8.89
+    2129.919     0.900000          216        10.00
+    2140.159     0.912500          219        11.43
+    2217.983     0.925000          222        13.33
+    2306.047     0.937500          226        16.00
+    2316.287     0.943750          227        17.78
+    2342.911     0.950000          228        20.00
+    2394.111     0.956250          230        22.86
+    2400.255     0.962500          232        26.67
+    2402.303     0.968750          237        32.00
+    2402.303     0.971875          237        35.56
+    2402.303     0.975000          237        40.00
+    2402.303     0.978125          237        45.71
+    2402.303     0.981250          237        53.33
+    2402.303     0.984375          237        64.00
+    2402.303     0.985938          237        71.11
+    2402.303     0.987500          237        80.00
+    2404.351     0.989062          238        91.43
+    2404.351     0.990625          238       106.67
+    2410.495     0.992188          239       128.00
+    2410.495     0.992969          239       142.22
+    2410.495     0.993750          239       160.00
+    2410.495     0.994531          239       182.86
+    2410.495     0.995313          239       213.33
+    2494.463     0.996094          240       256.00
+    2494.463     1.000000          240          inf
+#[Mean    =     1071.216, StdDeviation   =      711.959]
+#[Max     =     2492.416, Total count    =          240]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  2221 requests in 10.00s, 458.48KB read
+Requests/sec:    222.00  
+Transfer/sec:     45.83KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-8nkfj    15m          5Mi             
+compose-post-service-79b4f4448b-bmbc5    29m          5Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     10m          5Mi             
+home-timeline-service-76974b884d-rfcn6   31m          10Mi            
+jaeger-67c87b4489-rdzkh                  5m           33Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           3m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            39m          55Mi            
+nginx-thrift-6d9d7c98df-x5926            28m          58Mi            
+nginx-thrift-6d9d7c98df-xgrm6            34m          56Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           8Mi             
+post-storage-mongodb-867b76d74f-fzlpn    10m          93Mi            
+post-storage-service-77d88b64fc-m9zjp    25m          6Mi             
+social-graph-mongodb-69859bd677-7754g    12m          64Mi            
+social-graph-redis-59bc4b57bd-929hf      4m           6Mi             
+social-graph-service-755b8ff647-tn22w    11m          2Mi             
+text-service-64d6d4f459-7mktm            20m          4Mi             
+unique-id-service-7cbcbc74db-8fbm9       3m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     13m          93Mi            
+url-shorten-service-5b9598b6c4-sshcm     9m           4Mi             
+user-memcached-d6f8954b4-wkhd5           5m           3Mi             
+user-mention-service-7d55b6d565-grgfh    11m          2Mi             
+user-mongodb-6ddd645944-ffzww            12m          66Mi            
+user-service-6dfb9d6759-w2mqq            3m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   37m          91Mi            
+user-timeline-redis-7f767bdff5-jbw2z     13m          5Mi             
+user-timeline-service-f75795664-66288    20m          7Mi             
+user-timeline-service-f75795664-psfx2    38m          6Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    96%/80%    1         30        2          6m27s
+home-timeline-service   Deployment/home-timeline-service   103%/80%   1         30        1          6m27s
+media-service           Deployment/media-service           10%/80%    1         30        1          6m27s
+post-storage-service    Deployment/post-storage-service    83%/80%    1         30        1          6m27s
+social-graph-service    Deployment/social-graph-service    36%/80%    1         30        1          6m27s
+text-service            Deployment/text-service            66%/80%    1         30        1          6m27s
+unique-id-service       Deployment/unique-id-service       10%/80%    1         30        1          6m26s
+url-shorten-service     Deployment/url-shorten-service     30%/80%    1         30        1          6m26s
+user-mention-service    Deployment/user-mention-service    36%/80%    1         30        1          6m26s
+user-service            Deployment/user-service            10%/80%    1         30        1          6m26s
+user-timeline-service   Deployment/user-timeline-service   126%/80%   1         30        2          6m26s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          71s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          6m45s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          6m45s
+home-timeline-service-76974b884d-4kwvn   1/1     Running   0          11s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          6m45s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          6m45s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          6m43s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          6m41s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          6m43s
+media-service-5496988558-728cv           1/1     Running   0          6m43s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          6m42s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          6m42s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          6m42s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          6m44s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          6m44s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          6m42s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          6m43s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          6m41s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          6m45s
+text-service-64d6d4f459-7mktm            1/1     Running   0          6m44s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          6m44s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          6m42s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          6m42s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          6m41s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          6m44s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          6m45s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          6m45s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          6m45s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          6m45s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          6m43s
+user-timeline-service-f75795664-66288    1/1     Running   0          71s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          6m45s
+ 
+[Test 17] Sun Apr 21 01:26:05 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 1763.222ms, rate sampling interval: 6823ms
+  Thread calibration: mean lat.: 1980.072ms, rate sampling interval: 7286ms
+  Thread calibration: mean lat.: 1754.196ms, rate sampling interval: 6356ms
+  Thread calibration: mean lat.: 2068.856ms, rate sampling interval: 7454ms
+  Thread calibration: mean lat.: 2054.870ms, rate sampling interval: 7143ms
+  Thread calibration: mean lat.: 1942.596ms, rate sampling interval: 7122ms
+  Thread calibration: mean lat.: 2108.357ms, rate sampling interval: 7311ms
+  Thread calibration: mean lat.: 1963.922ms, rate sampling interval: 6664ms
+  Thread calibration: mean lat.: 2265.912ms, rate sampling interval: 7786ms
+  Thread calibration: mean lat.: 1899.125ms, rate sampling interval: 6479ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 3592 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  2162 requests in 10.00s, 434.76KB read
+Requests/sec:    216.11  
+Transfer/sec:     43.46KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-8nkfj    15m          5Mi             
+compose-post-service-79b4f4448b-bmbc5    29m          5Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     10m          5Mi             
+home-timeline-service-76974b884d-rfcn6   31m          10Mi            
+jaeger-67c87b4489-rdzkh                  5m           33Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           3m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            39m          55Mi            
+nginx-thrift-6d9d7c98df-x5926            28m          58Mi            
+nginx-thrift-6d9d7c98df-xgrm6            34m          56Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           8Mi             
+post-storage-mongodb-867b76d74f-fzlpn    10m          93Mi            
+post-storage-service-77d88b64fc-m9zjp    25m          6Mi             
+social-graph-mongodb-69859bd677-7754g    12m          64Mi            
+social-graph-redis-59bc4b57bd-929hf      4m           6Mi             
+social-graph-service-755b8ff647-tn22w    11m          2Mi             
+text-service-64d6d4f459-7mktm            20m          4Mi             
+unique-id-service-7cbcbc74db-8fbm9       3m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     13m          93Mi            
+url-shorten-service-5b9598b6c4-sshcm     9m           4Mi             
+user-memcached-d6f8954b4-wkhd5           5m           3Mi             
+user-mention-service-7d55b6d565-grgfh    11m          2Mi             
+user-mongodb-6ddd645944-ffzww            12m          66Mi            
+user-service-6dfb9d6759-w2mqq            3m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   37m          91Mi            
+user-timeline-redis-7f767bdff5-jbw2z     13m          5Mi             
+user-timeline-service-f75795664-66288    20m          7Mi             
+user-timeline-service-f75795664-psfx2    38m          6Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    96%/80%    1         30        2          6m37s
+home-timeline-service   Deployment/home-timeline-service   103%/80%   1         30        2          6m37s
+media-service           Deployment/media-service           10%/80%    1         30        1          6m37s
+post-storage-service    Deployment/post-storage-service    83%/80%    1         30        1          6m37s
+social-graph-service    Deployment/social-graph-service    36%/80%    1         30        1          6m37s
+text-service            Deployment/text-service            66%/80%    1         30        1          6m37s
+unique-id-service       Deployment/unique-id-service       10%/80%    1         30        1          6m36s
+url-shorten-service     Deployment/url-shorten-service     30%/80%    1         30        1          6m36s
+user-mention-service    Deployment/user-mention-service    36%/80%    1         30        1          6m36s
+user-service            Deployment/user-service            10%/80%    1         30        1          6m36s
+user-timeline-service   Deployment/user-timeline-service   126%/80%   1         30        2          6m36s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          81s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          6m55s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          6m55s
+home-timeline-service-76974b884d-4kwvn   1/1     Running   0          21s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          6m55s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          6m55s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          6m53s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          6m51s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          6m53s
+media-service-5496988558-728cv           1/1     Running   0          6m53s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          6m52s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          6m52s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          6m52s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          6m54s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          6m54s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          6m52s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          6m53s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          6m51s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          6m55s
+text-service-64d6d4f459-7mktm            1/1     Running   0          6m54s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          6m54s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          6m52s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          6m52s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          6m51s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          6m54s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          6m55s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          6m55s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          6m55s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          6m55s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          6m53s
+user-timeline-service-f75795664-66288    1/1     Running   0          81s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          6m55s
+ 
+[Test 18] Sun Apr 21 01:26:15 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 2480.859ms, rate sampling interval: 8986ms
+  Thread calibration: mean lat.: 2505.332ms, rate sampling interval: 8814ms
+  Thread calibration: mean lat.: 2443.532ms, rate sampling interval: 8863ms
+  Thread calibration: mean lat.: 2406.800ms, rate sampling interval: 8552ms
+  Thread calibration: mean lat.: 2643.108ms, rate sampling interval: 8863ms
+  Thread calibration: mean lat.: 2405.521ms, rate sampling interval: 8568ms
+  Thread calibration: mean lat.: 2498.463ms, rate sampling interval: 9314ms
+  Thread calibration: mean lat.: 2506.716ms, rate sampling interval: 8691ms
+  Thread calibration: mean lat.: 2321.684ms, rate sampling interval: 8318ms
+  Thread calibration: mean lat.: 2601.619ms, rate sampling interval: 9347ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 3989 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     -nanus    -nanus   0.00us    0.00%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    0.00us
+ 75.000%    0.00us
+ 90.000%    0.00us
+ 99.000%    0.00us
+ 99.900%    0.00us
+ 99.990%    0.00us
+ 99.999%    0.00us
+100.000%    0.00us
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+       0.000     1.000000            0          inf
+#[Mean    =         -nan, StdDeviation   =         -nan]
+#[Max     =        0.000, Total count    =            0]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1998 requests in 10.00s, 430.94KB read
+Requests/sec:    199.72  
+Transfer/sec:     43.08KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-8nkfj    15m          5Mi             
+compose-post-service-79b4f4448b-bmbc5    29m          5Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     10m          5Mi             
+home-timeline-service-76974b884d-rfcn6   31m          10Mi            
+jaeger-67c87b4489-rdzkh                  5m           33Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           3m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            39m          55Mi            
+nginx-thrift-6d9d7c98df-x5926            28m          58Mi            
+nginx-thrift-6d9d7c98df-xgrm6            34m          56Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           8Mi             
+post-storage-mongodb-867b76d74f-fzlpn    10m          93Mi            
+post-storage-service-77d88b64fc-m9zjp    25m          6Mi             
+social-graph-mongodb-69859bd677-7754g    12m          64Mi            
+social-graph-redis-59bc4b57bd-929hf      4m           6Mi             
+social-graph-service-755b8ff647-tn22w    11m          2Mi             
+text-service-64d6d4f459-7mktm            20m          4Mi             
+unique-id-service-7cbcbc74db-8fbm9       3m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     13m          93Mi            
+url-shorten-service-5b9598b6c4-sshcm     9m           4Mi             
+user-memcached-d6f8954b4-wkhd5           5m           3Mi             
+user-mention-service-7d55b6d565-grgfh    11m          2Mi             
+user-mongodb-6ddd645944-ffzww            12m          66Mi            
+user-service-6dfb9d6759-w2mqq            3m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   37m          91Mi            
+user-timeline-redis-7f767bdff5-jbw2z     13m          5Mi             
+user-timeline-service-f75795664-66288    20m          7Mi             
+user-timeline-service-f75795664-psfx2    38m          6Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    96%/80%    1         30        2          6m47s
+home-timeline-service   Deployment/home-timeline-service   103%/80%   1         30        2          6m47s
+media-service           Deployment/media-service           10%/80%    1         30        1          6m47s
+post-storage-service    Deployment/post-storage-service    83%/80%    1         30        1          6m47s
+social-graph-service    Deployment/social-graph-service    36%/80%    1         30        1          6m47s
+text-service            Deployment/text-service            66%/80%    1         30        1          6m47s
+unique-id-service       Deployment/unique-id-service       10%/80%    1         30        1          6m46s
+url-shorten-service     Deployment/url-shorten-service     30%/80%    1         30        1          6m46s
+user-mention-service    Deployment/user-mention-service    36%/80%    1         30        1          6m46s
+user-service            Deployment/user-service            10%/80%    1         30        1          6m46s
+user-timeline-service   Deployment/user-timeline-service   126%/80%   1         30        2          6m46s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          92s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          7m6s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          7m6s
+home-timeline-service-76974b884d-4kwvn   1/1     Running   0          32s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          7m6s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          7m6s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          7m4s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          7m2s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          7m4s
+media-service-5496988558-728cv           1/1     Running   0          7m4s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          7m3s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          7m3s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          7m3s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          7m5s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          7m5s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          7m3s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          7m4s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          7m2s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          7m6s
+text-service-64d6d4f459-7mktm            1/1     Running   0          7m5s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          7m5s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          7m3s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          7m3s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          7m2s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          7m5s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          7m6s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          7m6s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          7m6s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          7m6s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          7m4s
+user-timeline-service-f75795664-66288    1/1     Running   0          92s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          7m6s
+ 
+[Test 19] Sun Apr 21 01:26:26 UTC 2024
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Host URL:192.168.10.0
+Running 10s test @ http://192.168.10.0:8080
+  10 threads and 30 connections
+
+  Thread calibration: mean lat.: 2820.652ms, rate sampling interval: 9887ms
+  Thread calibration: mean lat.: 2284.086ms, rate sampling interval: 8708ms
+  Thread calibration: mean lat.: 2486.975ms, rate sampling interval: 8986ms
+  Thread calibration: mean lat.: 2485.955ms, rate sampling interval: 9191ms
+  Thread calibration: mean lat.: 2476.851ms, rate sampling interval: 8904ms
+  Thread calibration: mean lat.: 2538.706ms, rate sampling interval: 9084ms
+  Thread calibration: mean lat.: 2638.601ms, rate sampling interval: 9764ms
+  Thread calibration: mean lat.: 2447.384ms, rate sampling interval: 8945ms
+  Thread calibration: mean lat.: 2691.285ms, rate sampling interval: 9732ms
+
+-----------------------------------------------------------------------
+Test Results @ http://192.168.10.0:8080 
+Sent 3989 requests
+
+  Thread Stats   Avg      Stdev     99%   +/- Stdev
+    Latency     2.52s     1.29s    4.64s    59.42%
+    Req/Sec       -nan      -nan   0.00      0.00%
+  Latency Distribution (HdrHistogram - Recorded Latency)
+ 50.000%    2.60s 
+ 75.000%    3.52s 
+ 90.000%    4.19s 
+ 99.000%    4.64s 
+ 99.900%    5.03s 
+ 99.990%    5.03s 
+ 99.999%    5.03s 
+100.000%    5.03s 
+
+  Detailed Percentile spectrum:
+       Value   Percentile   TotalCount 1/(1-Percentile)
+
+      65.855     0.000000            1         1.00
+     548.351     0.100000           21         1.11
+    1257.471     0.200000           42         1.25
+    1811.455     0.300000           63         1.43
+    2183.167     0.400000           83         1.67
+    2598.911     0.500000          104         2.00
+    2813.951     0.550000          114         2.22
+    2998.271     0.600000          125         2.50
+    3133.439     0.650000          135         2.86
+    3313.663     0.700000          145         3.33
+    3528.703     0.750000          156         4.00
+    3751.935     0.775000          161         4.44
+    3825.663     0.800000          166         5.00
+    3958.783     0.825000          171         5.71
+    4016.127     0.850000          176         6.67
+    4132.863     0.875000          182         8.00
+    4184.063     0.887500          184         8.89
+    4259.839     0.900000          187        10.00
+    4333.567     0.912500          189        11.43
+    4407.295     0.925000          192        13.33
+    4415.487     0.937500          195        16.00
+    4431.871     0.943750          196        17.78
+    4440.063     0.950000          197        20.00
+    4505.599     0.956250          199        22.86
+    4513.791     0.962500          200        26.67
+    4558.847     0.968750          201        32.00
+    4562.943     0.971875          202        35.56
+    4562.943     0.975000          202        40.00
+    4575.231     0.978125          203        45.71
+    4620.287     0.981250          204        53.33
+    4620.287     0.984375          204        64.00
+    4644.863     0.985938          205        71.11
+    4644.863     0.987500          205        80.00
+    4644.863     0.989062          205        91.43
+    4886.527     0.990625          206       106.67
+    4886.527     0.992188          206       128.00
+    4886.527     0.992969          206       142.22
+    4886.527     0.993750          206       160.00
+    4886.527     0.994531          206       182.86
+    5025.791     0.995313          207       213.33
+    5025.791     1.000000          207          inf
+#[Mean    =     2520.466, StdDeviation   =     1292.773]
+#[Max     =     5021.696, Total count    =          207]
+#[Buckets =           27, SubBuckets     =         2048]
+-----------------------------------------------------------------------
+  1947 requests in 10.00s, 408.07KB read
+Requests/sec:    194.62  
+Transfer/sec:     40.79KB
+///////////////////////////////////////////
+NAME                                     CPU(cores)   MEMORY(bytes)   
+compose-post-service-79b4f4448b-8nkfj    15m          5Mi             
+compose-post-service-79b4f4448b-bmbc5    29m          5Mi             
+home-timeline-redis-567c9cdd6c-kqwdk     10m          5Mi             
+home-timeline-service-76974b884d-rfcn6   31m          10Mi            
+jaeger-67c87b4489-rdzkh                  5m           33Mi            
+media-frontend-59b6b7d96b-jlvgv          0m           14Mi            
+media-memcached-74df6744db-mx7kb         1m           3Mi             
+media-mongodb-7c9d794f8f-gltwd           3m           62Mi            
+media-service-5496988558-728cv           3m           1Mi             
+nginx-thrift-6d9d7c98df-j8cq2            39m          55Mi            
+nginx-thrift-6d9d7c98df-x5926            28m          58Mi            
+nginx-thrift-6d9d7c98df-xgrm6            34m          56Mi            
+post-storage-memcached-c98d5d99d-jqlrb   1m           8Mi             
+post-storage-mongodb-867b76d74f-fzlpn    10m          93Mi            
+post-storage-service-77d88b64fc-m9zjp    25m          6Mi             
+social-graph-mongodb-69859bd677-7754g    12m          64Mi            
+social-graph-redis-59bc4b57bd-929hf      4m           6Mi             
+social-graph-service-755b8ff647-tn22w    11m          2Mi             
+text-service-64d6d4f459-7mktm            20m          4Mi             
+unique-id-service-7cbcbc74db-8fbm9       3m           1Mi             
+url-shorten-memcached-7f78dbd7b4-9h4m2   1m           3Mi             
+url-shorten-mongodb-699d465fdb-wnhwd     13m          93Mi            
+url-shorten-service-5b9598b6c4-sshcm     9m           4Mi             
+user-memcached-d6f8954b4-wkhd5           5m           3Mi             
+user-mention-service-7d55b6d565-grgfh    11m          2Mi             
+user-mongodb-6ddd645944-ffzww            12m          66Mi            
+user-service-6dfb9d6759-w2mqq            3m           2Mi             
+user-timeline-mongodb-5c945fcd8b-kxdnh   37m          91Mi            
+user-timeline-redis-7f767bdff5-jbw2z     13m          5Mi             
+user-timeline-service-f75795664-66288    20m          7Mi             
+user-timeline-service-f75795664-psfx2    38m          6Mi             
+///////////////////////////////////////////
+NAME                    REFERENCE                          TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+compose-post-service    Deployment/compose-post-service    96%/80%    1         30        2          6m58s
+home-timeline-service   Deployment/home-timeline-service   103%/80%   1         30        2          6m58s
+media-service           Deployment/media-service           10%/80%    1         30        1          6m58s
+post-storage-service    Deployment/post-storage-service    83%/80%    1         30        1          6m58s
+social-graph-service    Deployment/social-graph-service    36%/80%    1         30        1          6m58s
+text-service            Deployment/text-service            66%/80%    1         30        1          6m58s
+unique-id-service       Deployment/unique-id-service       10%/80%    1         30        1          6m57s
+url-shorten-service     Deployment/url-shorten-service     30%/80%    1         30        1          6m57s
+user-mention-service    Deployment/user-mention-service    36%/80%    1         30        1          6m57s
+user-service            Deployment/user-service            10%/80%    1         30        1          6m57s
+user-timeline-service   Deployment/user-timeline-service   126%/80%   1         30        2          6m57s
+///////////////////////////////////////////
+NAME                                     READY   STATUS    RESTARTS   AGE
+compose-post-service-79b4f4448b-8nkfj    1/1     Running   0          102s
+compose-post-service-79b4f4448b-bmbc5    1/1     Running   0          7m16s
+home-timeline-redis-567c9cdd6c-kqwdk     1/1     Running   0          7m16s
+home-timeline-service-76974b884d-4kwvn   1/1     Running   0          42s
+home-timeline-service-76974b884d-rfcn6   1/1     Running   0          7m16s
+jaeger-67c87b4489-rdzkh                  1/1     Running   0          7m16s
+media-frontend-59b6b7d96b-jlvgv          1/1     Running   0          7m14s
+media-memcached-74df6744db-mx7kb         1/1     Running   0          7m12s
+media-mongodb-7c9d794f8f-gltwd           1/1     Running   0          7m14s
+media-service-5496988558-728cv           1/1     Running   0          7m14s
+nginx-thrift-6d9d7c98df-j8cq2            1/1     Running   0          7m13s
+nginx-thrift-6d9d7c98df-x5926            1/1     Running   0          7m13s
+nginx-thrift-6d9d7c98df-xgrm6            1/1     Running   0          7m13s
+post-storage-memcached-c98d5d99d-jqlrb   1/1     Running   0          7m15s
+post-storage-mongodb-867b76d74f-fzlpn    1/1     Running   0          7m15s
+post-storage-service-77d88b64fc-m9zjp    1/1     Running   0          7m13s
+social-graph-mongodb-69859bd677-7754g    1/1     Running   0          7m14s
+social-graph-redis-59bc4b57bd-929hf      1/1     Running   0          7m12s
+social-graph-service-755b8ff647-tn22w    1/1     Running   0          7m16s
+text-service-64d6d4f459-7mktm            1/1     Running   0          7m15s
+unique-id-service-7cbcbc74db-8fbm9       1/1     Running   0          7m15s
+url-shorten-memcached-7f78dbd7b4-9h4m2   1/1     Running   0          7m13s
+url-shorten-mongodb-699d465fdb-wnhwd     1/1     Running   0          7m13s
+url-shorten-service-5b9598b6c4-sshcm     1/1     Running   0          7m12s
+user-memcached-d6f8954b4-wkhd5           1/1     Running   0          7m15s
+user-mention-service-7d55b6d565-grgfh    1/1     Running   0          7m16s
+user-mongodb-6ddd645944-ffzww            1/1     Running   0          7m16s
+user-service-6dfb9d6759-w2mqq            1/1     Running   0          7m16s
+user-timeline-mongodb-5c945fcd8b-kxdnh   1/1     Running   0          7m16s
+user-timeline-redis-7f767bdff5-jbw2z     1/1     Running   0          7m14s
+user-timeline-service-f75795664-66288    1/1     Running   0          102s
+user-timeline-service-f75795664-psfx2    1/1     Running   0          7m16s
+ 
+[Test 20] Sun Apr 21 01:26:36 UTC 2024

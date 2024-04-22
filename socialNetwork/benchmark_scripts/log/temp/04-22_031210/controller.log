@@ -1,0 +1,244 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.244.2.121:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:10:52] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:10:52] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:10:52] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:10:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:10:52] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:10:53] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:05] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:05] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:05] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:06] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:06] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:06] "GET /api/v1/agent/ HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:06] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:06] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:06] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:11:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:11:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:20] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:22] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:22] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:11:23] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:11:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:35] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:37] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:37] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:11:38] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:11:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:11:50] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:11:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:11:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:11:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:11:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:12:06] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:12:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:12:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:12:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:12:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:12:21] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:12:23] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:12:23] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:12:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:12:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:12:36] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:12:38] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:12:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:12:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:12:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:12:51] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:12:53] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:12:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:12:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:12:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:13:06] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:13:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:13:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:13:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:13:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:13:21] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:13:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:13:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:13:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:13:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:13:36] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:13:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:13:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:13:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:13:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:13:51] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:13:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:13:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:13:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:13:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:14:06] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:14:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:14:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:14:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:14:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:14:22] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:14:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:14:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:14:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:14:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:14:37] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:14:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:14:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:14:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:14:45] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:14:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:14:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:14:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:14:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:15:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:15:07] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:15:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:15:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:15:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:15:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:15:22] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:15:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:15:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:15:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:15:31] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:15:37] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:15:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:15:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:15:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:15:46] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:15:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-7cx54
+ERROR:root:10.244.4.131
+ERROR:root:upstream-agent-b2sbv
+ERROR:root:10.244.1.10
+ERROR:root:upstream-agent-f5ffq
+ERROR:root:10.244.2.120
+ERROR:root:upstream-agent-rk857
+ERROR:root:10.244.3.133
+ERROR:root:upstream-agent-x72th
+ERROR:root:10.244.5.181
+ERROR:root:[{'name': 'upstream-agent-7cx54', 'pod_ip': '10.244.4.131', 'host_ip': '10.188.0.2'}, {'name': 'upstream-agent-b2sbv', 'pod_ip': '10.244.1.10', 'host_ip': '10.150.0.2'}, {'name': 'upstream-agent-f5ffq', 'pod_ip': '10.244.2.120', 'host_ip': '10.162.0.3'}, {'name': 'upstream-agent-rk857', 'pod_ip': '10.244.3.133', 'host_ip': '10.142.0.2'}, {'name': 'upstream-agent-x72th', 'pod_ip': '10.244.5.181', 'host_ip': '10.128.0.3'}]
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:15:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:15:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:15:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.133 - - [22/Apr/2024 03:16:02] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.181 - - [22/Apr/2024 03:16:07] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.10 - - [22/Apr/2024 03:16:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.120 - - [22/Apr/2024 03:16:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.131 - - [22/Apr/2024 03:16:14] "GET /api/v1/hpas HTTP/1.1" 200 -
