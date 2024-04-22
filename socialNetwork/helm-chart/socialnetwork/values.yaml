@@ -45,7 +45,7 @@ global:
     standalone:
       enabled: true
   replicas: 1
-  requestCpu: 30m
+  requestCpu: 100m
   requestMemory: 64Mi
   resources: true
   restartPolicy: Always
