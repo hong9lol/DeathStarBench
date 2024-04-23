@@ -11,9 +11,7 @@ container:
     ports:
         - containerPort: 8080
     requestCpu: 200m
-    requestMemory: 64Mi
-    limitCpu: 400m
-    limitmemory: 256Mi
+    requestMemory: 128Mi
     env:
         - name: fqdn_suffix
           value: '.{{ .Release.Namespace }}.svc.cluster.local'
