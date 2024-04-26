@@ -50,8 +50,8 @@ do
     echo "Test Duration(s)": $testDuration
     echo Connections: $connections
     echo Request per Second: $rps
-    ../../wrk2/wrk -D fixed -t ${numOfThreads} -c ${connections} -d ${testDuration}s -R ${rps} -T 10s  -r -s ./../wrk2/scripts/social-network/mixed-workload.lua ${hostPath} --latency -H 'Connection: close' >> $logPath/output.log 
-
+    # ../../wrk2/wrk -D fixed -t ${numOfThreads} -c ${connections} -d ${testDuration}s -R ${rps} -T 10s  -r -s ./../wrk2/scripts/social-network/mixed-workload.lua ${hostPath} --latency -H 'Connection: close' >> $logPath/output.log 
+    ../../wrk2/wrk -D fixed -t ${numOfThreads} -c ${connections} -d ${testDuration}s -R ${rps} -T 5s -r -s ./../wrk2/scripts/social-network/mixed-workload.lua ${hostPath} --latency -H 'Connection: close' >> $logPath/output.log
     echo "///////////////////////////////////////////" >> $logPath/output.log
     kubectl top pod >> $logPath/output.log 
 
@@ -60,6 +60,7 @@ do
 
     echo "///////////////////////////////////////////" >> $logPath/output.log
     kubectl get pod >> $logPath/output.log
+    sleep 2
 done
 
 timestamp=`date`
