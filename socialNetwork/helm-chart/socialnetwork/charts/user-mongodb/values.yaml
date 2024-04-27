@@ -15,7 +15,7 @@ container:
         - containerPort: 27017
     requestCpu: 200m
     requestMemory: 64Mi
-    limitCpu: 400m
+    limitCpu: 1000m
     limitmemory: 256Mi
 
 configMaps:
