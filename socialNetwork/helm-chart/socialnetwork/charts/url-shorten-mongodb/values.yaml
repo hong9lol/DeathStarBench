@@ -15,8 +15,8 @@ container:
         - containerPort: 27017
     requestCpu: 200m
     requestMemory: 64Mi
-    limitCpu: 400m
-    limitmemory: 256Mi
+    limitCpu: 1000m
+    limitmemory: 512Mi
 
 configMaps:
     - name: mongod.conf
