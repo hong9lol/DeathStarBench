@@ -16,7 +16,7 @@ container:
     requestCpu: 200m
     requestMemory: 64Mi
     limitCpu: 1000m
-    limitmemory: 256Mi
+    limitmemory: 512Mi
 configMaps:
     - name: mongod.conf
       mountPath: /social-network-microservices/config/mongod.conf
