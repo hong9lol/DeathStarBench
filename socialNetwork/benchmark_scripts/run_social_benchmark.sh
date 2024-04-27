@@ -6,8 +6,8 @@ logPath=$1
 # set target IP
 kubectl get svc | grep nginx-thrift |  awk '/[[:space:]]/ {print $4}' > target_url.txt
 
-numOfThreads=30
-connections=50
+numOfThreads=45
+connections=250
 testDuration=10
 requestPerSecond=(
         100	    100	    100	    100	    100	    100	    #0
