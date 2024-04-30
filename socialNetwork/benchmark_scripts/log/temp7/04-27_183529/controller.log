@@ -1,0 +1,839 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.244.4.4:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:None
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': None, 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:10] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:10] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:10] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:10] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:10] "GET /api/v1/agent/ HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:10] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:10] "GET /api/v1/agent/ HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:11] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:34:23] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:34:23] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:34:23] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:34:38] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:34:53] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:34:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:34:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:34:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:34:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:35:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:35:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:35:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:35:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:35:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:35:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:37] "POST /api/v1/notify HTTP/1.1" 200 -
+Exception in thread Thread-3 (job_handler):
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/manager/handler.py", line 99, in job_handler
+    collector.collect_all_agent_resource_of_deployment(deployment_name)
+  File "/manager/collector.py", line 32, in collect_all_agent_resource_of_deployment
+    if regex.ip_validation_check(_ip):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/utils/regex.py", line 7, in ip_validation_check
+    if re.match(ipv4_pattern, ip):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/re/__init__.py", line 167, in match
+    return _compile(pattern, flags).match(string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:35:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:35:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:35:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:35:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:35:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:35:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:35:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:35:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:36:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:36:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:36:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:36:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:36:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:36:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:35] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:36:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:36:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:36:45] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:36:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:36:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:36:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:36:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:37:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:37:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:37:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:37:16] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:37:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:37:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:37:31] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:35] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:35] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:36] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:37:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:37:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:37:46] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:37:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:37:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:37:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:37:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:38:02] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:38:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:38:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:38:17] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:38:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:38:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:38:33] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:35] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:36] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:38:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:38:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:44] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:44] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:38:48] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:51] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:38:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:38:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:38:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:38:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:39:04] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:39:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:39:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:39:19] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:25] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:39:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:26] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:27] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:39:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:28] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:29] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:30] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:39:34] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:35] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:36] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:36] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:36] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:37] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:38] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:39] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:40] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:39:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:39:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:45] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:45] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:48] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:49] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:39:50] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:50] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:52] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:39:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:57] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:39:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:39:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:39:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:01] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:02] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:40:05] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:40:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-gtj4d
+ERROR:root:10.244.4.3
+ERROR:root:upstream-agent-r5dp7
+ERROR:root:10.244.1.91
+ERROR:root:upstream-agent-r5qdb
+ERROR:root:10.244.3.167
+ERROR:root:upstream-agent-z29ms
+ERROR:root:10.244.2.32
+ERROR:root:upstream-agent-zzpzg
+ERROR:root:10.244.5.82
+ERROR:root:[{'name': 'upstream-agent-gtj4d', 'pod_ip': '10.244.4.3', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-r5dp7', 'pod_ip': '10.244.1.91', 'host_ip': '10.142.0.3'}, {'name': 'upstream-agent-r5qdb', 'pod_ip': '10.244.3.167', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-z29ms', 'pod_ip': '10.244.2.32', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-zzpzg', 'pod_ip': '10.244.5.82', 'host_ip': '10.206.0.2'}]
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.167 - - [27/Apr/2024 18:40:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:12] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.32 - - [27/Apr/2024 18:40:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:13] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:14] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:15] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:16] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:40:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:40:19] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.82 - - [27/Apr/2024 18:40:21] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.3 - - [27/Apr/2024 18:40:24] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.91 - - [27/Apr/2024 18:40:25] "POST /api/v1/notify HTTP/1.1" 200 -

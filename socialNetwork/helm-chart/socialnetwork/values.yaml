@@ -15,7 +15,7 @@ global:
     queueSize: 1000000
     samplerParam: 0.1
     samplerType: probabilistic
-  limitCpu: 30m
+  limitCpu: 75m
   limitmemory: 128Mi
   memcached:
     cluster:

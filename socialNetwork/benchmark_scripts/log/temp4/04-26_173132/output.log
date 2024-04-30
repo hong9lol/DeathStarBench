@@ -1,0 +1,2197 @@
+[Result] Fri Apr 26 17:31:32 UTC 2024k
+[Ratio]
+Current Pod Status
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m39s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m33s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m33s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m39s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m39s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m33s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m33s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m39s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m33s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m39s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m39s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m33s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m33s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m39s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m39s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m39s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m39s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m39s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m33s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m33s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m39s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m33s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m38s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m38s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m32s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m32s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m38s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m32s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m38s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m38s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m32s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m37s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m32s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m37s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m32s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m37s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m32s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m37s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m32s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m31s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m37s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m36s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m31s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m31s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m36s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m31s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m36s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m36s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m30s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m30s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m36s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m30s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m35s
+ 
+[Test 1] Fri Apr 26 17:31:32 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m39s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m33s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m33s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m39s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m39s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m33s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m33s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m39s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m33s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m39s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m39s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m33s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m33s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m39s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m39s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m39s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m33s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m39s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m39s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m33s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m33s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m39s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m33s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m38s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m38s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m32s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m32s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m38s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m32s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m38s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m38s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m32s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m37s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m32s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m37s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m32s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m37s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m32s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m37s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m32s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m31s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m37s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m36s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m31s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m31s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m36s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m31s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m36s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m36s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m30s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m30s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m36s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m30s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m35s
+ 
+[Test 2] Fri Apr 26 17:31:34 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m41s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m35s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m35s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m41s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m41s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m35s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m35s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m41s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m35s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m41s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m41s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m35s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m35s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m41s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m35s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m35s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m41s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m41s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m35s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m41s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m41s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m35s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m35s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m41s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m35s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m40s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m40s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m34s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m34s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m40s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m34s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m40s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m40s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m34s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m39s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m34s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m39s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m34s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m39s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m34s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m39s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m34s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m33s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m39s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m38s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m33s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m33s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m38s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m33s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m38s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m38s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m32s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m32s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m38s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m32s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m37s
+ 
+[Test 3] Fri Apr 26 17:31:36 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m44s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m38s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m38s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m44s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m44s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m38s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m38s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m44s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m38s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m44s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m44s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m38s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m38s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m44s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m38s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m38s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m44s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m44s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m38s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m44s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m44s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m38s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m38s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m44s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m38s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m43s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m43s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m37s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m37s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m43s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m37s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m43s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m43s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m37s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m42s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m37s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m42s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m37s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m42s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m37s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m42s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m37s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m36s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m42s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m41s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m36s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m36s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m41s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m36s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m41s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m41s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m35s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m35s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m41s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m35s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m40s
+ 
+[Test 4] Fri Apr 26 17:31:39 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m46s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m40s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m40s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m46s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m46s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m40s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m40s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m46s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m40s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m46s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m46s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m40s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m40s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m46s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m40s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m40s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m46s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m46s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m40s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m46s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m46s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m40s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m40s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m46s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m40s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m45s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m45s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m39s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m39s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m45s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m39s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m45s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m45s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m39s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m44s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m39s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m44s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m39s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m44s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m39s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m44s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m39s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m38s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m44s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m43s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m38s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m38s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m43s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m38s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m43s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m43s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m37s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m37s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m43s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m37s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m42s
+ 
+[Test 5] Fri Apr 26 17:31:41 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m48s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m42s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m42s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m48s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m48s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m42s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m42s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m48s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m42s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m48s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m48s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m42s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m42s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m48s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m42s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m42s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m48s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m48s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m42s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m48s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m48s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m42s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m42s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m48s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m42s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m47s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m47s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m41s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m41s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m47s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m41s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m47s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m47s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m41s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m46s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m41s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m46s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m41s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m46s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m41s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m46s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m41s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m40s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m46s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m45s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m40s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m40s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m45s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m40s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m45s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m45s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m39s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m39s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m45s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m39s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m44s
+ 
+[Test 6] Fri Apr 26 17:31:43 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m50s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m44s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m44s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m50s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m50s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m44s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m44s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m50s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m44s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m50s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m50s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m44s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m44s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m50s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m44s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m44s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m50s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m50s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m44s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m50s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m50s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m44s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m44s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m50s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m44s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m49s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m49s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m43s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m43s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m49s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m43s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m49s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m49s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m43s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m48s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m43s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m48s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m43s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m48s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m43s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m48s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m43s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m42s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m48s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m47s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m42s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m42s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m47s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m42s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m47s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m47s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m41s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m41s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m47s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m41s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m46s
+ 
+[Test 7] Fri Apr 26 17:31:45 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m53s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m47s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m47s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m53s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m53s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m47s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m47s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m53s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m47s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m53s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m53s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m47s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m47s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m53s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m47s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m47s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m53s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m53s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m47s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m53s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m53s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m47s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m47s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m53s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m47s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m52s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m52s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m46s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m46s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m52s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m46s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m52s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m52s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m46s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m51s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m46s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m51s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m46s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m51s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m46s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m51s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m46s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m45s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m51s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m50s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m45s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m45s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m50s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m45s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m50s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m50s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m44s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m44s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m50s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m44s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m49s
+ 
+[Test 8] Fri Apr 26 17:31:48 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m55s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m49s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m49s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m55s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m55s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m49s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m49s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m55s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m49s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m55s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m55s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m49s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m49s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m55s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m49s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m49s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m49s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m55s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m55s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m49s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m49s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m55s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m49s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m54s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m54s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m48s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m48s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m54s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m48s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m54s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m54s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m48s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m53s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m48s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m53s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m48s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m53s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m48s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m53s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m48s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m47s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m53s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m52s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m47s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m47s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m52s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m47s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m52s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m52s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m46s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m46s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m52s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m46s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m51s
+ 
+[Test 9] Fri Apr 26 17:31:50 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m57s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m51s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m51s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m57s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m57s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m51s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m51s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m57s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m51s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m57s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m57s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m51s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m51s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m57s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m51s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m51s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m57s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m57s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m51s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m57s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m57s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m51s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m51s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m57s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m51s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m56s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m56s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m50s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m50s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m56s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m50s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m56s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m56s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m50s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m55s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m50s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m55s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m50s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m55s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m50s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m55s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m50s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m49s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m55s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m54s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m49s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m49s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m54s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m49s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m54s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m54s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m48s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m48s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m54s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m48s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m53s
+ 
+[Test 10] Fri Apr 26 17:31:52 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          2m59s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m53s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m53s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          2m59s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          2m59s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m53s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m53s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          2m59s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m53s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          2m59s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          2m59s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m53s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m53s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          2m59s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m53s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m53s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          2m59s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          2m59s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m53s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          2m59s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          2m59s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m53s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m53s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          2m59s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m53s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          2m58s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          2m58s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m52s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m52s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          2m58s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m52s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          2m58s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          2m58s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m52s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m57s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m52s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m57s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m52s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m57s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m52s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m57s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m52s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m51s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m57s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m56s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m51s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m51s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m56s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m51s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m56s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m56s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m50s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m50s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m56s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m50s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m55s
+ 
+[Test 11] Fri Apr 26 17:31:54 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m1s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m55s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m55s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m1s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m1s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m55s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m55s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m1s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m55s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m1s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m1s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m55s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m55s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m1s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m55s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m55s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m1s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m1s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m55s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m1s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m1s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m55s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m55s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m1s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m55s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m54s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m54s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m54s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m54s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          2m59s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m54s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          2m59s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m54s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          2m59s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m54s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          2m59s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m54s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m53s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          2m59s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          2m58s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m53s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m53s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          2m58s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m53s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          2m58s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          2m58s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m52s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m52s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          2m58s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m52s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          2m57s
+ 
+[Test 12] Fri Apr 26 17:31:56 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m4s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          7m58s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          7m58s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m4s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m4s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          7m58s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          7m58s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m4s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          7m58s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m4s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m4s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          7m58s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          7m58s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m4s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          7m58s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          7m58s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m4s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m4s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          7m58s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m4s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m4s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          7m58s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          7m58s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m4s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          7m58s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m3s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m3s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m57s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m57s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m3s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m57s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m3s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m3s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m57s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m2s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m57s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m2s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m57s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m2s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m57s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m2s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m57s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m56s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m2s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m1s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m56s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m56s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m1s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m56s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m1s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m1s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m55s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m55s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m1s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m55s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m
+ 
+[Test 13] Fri Apr 26 17:31:59 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m6s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m6s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m6s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m6s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m6s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m6s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m6s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m6s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m6s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m6s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m6s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m6s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m5s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m5s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          7m59s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          7m59s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m5s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          7m59s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m5s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m5s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          7m59s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m4s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          7m59s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m4s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          7m59s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m4s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          7m59s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m4s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          7m59s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          7m58s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m4s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m3s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          7m58s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          7m58s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m3s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          7m58s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m3s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m3s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m57s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m57s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m3s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m57s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m2s
+ 
+[Test 14] Fri Apr 26 17:32:01 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m8s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m2s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m2s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m8s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m8s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m2s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m2s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m8s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m2s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m8s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m8s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m2s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m2s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m8s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m2s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m2s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m8s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m8s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m2s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m8s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m8s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m2s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m2s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m8s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m2s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m7s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m7s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m1s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m1s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m7s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m1s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m7s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m7s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m1s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m6s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m1s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m6s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m1s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m6s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m1s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m6s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m1s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m6s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m5s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m5s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m5s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m5s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          7m59s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          7m59s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m5s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          7m59s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m4s
+ 
+[Test 15] Fri Apr 26 17:32:03 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m10s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m4s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m4s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m10s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m10s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m4s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m4s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m10s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m4s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m10s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m10s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m4s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m4s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m10s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m4s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m4s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m10s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m10s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m4s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m10s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m10s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m4s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m4s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m10s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m4s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m9s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m9s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m3s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m3s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m9s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m3s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m9s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m9s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m3s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m8s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m3s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m8s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m3s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m8s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m3s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m8s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m3s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m2s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m8s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m7s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m2s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m2s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m7s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m2s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m7s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m7s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m1s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m1s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m7s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m1s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m6s
+ 
+[Test 16] Fri Apr 26 17:32:05 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m12s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m6s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m6s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m12s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m12s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m6s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m6s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m12s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m6s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m12s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m12s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m6s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m6s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m12s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m6s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m6s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m12s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m12s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m6s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m12s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m12s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m6s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m6s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m12s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m6s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m11s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m11s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m5s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m5s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m11s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m5s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m11s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m11s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m5s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m10s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m5s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m10s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m5s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m10s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m5s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m10s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m5s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m4s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m10s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m9s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m4s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m4s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m9s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m4s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m9s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m9s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m3s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m3s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m9s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m3s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m8s
+ 
+[Test 17] Fri Apr 26 17:32:07 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m14s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m8s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m8s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m14s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m14s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m8s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m8s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m14s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m8s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m14s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m14s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m8s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m8s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m14s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m8s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m8s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m14s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m14s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m8s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m14s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m14s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m8s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m8s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m14s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m8s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m13s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m13s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m7s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m7s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m13s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m7s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m13s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m13s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m7s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m12s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m7s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m12s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m7s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m12s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m7s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m12s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m7s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m6s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m12s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m11s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m6s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m6s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m11s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m6s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m11s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m11s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m5s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m5s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m11s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m5s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m10s
+ 
+[Test 18] Fri Apr 26 17:32:09 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m17s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m11s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m11s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m17s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m17s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m11s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m11s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m17s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m11s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m17s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m17s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m11s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m11s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m17s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m11s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m11s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m17s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m17s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m11s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m17s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m17s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m11s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m11s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m17s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m11s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m16s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m16s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m10s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m10s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m16s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m10s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m16s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m16s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m10s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m15s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m10s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m15s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m10s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m15s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m10s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m15s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m10s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m9s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m15s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m14s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m9s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m9s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m14s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m9s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m14s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m14s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m8s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m8s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m14s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m8s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m13s
+ 
+[Test 19] Fri Apr 26 17:32:12 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m19s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m13s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m13s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m19s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m19s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m13s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m13s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m19s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m13s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m19s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m19s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m13s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m13s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m19s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m13s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m13s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m19s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m19s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m13s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m19s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m19s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m13s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m13s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m19s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m13s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m18s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m18s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m12s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m12s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m18s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m12s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m18s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m18s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m12s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m17s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m12s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m17s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m12s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m17s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m12s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m17s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m12s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m11s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m17s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m16s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m11s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m11s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m16s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m11s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m16s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m16s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m10s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m10s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m16s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m10s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m15s
+ 
+[Test 20] Fri Apr 26 17:32:14 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m21s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m15s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m15s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m21s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m21s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m15s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m15s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m21s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m15s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m21s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m21s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m15s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m15s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m21s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m15s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m15s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m21s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m21s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m15s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m21s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m21s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m15s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m15s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m21s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m15s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m20s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m20s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m14s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m14s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m20s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m14s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m20s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m20s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m14s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m19s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m14s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m19s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m14s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m19s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m14s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m19s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m14s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m13s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m19s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m18s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m13s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m13s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m18s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m13s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m18s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m18s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m12s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m12s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m18s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m12s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m17s
+ 
+[Test 21] Fri Apr 26 17:32:16 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m23s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m17s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m17s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m23s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m23s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m17s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m17s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m23s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m17s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m23s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m23s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m17s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m17s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m23s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m17s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m17s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m23s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m23s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m17s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m23s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m23s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m17s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m17s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m23s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m17s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m22s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m22s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m16s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m16s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m22s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m16s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m22s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m22s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m16s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m21s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m16s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m21s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m16s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m21s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m16s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m21s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m16s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m15s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m21s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m20s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m15s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m15s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m20s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m15s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m20s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m20s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m14s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m14s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m20s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m14s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m19s
+ 
+[Test 22] Fri Apr 26 17:32:18 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m25s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m19s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m19s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m25s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m25s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m19s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m19s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m25s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m19s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m25s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m25s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m19s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m19s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m25s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m19s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m19s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m25s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m25s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m19s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m25s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m25s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m19s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m19s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m25s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m19s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m24s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m24s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m18s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m18s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m24s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m18s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m24s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m24s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m18s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m23s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m18s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m23s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m18s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m23s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m18s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m23s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m18s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m17s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m23s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m22s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m17s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m17s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m22s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m17s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m22s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m22s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m16s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m16s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m22s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m16s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m21s
+ 
+[Test 23] Fri Apr 26 17:32:20 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m28s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m22s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m22s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m28s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m28s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m22s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m22s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m28s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m22s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m28s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m28s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m22s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m22s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m28s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m22s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m22s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m28s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m28s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m22s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m28s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m28s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m22s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m22s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m28s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m22s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m27s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m27s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m21s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m21s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m27s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m21s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m27s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m27s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m21s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m26s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m21s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m26s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m21s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m26s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m21s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m26s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m21s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m20s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m26s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m25s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m20s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m20s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m25s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m20s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m25s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m25s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m19s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m19s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m25s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m19s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m24s
+ 
+[Test 24] Fri Apr 26 17:32:23 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-jp46w    0/1     ContainerCreating   0          3m30s
+compose-post-service-54bc98f64b-zqxdj    0/1     Terminating         0          8m24s
+home-timeline-service-f6df59756-8tjxf    0/1     Terminating         0          8m24s
+home-timeline-service-f6df59756-n6p9k    0/1     ContainerCreating   0          3m30s
+jaeger-744f6b7df7-72tlf                  0/1     ContainerCreating   0          3m30s
+jaeger-744f6b7df7-hbb9t                  0/1     Terminating         0          8m24s
+media-frontend-59b6b7d96b-f4tlz          0/1     Terminating         0          8m24s
+media-frontend-59b6b7d96b-hph8c          0/1     Init:0/1            0          3m30s
+media-memcached-74df6744db-g86m6         0/1     Terminating         0          8m24s
+media-memcached-74df6744db-t96zr         0/1     ContainerCreating   0          3m30s
+media-mongodb-7c9d794f8f-jdgrc           0/1     ContainerCreating   0          3m30s
+media-mongodb-7c9d794f8f-whqb9           0/1     Terminating         0          8m24s
+media-service-64dfb64d94-8qms4           0/1     Terminating         0          8m24s
+media-service-64dfb64d94-b9j86           0/1     ContainerCreating   0          3m30s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Terminating         0          8m24s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Terminating         0          8m24s
+nginx-thrift-6d9d7c98df-h2f2j            0/1     Init:0/1            0          3m30s
+nginx-thrift-6d9d7c98df-k8mxb            0/1     Init:0/1            0          3m30s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Terminating         0          8m24s
+nginx-thrift-6d9d7c98df-mzr4r            0/1     Init:0/1            0          3m30s
+post-storage-memcached-c98d5d99d-58kdz   0/1     ContainerCreating   0          3m30s
+post-storage-memcached-c98d5d99d-vv67r   0/1     Terminating         0          8m24s
+post-storage-mongodb-867b76d74f-6wjng    0/1     Terminating         0          8m24s
+post-storage-mongodb-867b76d74f-k89bx    0/1     ContainerCreating   0          3m30s
+post-storage-service-66558bb7f7-5qc45    0/1     Terminating         0          8m24s
+post-storage-service-66558bb7f7-kh6bp    0/1     ContainerCreating   0          3m29s
+social-graph-mongodb-69859bd677-zf8jc    0/1     ContainerCreating   0          3m29s
+social-graph-mongodb-69859bd677-znwfb    0/1     Terminating         0          8m23s
+social-graph-redis-59bc4b57bd-cffls      0/1     Terminating         0          8m23s
+social-graph-redis-59bc4b57bd-z2bdw      0/1     ContainerCreating   0          3m29s
+social-graph-service-7cd867cd79-2hb9b    0/1     Terminating         0          8m23s
+social-graph-service-7cd867cd79-wgrj9    0/1     ContainerCreating   0          3m29s
+text-service-64f4fcd547-pszf6            0/1     ContainerCreating   0          3m29s
+text-service-64f4fcd547-pv4ct            0/1     Terminating         0          8m23s
+unique-id-service-6f947969d6-dmqdn       0/1     ContainerCreating   0          3m28s
+unique-id-service-6f947969d6-nkjqv       0/1     Terminating         0          8m23s
+url-shorten-memcached-7f78dbd7b4-7dwxv   0/1     ContainerCreating   0          3m28s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     Terminating         0          8m23s
+url-shorten-mongodb-699d465fdb-g8zf9     0/1     ContainerCreating   0          3m28s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     Terminating         0          8m23s
+url-shorten-service-85fbbffcbb-5ccx9     0/1     ContainerCreating   0          3m28s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     Terminating         0          8m23s
+user-memcached-d6f8954b4-45ztg           0/1     Terminating         0          8m22s
+user-memcached-d6f8954b4-nsmpp           0/1     ContainerCreating   0          3m28s
+user-mention-service-74755598c7-tcj2c    0/1     ContainerCreating   0          3m27s
+user-mention-service-74755598c7-x9ldm    0/1     Terminating         0          8m22s
+user-mongodb-6ddd645944-88lsk            0/1     Terminating         0          8m22s
+user-mongodb-6ddd645944-8kp5j            0/1     ContainerCreating   0          3m27s
+user-service-776b5c74ff-6mwpd            0/1     Terminating         0          8m22s
+user-service-776b5c74ff-dc7h5            0/1     ContainerCreating   0          3m27s
+user-timeline-mongodb-5c945fcd8b-hxkdv   0/1     ContainerCreating   0          3m27s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     Terminating         0          8m21s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     Terminating         0          8m21s
+user-timeline-redis-7f767bdff5-nnb2d     0/1     ContainerCreating   0          3m27s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     Terminating         0          8m21s
+user-timeline-service-7cd65d7ffb-sb45j   0/1     ContainerCreating   0          3m26s
+Test End Fri Apr 26 17:32:25 UTC 2024

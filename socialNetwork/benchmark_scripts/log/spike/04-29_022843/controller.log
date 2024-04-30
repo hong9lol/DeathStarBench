@@ -1,0 +1,865 @@
+ * Serving Flask app 'main'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.244.4.24:5001
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:27:25] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:27:26] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:27:26] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:27:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:27:26] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:27:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:27:37] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:27:37] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:27:37] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:27:39] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:27:39] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:27:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:27:41] "[32mGET /api/v1/agent HTTP/1.1[0m" 308 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:27:41] "GET /api/v1/agent/ HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:27:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:27:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:27:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:27:52] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:27:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:27:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:27:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:27:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:28:07] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:28:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:28:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:28:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:28:22] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:28:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:28:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:28:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:28:38] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:28:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:28:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:28:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:52] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 66934, 'timestamp': 1714357722968}, {'usage': 66934, 'timestamp': 1714357723973}, {'usage': 66934, 'timestamp': 1714357724977}, {'usage': 67293, 'timestamp': 1714357725981}, {'usage': 67293, 'timestamp': 1714357726986}, {'usage': 97026, 'timestamp': 1714357727991}, {'usage': 123395, 'timestamp': 1714357728995}, {'usage': 156553, 'timestamp': 1714357730001}, {'usage': 187142, 'timestamp': 1714357731005}, {'usage': 213082, 'timestamp': 1714357732010}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 86.03648424543947, involved_nodes: 1, current_cpu_usage_rate: 86.03648424543947, target_cpu_utilization: 80
+ERROR:root:Scale out [user-timeline-service] replicas: 2
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:53] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:28:53] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:28:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:28:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:28:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:28:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:05] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 150916, 'timestamp': 1714357735650}, {'usage': 152094, 'timestamp': 1714357736730}, {'usage': 152094, 'timestamp': 1714357737733}, {'usage': 152304, 'timestamp': 1714357738736}, {'usage': 160399, 'timestamp': 1714357739739}, {'usage': 188284, 'timestamp': 1714357740742}, {'usage': 218636, 'timestamp': 1714357741745}, {'usage': 245190, 'timestamp': 1714357742748}, {'usage': 277220, 'timestamp': 1714357743750}, {'usage': 307612, 'timestamp': 1714357744908}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 87.48416810592975, involved_nodes: 1, current_cpu_usage_rate: 87.48416810592975, target_cpu_utilization: 80
+ERROR:root:Scale out [compose-post-service] replicas: 2
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:29:08] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:29:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:29:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:29:23] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:29:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:29:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:29:38] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:41] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:29:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:29:44] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:29:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:29:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:29:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:29:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:03] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:04] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:04] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 977661, 'timestamp': 1714357794678}, {'usage': 1003973, 'timestamp': 1714357795683}, {'usage': 1014405, 'timestamp': 1714357796770}, {'usage': 1014405, 'timestamp': 1714357797774}, {'usage': 1014405, 'timestamp': 1714357798779}, {'usage': 1014666, 'timestamp': 1714357799783}, {'usage': 1050075, 'timestamp': 1714357800788}, {'usage': 1081973, 'timestamp': 1714357801793}, {'usage': 1108974, 'timestamp': 1714357802798}, {'usage': 1140379, 'timestamp': 1714357803804}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 293601, 'timestamp': 1714357794555}, {'usage': 302761, 'timestamp': 1714357795560}, {'usage': 307883, 'timestamp': 1714357796564}, {'usage': 307883, 'timestamp': 1714357797634}, {'usage': 307883, 'timestamp': 1714357798639}, {'usage': 308689, 'timestamp': 1714357799643}, {'usage': 325388, 'timestamp': 1714357800648}, {'usage': 348067, 'timestamp': 1714357801654}, {'usage': 360541, 'timestamp': 1714357802659}, {'usage': 371437, 'timestamp': 1714357803663}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 140.23427826137464, involved_nodes: 2, current_cpu_usage_rate: 70.11713913068732, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:05] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:05] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 478634, 'timestamp': 1714357796236}, {'usage': 482918, 'timestamp': 1714357797346}, {'usage': 482918, 'timestamp': 1714357798350}, {'usage': 482918, 'timestamp': 1714357799354}, {'usage': 505841, 'timestamp': 1714357800359}, {'usage': 537885, 'timestamp': 1714357801364}, {'usage': 567695, 'timestamp': 1714357802370}, {'usage': 593784, 'timestamp': 1714357803375}, {'usage': 624766, 'timestamp': 1714357804380}, {'usage': 655534, 'timestamp': 1714357805491}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 710281, 'timestamp': 1714357796631}, {'usage': 710281, 'timestamp': 1714357797713}, {'usage': 710320, 'timestamp': 1714357798716}, {'usage': 710320, 'timestamp': 1714357799719}, {'usage': 722266, 'timestamp': 1714357800722}, {'usage': 733565, 'timestamp': 1714357801725}, {'usage': 737742, 'timestamp': 1714357802728}, {'usage': 746476, 'timestamp': 1714357803731}, {'usage': 752931, 'timestamp': 1714357804733}, {'usage': 753390, 'timestamp': 1714357805736}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 93.83865505194586, involved_nodes: 2, current_cpu_usage_rate: 46.91932752597293, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:06] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:06] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 746095, 'timestamp': 1714357797347}, {'usage': 746095, 'timestamp': 1714357798351}, {'usage': 746095, 'timestamp': 1714357799356}, {'usage': 770087, 'timestamp': 1714357800361}, {'usage': 800943, 'timestamp': 1714357801366}, {'usage': 832721, 'timestamp': 1714357802372}, {'usage': 858823, 'timestamp': 1714357803376}, {'usage': 875907, 'timestamp': 1714357804434}, {'usage': 891283, 'timestamp': 1714357805545}, {'usage': 906076, 'timestamp': 1714357806603}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 46.60680529300567, involved_nodes: 1, current_cpu_usage_rate: 46.60680529300567, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:07] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 808955, 'timestamp': 1714357797631}, {'usage': 808955, 'timestamp': 1714357798636}, {'usage': 811104, 'timestamp': 1714357799640}, {'usage': 838985, 'timestamp': 1714357800645}, {'usage': 869429, 'timestamp': 1714357801650}, {'usage': 895694, 'timestamp': 1714357802655}, {'usage': 915453, 'timestamp': 1714357803660}, {'usage': 933532, 'timestamp': 1714357804665}, {'usage': 952256, 'timestamp': 1714357806105}, {'usage': 957388, 'timestamp': 1714357807110}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 17.02155887230514, involved_nodes: 1, current_cpu_usage_rate: 17.02155887230514, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:08] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1014405, 'timestamp': 1714357798779}, {'usage': 1014666, 'timestamp': 1714357799783}, {'usage': 1050075, 'timestamp': 1714357800788}, {'usage': 1081973, 'timestamp': 1714357801793}, {'usage': 1108974, 'timestamp': 1714357802798}, {'usage': 1140379, 'timestamp': 1714357803804}, {'usage': 1171041, 'timestamp': 1714357804981}, {'usage': 1209314, 'timestamp': 1714357806156}, {'usage': 1243998, 'timestamp': 1714357807329}, {'usage': 1267991, 'timestamp': 1714357808502}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 308689, 'timestamp': 1714357799643}, {'usage': 325388, 'timestamp': 1714357800648}, {'usage': 348067, 'timestamp': 1714357801654}, {'usage': 360541, 'timestamp': 1714357802659}, {'usage': 371437, 'timestamp': 1714357803663}, {'usage': 384552, 'timestamp': 1714357805103}, {'usage': 396002, 'timestamp': 1714357806108}, {'usage': 400792, 'timestamp': 1714357807113}, {'usage': 405246, 'timestamp': 1714357808117}, {'usage': 406810, 'timestamp': 1714357809122}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 73.36869785768515, involved_nodes: 2, current_cpu_usage_rate: 36.684348928842574, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:30:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 505841, 'timestamp': 1714357800359}, {'usage': 537885, 'timestamp': 1714357801364}, {'usage': 567695, 'timestamp': 1714357802370}, {'usage': 593784, 'timestamp': 1714357803375}, {'usage': 624766, 'timestamp': 1714357804380}, {'usage': 655534, 'timestamp': 1714357805491}, {'usage': 684118, 'timestamp': 1714357806548}, {'usage': 698384, 'timestamp': 1714357807607}, {'usage': 714122, 'timestamp': 1714357808663}, {'usage': 714348, 'timestamp': 1714357809668}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 722266, 'timestamp': 1714357800722}, {'usage': 733565, 'timestamp': 1714357801725}, {'usage': 737742, 'timestamp': 1714357802728}, {'usage': 746476, 'timestamp': 1714357803731}, {'usage': 752931, 'timestamp': 1714357804733}, {'usage': 753390, 'timestamp': 1714357805736}, {'usage': 756429, 'timestamp': 1714357806740}, {'usage': 771960, 'timestamp': 1714357807743}, {'usage': 775488, 'timestamp': 1714357808746}, {'usage': 775488, 'timestamp': 1714357809750}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 0.7495854063018242, involved_nodes: 2, current_cpu_usage_rate: 0.3747927031509121, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:16] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1243998, 'timestamp': 1714357807329}, {'usage': 1267991, 'timestamp': 1714357808502}, {'usage': 1267991, 'timestamp': 1714357809677}, {'usage': 1268494, 'timestamp': 1714357810681}, {'usage': 1269469, 'timestamp': 1714357811686}, {'usage': 1294581, 'timestamp': 1714357812774}, {'usage': 1321192, 'timestamp': 1714357813778}, {'usage': 1353696, 'timestamp': 1714357814783}, {'usage': 1381178, 'timestamp': 1714357815787}, {'usage': 1411242, 'timestamp': 1714357816792}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 405246, 'timestamp': 1714357808117}, {'usage': 406810, 'timestamp': 1714357809122}, {'usage': 407159, 'timestamp': 1714357810127}, {'usage': 407159, 'timestamp': 1714357811132}, {'usage': 407586, 'timestamp': 1714357812137}, {'usage': 418384, 'timestamp': 1714357813209}, {'usage': 441669, 'timestamp': 1714357814214}, {'usage': 457657, 'timestamp': 1714357815218}, {'usage': 465122, 'timestamp': 1714357816223}, {'usage': 473833, 'timestamp': 1714357817228}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 128.60696517412936, involved_nodes: 2, current_cpu_usage_rate: 64.30348258706468, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:18] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 714122, 'timestamp': 1714357808663}, {'usage': 714348, 'timestamp': 1714357809668}, {'usage': 714348, 'timestamp': 1714357810672}, {'usage': 715085, 'timestamp': 1714357811677}, {'usage': 722253, 'timestamp': 1714357812763}, {'usage': 749721, 'timestamp': 1714357813767}, {'usage': 779666, 'timestamp': 1714357814772}, {'usage': 802530, 'timestamp': 1714357815777}, {'usage': 835413, 'timestamp': 1714357816781}, {'usage': 844616, 'timestamp': 1714357817785}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 775488, 'timestamp': 1714357808746}, {'usage': 775488, 'timestamp': 1714357809750}, {'usage': 775488, 'timestamp': 1714357810753}, {'usage': 776166, 'timestamp': 1714357811755}, {'usage': 789729, 'timestamp': 1714357812836}, {'usage': 804296, 'timestamp': 1714357813838}, {'usage': 815110, 'timestamp': 1714357814841}, {'usage': 830356, 'timestamp': 1714357815844}, {'usage': 842852, 'timestamp': 1714357816847}, {'usage': 850262, 'timestamp': 1714357817850}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 55.18057050627665, involved_nodes: 2, current_cpu_usage_rate: 27.590285253138326, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:19] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1267991, 'timestamp': 1714357809677}, {'usage': 1268494, 'timestamp': 1714357810681}, {'usage': 1269469, 'timestamp': 1714357811686}, {'usage': 1294581, 'timestamp': 1714357812774}, {'usage': 1321192, 'timestamp': 1714357813778}, {'usage': 1353696, 'timestamp': 1714357814783}, {'usage': 1381178, 'timestamp': 1714357815787}, {'usage': 1411242, 'timestamp': 1714357816792}, {'usage': 1445373, 'timestamp': 1714357817966}, {'usage': 1472180, 'timestamp': 1714357819140}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 407159, 'timestamp': 1714357810127}, {'usage': 407159, 'timestamp': 1714357811132}, {'usage': 407586, 'timestamp': 1714357812137}, {'usage': 418384, 'timestamp': 1714357813209}, {'usage': 441669, 'timestamp': 1714357814214}, {'usage': 457657, 'timestamp': 1714357815218}, {'usage': 465122, 'timestamp': 1714357816223}, {'usage': 473833, 'timestamp': 1714357817228}, {'usage': 476839, 'timestamp': 1714357818233}, {'usage': 481520, 'timestamp': 1714357819237}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 91.65417263371275, involved_nodes: 2, current_cpu_usage_rate: 45.827086316856374, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:20] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1268494, 'timestamp': 1714357810681}, {'usage': 1269469, 'timestamp': 1714357811686}, {'usage': 1294581, 'timestamp': 1714357812774}, {'usage': 1321192, 'timestamp': 1714357813778}, {'usage': 1353696, 'timestamp': 1714357814783}, {'usage': 1381178, 'timestamp': 1714357815787}, {'usage': 1411242, 'timestamp': 1714357816792}, {'usage': 1445373, 'timestamp': 1714357817966}, {'usage': 1472180, 'timestamp': 1714357819140}, {'usage': 1494015, 'timestamp': 1714357820314}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 407159, 'timestamp': 1714357811132}, {'usage': 407586, 'timestamp': 1714357812137}, {'usage': 418384, 'timestamp': 1714357813209}, {'usage': 441669, 'timestamp': 1714357814214}, {'usage': 457657, 'timestamp': 1714357815218}, {'usage': 465122, 'timestamp': 1714357816223}, {'usage': 473833, 'timestamp': 1714357817228}, {'usage': 476839, 'timestamp': 1714357818233}, {'usage': 481520, 'timestamp': 1714357819237}, {'usage': 485308, 'timestamp': 1714357820242}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 74.55987241532259, involved_nodes: 2, current_cpu_usage_rate: 37.279936207661294, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:30:24] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:29] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1494015, 'timestamp': 1714357820314}, {'usage': 1498147, 'timestamp': 1714357821487}, {'usage': 1498147, 'timestamp': 1714357822491}, {'usage': 1498147, 'timestamp': 1714357823495}, {'usage': 1498823, 'timestamp': 1714357824499}, {'usage': 1528843, 'timestamp': 1714357825503}, {'usage': 1560739, 'timestamp': 1714357826508}, {'usage': 1588987, 'timestamp': 1714357827513}, {'usage': 1620242, 'timestamp': 1714357828598}, {'usage': 1650809, 'timestamp': 1714357829604}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 486865, 'timestamp': 1714357821247}, {'usage': 486865, 'timestamp': 1714357822251}, {'usage': 487209, 'timestamp': 1714357823256}, {'usage': 488808, 'timestamp': 1714357824260}, {'usage': 501343, 'timestamp': 1714357825265}, {'usage': 520922, 'timestamp': 1714357826270}, {'usage': 530840, 'timestamp': 1714357827275}, {'usage': 538427, 'timestamp': 1714357828346}, {'usage': 548146, 'timestamp': 1714357829350}, {'usage': 551485, 'timestamp': 1714357830355}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 112.35693302869352, involved_nodes: 2, current_cpu_usage_rate: 56.17846651434676, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:31] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1498147, 'timestamp': 1714357821487}, {'usage': 1498147, 'timestamp': 1714357822491}, {'usage': 1498147, 'timestamp': 1714357823495}, {'usage': 1498823, 'timestamp': 1714357824499}, {'usage': 1528843, 'timestamp': 1714357825503}, {'usage': 1560739, 'timestamp': 1714357826508}, {'usage': 1588987, 'timestamp': 1714357827513}, {'usage': 1620242, 'timestamp': 1714357828598}, {'usage': 1650809, 'timestamp': 1714357829604}, {'usage': 1686527, 'timestamp': 1714357830779}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 486865, 'timestamp': 1714357822251}, {'usage': 487209, 'timestamp': 1714357823256}, {'usage': 488808, 'timestamp': 1714357824260}, {'usage': 501343, 'timestamp': 1714357825265}, {'usage': 520922, 'timestamp': 1714357826270}, {'usage': 530840, 'timestamp': 1714357827275}, {'usage': 538427, 'timestamp': 1714357828346}, {'usage': 548146, 'timestamp': 1714357829350}, {'usage': 551485, 'timestamp': 1714357830355}, {'usage': 558613, 'timestamp': 1714357831360}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 124.96945061924418, involved_nodes: 2, current_cpu_usage_rate: 62.48472530962209, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:32] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1498147, 'timestamp': 1714357822491}, {'usage': 1498147, 'timestamp': 1714357823495}, {'usage': 1498823, 'timestamp': 1714357824499}, {'usage': 1528843, 'timestamp': 1714357825503}, {'usage': 1560739, 'timestamp': 1714357826508}, {'usage': 1588987, 'timestamp': 1714357827513}, {'usage': 1620242, 'timestamp': 1714357828598}, {'usage': 1650809, 'timestamp': 1714357829604}, {'usage': 1686527, 'timestamp': 1714357830779}, {'usage': 1713159, 'timestamp': 1714357831955}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 487209, 'timestamp': 1714357823256}, {'usage': 488808, 'timestamp': 1714357824260}, {'usage': 501343, 'timestamp': 1714357825265}, {'usage': 520922, 'timestamp': 1714357826270}, {'usage': 530840, 'timestamp': 1714357827275}, {'usage': 538427, 'timestamp': 1714357828346}, {'usage': 548146, 'timestamp': 1714357829350}, {'usage': 551485, 'timestamp': 1714357830355}, {'usage': 558613, 'timestamp': 1714357831360}, {'usage': 560384, 'timestamp': 1714357832365}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 81.36149186042576, involved_nodes: 2, current_cpu_usage_rate: 40.68074593021288, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:33] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1498147, 'timestamp': 1714357823495}, {'usage': 1498823, 'timestamp': 1714357824499}, {'usage': 1528843, 'timestamp': 1714357825503}, {'usage': 1560739, 'timestamp': 1714357826508}, {'usage': 1588987, 'timestamp': 1714357827513}, {'usage': 1620242, 'timestamp': 1714357828598}, {'usage': 1650809, 'timestamp': 1714357829604}, {'usage': 1686527, 'timestamp': 1714357830779}, {'usage': 1713159, 'timestamp': 1714357831955}, {'usage': 1730701, 'timestamp': 1714357833169}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 488808, 'timestamp': 1714357824260}, {'usage': 501343, 'timestamp': 1714357825265}, {'usage': 520922, 'timestamp': 1714357826270}, {'usage': 530840, 'timestamp': 1714357827275}, {'usage': 538427, 'timestamp': 1714357828346}, {'usage': 548146, 'timestamp': 1714357829350}, {'usage': 551485, 'timestamp': 1714357830355}, {'usage': 558613, 'timestamp': 1714357831360}, {'usage': 560384, 'timestamp': 1714357832365}, {'usage': 561978, 'timestamp': 1714357833370}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 53.452741782575316, involved_nodes: 2, current_cpu_usage_rate: 26.726370891287658, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:30:39] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:41] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:41] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 982032, 'timestamp': 1714357831984}, {'usage': 993462, 'timestamp': 1714357832989}, {'usage': 993462, 'timestamp': 1714357833993}, {'usage': 993462, 'timestamp': 1714357834998}, {'usage': 993774, 'timestamp': 1714357836002}, {'usage': 1002269, 'timestamp': 1714357837006}, {'usage': 1028982, 'timestamp': 1714357838010}, {'usage': 1061024, 'timestamp': 1714357839014}, {'usage': 1083729, 'timestamp': 1714357840019}, {'usage': 1098969, 'timestamp': 1714357841024}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 997612, 'timestamp': 1714357831971}, {'usage': 1003733, 'timestamp': 1714357832974}, {'usage': 1009461, 'timestamp': 1714357833977}, {'usage': 1009461, 'timestamp': 1714357834980}, {'usage': 1009634, 'timestamp': 1714357835983}, {'usage': 1016068, 'timestamp': 1714357836985}, {'usage': 1045860, 'timestamp': 1714357837988}, {'usage': 1074121, 'timestamp': 1714357838991}, {'usage': 1101213, 'timestamp': 1714357839994}, {'usage': 1132327, 'timestamp': 1714357840997}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 153.95038764304104, involved_nodes: 2, current_cpu_usage_rate: 76.97519382152052, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:42] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1730701, 'timestamp': 1714357833169}, {'usage': 1731519, 'timestamp': 1714357834344}, {'usage': 1731720, 'timestamp': 1714357835348}, {'usage': 1732925, 'timestamp': 1714357836353}, {'usage': 1755240, 'timestamp': 1714357837358}, {'usage': 1784712, 'timestamp': 1714357838362}, {'usage': 1809730, 'timestamp': 1714357839367}, {'usage': 1843231, 'timestamp': 1714357840371}, {'usage': 1871840, 'timestamp': 1714357841377}, {'usage': 1906050, 'timestamp': 1714357842550}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 561978, 'timestamp': 1714357833370}, {'usage': 561978, 'timestamp': 1714357834374}, {'usage': 562702, 'timestamp': 1714357835379}, {'usage': 563941, 'timestamp': 1714357836383}, {'usage': 572238, 'timestamp': 1714357837388}, {'usage': 579864, 'timestamp': 1714357838393}, {'usage': 592456, 'timestamp': 1714357839398}, {'usage': 604478, 'timestamp': 1714357840402}, {'usage': 617089, 'timestamp': 1714357841836}, {'usage': 620882, 'timestamp': 1714357842841}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 109.79554910867655, involved_nodes: 2, current_cpu_usage_rate: 54.89777455433828, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1290001, 'timestamp': 1714357834371}, {'usage': 1290568, 'timestamp': 1714357835376}, {'usage': 1292902, 'timestamp': 1714357836380}, {'usage': 1314060, 'timestamp': 1714357837385}, {'usage': 1342555, 'timestamp': 1714357838390}, {'usage': 1371085, 'timestamp': 1714357839395}, {'usage': 1396908, 'timestamp': 1714357840399}, {'usage': 1414225, 'timestamp': 1714357841404}, {'usage': 1433520, 'timestamp': 1714357842838}, {'usage': 1441984, 'timestamp': 1714357843907}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 26.39226691612098, involved_nodes: 1, current_cpu_usage_rate: 26.39226691612098, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:45] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 1256918, 'timestamp': 1714357834999}, {'usage': 1257179, 'timestamp': 1714357836003}, {'usage': 1257613, 'timestamp': 1714357837007}, {'usage': 1294551, 'timestamp': 1714357838012}, {'usage': 1325361, 'timestamp': 1714357839016}, {'usage': 1351321, 'timestamp': 1714357840021}, {'usage': 1372872, 'timestamp': 1714357841025}, {'usage': 1391100, 'timestamp': 1714357842030}, {'usage': 1405869, 'timestamp': 1714357843171}, {'usage': 1411589, 'timestamp': 1714357844176}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 18.971807628524047, involved_nodes: 1, current_cpu_usage_rate: 18.971807628524047, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1002269, 'timestamp': 1714357837006}, {'usage': 1028982, 'timestamp': 1714357838010}, {'usage': 1061024, 'timestamp': 1714357839014}, {'usage': 1083729, 'timestamp': 1714357840019}, {'usage': 1098969, 'timestamp': 1714357841024}, {'usage': 1105972, 'timestamp': 1714357842029}, {'usage': 1109174, 'timestamp': 1714357843170}, {'usage': 1109174, 'timestamp': 1714357844174}, {'usage': 1116996, 'timestamp': 1714357845179}, {'usage': 1123858, 'timestamp': 1714357846184}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1009634, 'timestamp': 1714357835983}, {'usage': 1016068, 'timestamp': 1714357836985}, {'usage': 1045860, 'timestamp': 1714357837988}, {'usage': 1074121, 'timestamp': 1714357838991}, {'usage': 1101213, 'timestamp': 1714357839994}, {'usage': 1132327, 'timestamp': 1714357840997}, {'usage': 1160946, 'timestamp': 1714357842173}, {'usage': 1169340, 'timestamp': 1714357843408}, {'usage': 1172231, 'timestamp': 1714357844410}, {'usage': 1179436, 'timestamp': 1714357845414}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 46.68051839078181, involved_nodes: 2, current_cpu_usage_rate: 23.340259195390907, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:30:46] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1755240, 'timestamp': 1714357837358}, {'usage': 1784712, 'timestamp': 1714357838362}, {'usage': 1809730, 'timestamp': 1714357839367}, {'usage': 1843231, 'timestamp': 1714357840371}, {'usage': 1871840, 'timestamp': 1714357841377}, {'usage': 1906050, 'timestamp': 1714357842550}, {'usage': 1922021, 'timestamp': 1714357843724}, {'usage': 1942225, 'timestamp': 1714357844977}, {'usage': 1948685, 'timestamp': 1714357846152}, {'usage': 1949834, 'timestamp': 1714357847156}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 572238, 'timestamp': 1714357837388}, {'usage': 579864, 'timestamp': 1714357838393}, {'usage': 592456, 'timestamp': 1714357839398}, {'usage': 604478, 'timestamp': 1714357840402}, {'usage': 617089, 'timestamp': 1714357841836}, {'usage': 620882, 'timestamp': 1714357842841}, {'usage': 623996, 'timestamp': 1714357843910}, {'usage': 627841, 'timestamp': 1714357844915}, {'usage': 630083, 'timestamp': 1714357845919}, {'usage': 630317, 'timestamp': 1714357846924}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 4.5908604388416485, involved_nodes: 2, current_cpu_usage_rate: 2.2954302194208243, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:54] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 1420404, 'timestamp': 1714357845181}, {'usage': 1423688, 'timestamp': 1714357846185}, {'usage': 1423688, 'timestamp': 1714357847189}, {'usage': 1423688, 'timestamp': 1714357848193}, {'usage': 1423688, 'timestamp': 1714357849197}, {'usage': 1449205, 'timestamp': 1714357850202}, {'usage': 1479902, 'timestamp': 1714357851207}, {'usage': 1508914, 'timestamp': 1714357852211}, {'usage': 1528258, 'timestamp': 1714357853216}, {'usage': 1551172, 'timestamp': 1714357854220}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 76.07569721115539, involved_nodes: 1, current_cpu_usage_rate: 76.07569721115539, target_cpu_utilization: 80
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:30:54] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1948685, 'timestamp': 1714357846152}, {'usage': 1949834, 'timestamp': 1714357847156}, {'usage': 1950546, 'timestamp': 1714357848161}, {'usage': 1951415, 'timestamp': 1714357849165}, {'usage': 1982091, 'timestamp': 1714357850169}, {'usage': 2011492, 'timestamp': 1714357851175}, {'usage': 2042208, 'timestamp': 1714357852179}, {'usage': 2069903, 'timestamp': 1714357853184}, {'usage': 2099801, 'timestamp': 1714357854189}, {'usage': 2134978, 'timestamp': 1714357855362}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 630083, 'timestamp': 1714357845919}, {'usage': 630317, 'timestamp': 1714357846924}, {'usage': 630816, 'timestamp': 1714357847928}, {'usage': 631011, 'timestamp': 1714357848933}, {'usage': 641986, 'timestamp': 1714357849938}, {'usage': 657108, 'timestamp': 1714357850942}, {'usage': 663537, 'timestamp': 1714357851946}, {'usage': 677417, 'timestamp': 1714357852951}, {'usage': 692330, 'timestamp': 1714357853955}, {'usage': 697154, 'timestamp': 1714357854960}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 115.96305768684284, involved_nodes: 2, current_cpu_usage_rate: 57.98152884342142, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:55] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1123858, 'timestamp': 1714357847188}, {'usage': 1123858, 'timestamp': 1714357848192}, {'usage': 1124084, 'timestamp': 1714357849196}, {'usage': 1136977, 'timestamp': 1714357850200}, {'usage': 1167865, 'timestamp': 1714357851205}, {'usage': 1178602, 'timestamp': 1714357852210}, {'usage': 1201949, 'timestamp': 1714357853214}, {'usage': 1219231, 'timestamp': 1714357854219}, {'usage': 1229491, 'timestamp': 1714357855276}, {'usage': 1230062, 'timestamp': 1714357856281}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1179436, 'timestamp': 1714357846417}, {'usage': 1179436, 'timestamp': 1714357847420}, {'usage': 1180072, 'timestamp': 1714357848423}, {'usage': 1190734, 'timestamp': 1714357849425}, {'usage': 1206167, 'timestamp': 1714357850428}, {'usage': 1232193, 'timestamp': 1714357851431}, {'usage': 1264698, 'timestamp': 1714357852434}, {'usage': 1293006, 'timestamp': 1714357853437}, {'usage': 1320095, 'timestamp': 1714357854440}, {'usage': 1323828, 'timestamp': 1714357855597}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 12.648689711912922, involved_nodes: 2, current_cpu_usage_rate: 6.324344855956461, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:30:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:30:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1949834, 'timestamp': 1714357847156}, {'usage': 1950546, 'timestamp': 1714357848161}, {'usage': 1951415, 'timestamp': 1714357849165}, {'usage': 1982091, 'timestamp': 1714357850169}, {'usage': 2011492, 'timestamp': 1714357851175}, {'usage': 2042208, 'timestamp': 1714357852179}, {'usage': 2069903, 'timestamp': 1714357853184}, {'usage': 2099801, 'timestamp': 1714357854189}, {'usage': 2134978, 'timestamp': 1714357855362}, {'usage': 2156443, 'timestamp': 1714357856536}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 630816, 'timestamp': 1714357847928}, {'usage': 631011, 'timestamp': 1714357848933}, {'usage': 641986, 'timestamp': 1714357849938}, {'usage': 657108, 'timestamp': 1714357850942}, {'usage': 663537, 'timestamp': 1714357851946}, {'usage': 677417, 'timestamp': 1714357852951}, {'usage': 692330, 'timestamp': 1714357853955}, {'usage': 697154, 'timestamp': 1714357854960}, {'usage': 700840, 'timestamp': 1714357855965}, {'usage': 706902, 'timestamp': 1714357856971}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 81.03163528764946, involved_nodes: 2, current_cpu_usage_rate: 40.51581764382473, target_cpu_utilization: 80
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:30:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:01] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:06] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2156443, 'timestamp': 1714357856536}, {'usage': 2169688, 'timestamp': 1714357857711}, {'usage': 2178622, 'timestamp': 1714357858715}, {'usage': 2178844, 'timestamp': 1714357859720}, {'usage': 2178844, 'timestamp': 1714357860807}, {'usage': 2189417, 'timestamp': 1714357861812}, {'usage': 2216624, 'timestamp': 1714357862816}, {'usage': 2243969, 'timestamp': 1714357863821}, {'usage': 2275931, 'timestamp': 1714357864825}, {'usage': 2301427, 'timestamp': 1714357865829}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 706902, 'timestamp': 1714357856971}, {'usage': 708472, 'timestamp': 1714357857975}, {'usage': 709114, 'timestamp': 1714357859044}, {'usage': 709648, 'timestamp': 1714357860049}, {'usage': 710502, 'timestamp': 1714357861054}, {'usage': 722610, 'timestamp': 1714357862060}, {'usage': 731878, 'timestamp': 1714357863064}, {'usage': 743029, 'timestamp': 1714357864069}, {'usage': 762770, 'timestamp': 1714357865076}, {'usage': 768323, 'timestamp': 1714357866080}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 103.0843293492696, involved_nodes: 2, current_cpu_usage_rate: 51.5421646746348, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:07] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2169688, 'timestamp': 1714357857711}, {'usage': 2178622, 'timestamp': 1714357858715}, {'usage': 2178844, 'timestamp': 1714357859720}, {'usage': 2178844, 'timestamp': 1714357860807}, {'usage': 2189417, 'timestamp': 1714357861812}, {'usage': 2216624, 'timestamp': 1714357862816}, {'usage': 2243969, 'timestamp': 1714357863821}, {'usage': 2275931, 'timestamp': 1714357864825}, {'usage': 2301427, 'timestamp': 1714357865829}, {'usage': 2339746, 'timestamp': 1714357867014}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 708472, 'timestamp': 1714357857975}, {'usage': 709114, 'timestamp': 1714357859044}, {'usage': 709648, 'timestamp': 1714357860049}, {'usage': 710502, 'timestamp': 1714357861054}, {'usage': 722610, 'timestamp': 1714357862060}, {'usage': 731878, 'timestamp': 1714357863064}, {'usage': 743029, 'timestamp': 1714357864069}, {'usage': 762770, 'timestamp': 1714357865076}, {'usage': 768323, 'timestamp': 1714357866080}, {'usage': 772179, 'timestamp': 1714357867086}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 120.56570282943689, involved_nodes: 2, current_cpu_usage_rate: 60.28285141471844, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:08] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2178622, 'timestamp': 1714357858715}, {'usage': 2178844, 'timestamp': 1714357859720}, {'usage': 2178844, 'timestamp': 1714357860807}, {'usage': 2189417, 'timestamp': 1714357861812}, {'usage': 2216624, 'timestamp': 1714357862816}, {'usage': 2243969, 'timestamp': 1714357863821}, {'usage': 2275931, 'timestamp': 1714357864825}, {'usage': 2301427, 'timestamp': 1714357865829}, {'usage': 2339746, 'timestamp': 1714357867014}, {'usage': 2375407, 'timestamp': 1714357868223}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 709114, 'timestamp': 1714357859044}, {'usage': 709648, 'timestamp': 1714357860049}, {'usage': 710502, 'timestamp': 1714357861054}, {'usage': 722610, 'timestamp': 1714357862060}, {'usage': 731878, 'timestamp': 1714357863064}, {'usage': 743029, 'timestamp': 1714357864069}, {'usage': 762770, 'timestamp': 1714357865076}, {'usage': 768323, 'timestamp': 1714357866080}, {'usage': 772179, 'timestamp': 1714357867086}, {'usage': 776767, 'timestamp': 1714357868091}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 113.53817348328661, involved_nodes: 2, current_cpu_usage_rate: 56.76908674164331, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:31:09] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2178844, 'timestamp': 1714357859720}, {'usage': 2178844, 'timestamp': 1714357860807}, {'usage': 2189417, 'timestamp': 1714357861812}, {'usage': 2216624, 'timestamp': 1714357862816}, {'usage': 2243969, 'timestamp': 1714357863821}, {'usage': 2275931, 'timestamp': 1714357864825}, {'usage': 2301427, 'timestamp': 1714357865829}, {'usage': 2339746, 'timestamp': 1714357867014}, {'usage': 2375407, 'timestamp': 1714357868223}, {'usage': 2397653, 'timestamp': 1714357869397}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 709648, 'timestamp': 1714357860049}, {'usage': 710502, 'timestamp': 1714357861054}, {'usage': 722610, 'timestamp': 1714357862060}, {'usage': 731878, 'timestamp': 1714357863064}, {'usage': 743029, 'timestamp': 1714357864069}, {'usage': 762770, 'timestamp': 1714357865076}, {'usage': 768323, 'timestamp': 1714357866080}, {'usage': 772179, 'timestamp': 1714357867086}, {'usage': 776767, 'timestamp': 1714357868091}, {'usage': 778894, 'timestamp': 1714357869095}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 70.22472857010345, involved_nodes: 2, current_cpu_usage_rate: 35.112364285051726, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:31:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:17] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:17] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:17] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 1728304, 'timestamp': 1714357868422}, {'usage': 1742274, 'timestamp': 1714357869427}, {'usage': 1746579, 'timestamp': 1714357870433}, {'usage': 1746579, 'timestamp': 1714357871438}, {'usage': 1746579, 'timestamp': 1714357872443}, {'usage': 1755210, 'timestamp': 1714357873535}, {'usage': 1787426, 'timestamp': 1714357874539}, {'usage': 1815450, 'timestamp': 1714357875544}, {'usage': 1848116, 'timestamp': 1714357876551}, {'usage': 1871180, 'timestamp': 1714357877555}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 76.57370517928287, involved_nodes: 1, current_cpu_usage_rate: 76.57370517928287, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:18] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:19] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2397653, 'timestamp': 1714357869397}, {'usage': 2412103, 'timestamp': 1714357870572}, {'usage': 2412377, 'timestamp': 1714357871576}, {'usage': 2412671, 'timestamp': 1714357872581}, {'usage': 2426399, 'timestamp': 1714357873586}, {'usage': 2455059, 'timestamp': 1714357874591}, {'usage': 2483286, 'timestamp': 1714357875595}, {'usage': 2520399, 'timestamp': 1714357876681}, {'usage': 2545651, 'timestamp': 1714357877686}, {'usage': 2580310, 'timestamp': 1714357878859}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 778894, 'timestamp': 1714357869095}, {'usage': 781686, 'timestamp': 1714357870100}, {'usage': 781686, 'timestamp': 1714357871105}, {'usage': 782190, 'timestamp': 1714357872110}, {'usage': 782368, 'timestamp': 1714357873114}, {'usage': 810073, 'timestamp': 1714357874185}, {'usage': 835898, 'timestamp': 1714357875190}, {'usage': 845539, 'timestamp': 1714357876195}, {'usage': 864619, 'timestamp': 1714357877200}, {'usage': 880689, 'timestamp': 1714357878463}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 140.90329456854172, involved_nodes: 2, current_cpu_usage_rate: 70.45164728427086, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1766110, 'timestamp': 1714357870097}, {'usage': 1768125, 'timestamp': 1714357871102}, {'usage': 1769387, 'timestamp': 1714357872106}, {'usage': 1771756, 'timestamp': 1714357873111}, {'usage': 1801897, 'timestamp': 1714357874181}, {'usage': 1830352, 'timestamp': 1714357875187}, {'usage': 1860034, 'timestamp': 1714357876192}, {'usage': 1884950, 'timestamp': 1714357877197}, {'usage': 1898901, 'timestamp': 1714357878202}, {'usage': 1912473, 'timestamp': 1714357879465}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 35.81947743467933, involved_nodes: 1, current_cpu_usage_rate: 35.81947743467933, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:20] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 1746579, 'timestamp': 1714357871438}, {'usage': 1746579, 'timestamp': 1714357872443}, {'usage': 1755210, 'timestamp': 1714357873535}, {'usage': 1787426, 'timestamp': 1714357874539}, {'usage': 1815450, 'timestamp': 1714357875544}, {'usage': 1848116, 'timestamp': 1714357876551}, {'usage': 1871180, 'timestamp': 1714357877555}, {'usage': 1884065, 'timestamp': 1714357878611}, {'usage': 1899839, 'timestamp': 1714357879670}, {'usage': 1910906, 'timestamp': 1714357880674}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 36.743027888446214, involved_nodes: 1, current_cpu_usage_rate: 36.743027888446214, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:21] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2412377, 'timestamp': 1714357871576}, {'usage': 2412671, 'timestamp': 1714357872581}, {'usage': 2426399, 'timestamp': 1714357873586}, {'usage': 2455059, 'timestamp': 1714357874591}, {'usage': 2483286, 'timestamp': 1714357875595}, {'usage': 2520399, 'timestamp': 1714357876681}, {'usage': 2545651, 'timestamp': 1714357877686}, {'usage': 2580310, 'timestamp': 1714357878859}, {'usage': 2616556, 'timestamp': 1714357880034}, {'usage': 2649413, 'timestamp': 1714357881208}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 782190, 'timestamp': 1714357872110}, {'usage': 782368, 'timestamp': 1714357873114}, {'usage': 810073, 'timestamp': 1714357874185}, {'usage': 835898, 'timestamp': 1714357875190}, {'usage': 845539, 'timestamp': 1714357876195}, {'usage': 864619, 'timestamp': 1714357877200}, {'usage': 880689, 'timestamp': 1714357878463}, {'usage': 883497, 'timestamp': 1714357879468}, {'usage': 887484, 'timestamp': 1714357880473}, {'usage': 891344, 'timestamp': 1714357881478}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 106.09339729518223, involved_nodes: 2, current_cpu_usage_rate: 53.046698647591114, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:22] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2412671, 'timestamp': 1714357872581}, {'usage': 2426399, 'timestamp': 1714357873586}, {'usage': 2455059, 'timestamp': 1714357874591}, {'usage': 2483286, 'timestamp': 1714357875595}, {'usage': 2520399, 'timestamp': 1714357876681}, {'usage': 2545651, 'timestamp': 1714357877686}, {'usage': 2580310, 'timestamp': 1714357878859}, {'usage': 2616556, 'timestamp': 1714357880034}, {'usage': 2649413, 'timestamp': 1714357881208}, {'usage': 2668100, 'timestamp': 1714357882382}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 782368, 'timestamp': 1714357873114}, {'usage': 810073, 'timestamp': 1714357874185}, {'usage': 835898, 'timestamp': 1714357875190}, {'usage': 845539, 'timestamp': 1714357876195}, {'usage': 864619, 'timestamp': 1714357877200}, {'usage': 880689, 'timestamp': 1714357878463}, {'usage': 883497, 'timestamp': 1714357879468}, {'usage': 887484, 'timestamp': 1714357880473}, {'usage': 891344, 'timestamp': 1714357881478}, {'usage': 892358, 'timestamp': 1714357882484}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 56.417762589708765, involved_nodes: 2, current_cpu_usage_rate: 28.208881294854383, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:31:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:27] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:31:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:30] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:30] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2649413, 'timestamp': 1714357881208}, {'usage': 2668100, 'timestamp': 1714357882382}, {'usage': 2670624, 'timestamp': 1714357883556}, {'usage': 2670624, 'timestamp': 1714357884561}, {'usage': 2671847, 'timestamp': 1714357885565}, {'usage': 2705764, 'timestamp': 1714357886569}, {'usage': 2734881, 'timestamp': 1714357887574}, {'usage': 2759407, 'timestamp': 1714357888578}, {'usage': 2788041, 'timestamp': 1714357889583}, {'usage': 2817253, 'timestamp': 1714357890587}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 891344, 'timestamp': 1714357881478}, {'usage': 892358, 'timestamp': 1714357882484}, {'usage': 893451, 'timestamp': 1714357883488}, {'usage': 894334, 'timestamp': 1714357884493}, {'usage': 895922, 'timestamp': 1714357885497}, {'usage': 913255, 'timestamp': 1714357886502}, {'usage': 941557, 'timestamp': 1714357887507}, {'usage': 960471, 'timestamp': 1714357888511}, {'usage': 984605, 'timestamp': 1714357889581}, {'usage': 995677, 'timestamp': 1714357890586}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 133.70844317588683, involved_nodes: 2, current_cpu_usage_rate: 66.85422158794341, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:31] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 1930769, 'timestamp': 1714357882682}, {'usage': 1930769, 'timestamp': 1714357883686}, {'usage': 1930993, 'timestamp': 1714357884691}, {'usage': 1931179, 'timestamp': 1714357885695}, {'usage': 1965573, 'timestamp': 1714357886700}, {'usage': 1995479, 'timestamp': 1714357887706}, {'usage': 2027266, 'timestamp': 1714357888790}, {'usage': 2050024, 'timestamp': 1714357889794}, {'usage': 2069737, 'timestamp': 1714357890799}, {'usage': 2088626, 'timestamp': 1714357891861}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 59.28750784682989, involved_nodes: 1, current_cpu_usage_rate: 59.28750784682989, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:32] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:33] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2670624, 'timestamp': 1714357883556}, {'usage': 2670624, 'timestamp': 1714357884561}, {'usage': 2671847, 'timestamp': 1714357885565}, {'usage': 2705764, 'timestamp': 1714357886569}, {'usage': 2734881, 'timestamp': 1714357887574}, {'usage': 2759407, 'timestamp': 1714357888578}, {'usage': 2788041, 'timestamp': 1714357889583}, {'usage': 2817253, 'timestamp': 1714357890587}, {'usage': 2850494, 'timestamp': 1714357891767}, {'usage': 2887044, 'timestamp': 1714357893027}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 893451, 'timestamp': 1714357883488}, {'usage': 894334, 'timestamp': 1714357884493}, {'usage': 895922, 'timestamp': 1714357885497}, {'usage': 913255, 'timestamp': 1714357886502}, {'usage': 941557, 'timestamp': 1714357887507}, {'usage': 960471, 'timestamp': 1714357888511}, {'usage': 984605, 'timestamp': 1714357889581}, {'usage': 995677, 'timestamp': 1714357890586}, {'usage': 1000394, 'timestamp': 1714357891591}, {'usage': 1006306, 'timestamp': 1714357892597}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 116.28225356853588, involved_nodes: 2, current_cpu_usage_rate: 58.14112678426794, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:34] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2670624, 'timestamp': 1714357884561}, {'usage': 2671847, 'timestamp': 1714357885565}, {'usage': 2705764, 'timestamp': 1714357886569}, {'usage': 2734881, 'timestamp': 1714357887574}, {'usage': 2759407, 'timestamp': 1714357888578}, {'usage': 2788041, 'timestamp': 1714357889583}, {'usage': 2817253, 'timestamp': 1714357890587}, {'usage': 2850494, 'timestamp': 1714357891767}, {'usage': 2887044, 'timestamp': 1714357893027}, {'usage': 2919325, 'timestamp': 1714357894201}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 895922, 'timestamp': 1714357885497}, {'usage': 913255, 'timestamp': 1714357886502}, {'usage': 941557, 'timestamp': 1714357887507}, {'usage': 960471, 'timestamp': 1714357888511}, {'usage': 984605, 'timestamp': 1714357889581}, {'usage': 995677, 'timestamp': 1714357890586}, {'usage': 1000394, 'timestamp': 1714357891591}, {'usage': 1006306, 'timestamp': 1714357892597}, {'usage': 1010906, 'timestamp': 1714357893601}, {'usage': 1015130, 'timestamp': 1714357894606}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 105.66525973200437, involved_nodes: 2, current_cpu_usage_rate: 52.832629866002186, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:35] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2671847, 'timestamp': 1714357885565}, {'usage': 2705764, 'timestamp': 1714357886569}, {'usage': 2734881, 'timestamp': 1714357887574}, {'usage': 2759407, 'timestamp': 1714357888578}, {'usage': 2788041, 'timestamp': 1714357889583}, {'usage': 2817253, 'timestamp': 1714357890587}, {'usage': 2850494, 'timestamp': 1714357891767}, {'usage': 2887044, 'timestamp': 1714357893027}, {'usage': 2919325, 'timestamp': 1714357894201}, {'usage': 2931117, 'timestamp': 1714357895374}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 913255, 'timestamp': 1714357886502}, {'usage': 941557, 'timestamp': 1714357887507}, {'usage': 960471, 'timestamp': 1714357888511}, {'usage': 984605, 'timestamp': 1714357889581}, {'usage': 995677, 'timestamp': 1714357890586}, {'usage': 1000394, 'timestamp': 1714357891591}, {'usage': 1006306, 'timestamp': 1714357892597}, {'usage': 1010906, 'timestamp': 1714357893601}, {'usage': 1015130, 'timestamp': 1714357894606}, {'usage': 1016117, 'timestamp': 1714357895610}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 36.78641218020784, involved_nodes: 2, current_cpu_usage_rate: 18.39320609010392, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:31:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:42] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:42] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2887044, 'timestamp': 1714357893027}, {'usage': 2919325, 'timestamp': 1714357894201}, {'usage': 2931117, 'timestamp': 1714357895374}, {'usage': 2931423, 'timestamp': 1714357896549}, {'usage': 2932599, 'timestamp': 1714357897554}, {'usage': 2952235, 'timestamp': 1714357898559}, {'usage': 2980200, 'timestamp': 1714357899563}, {'usage': 3011684, 'timestamp': 1714357900568}, {'usage': 3038581, 'timestamp': 1714357901572}, {'usage': 3068715, 'timestamp': 1714357902577}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1010906, 'timestamp': 1714357893601}, {'usage': 1015130, 'timestamp': 1714357894606}, {'usage': 1016117, 'timestamp': 1714357895610}, {'usage': 1016722, 'timestamp': 1714357896615}, {'usage': 1017251, 'timestamp': 1714357897620}, {'usage': 1023420, 'timestamp': 1714357898625}, {'usage': 1040361, 'timestamp': 1714357899630}, {'usage': 1051613, 'timestamp': 1714357900634}, {'usage': 1057089, 'timestamp': 1714357901639}, {'usage': 1080063, 'timestamp': 1714357902899}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 160.7247097844113, involved_nodes: 2, current_cpu_usage_rate: 80.36235489220564, target_cpu_utilization: 80
+ERROR:root:Scale out [user-timeline-service] replicas: 3
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:44] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:31:44] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2099113, 'timestamp': 1714357894603}, {'usage': 2103977, 'timestamp': 1714357895607}, {'usage': 2104539, 'timestamp': 1714357896612}, {'usage': 2108830, 'timestamp': 1714357897617}, {'usage': 2131759, 'timestamp': 1714357898621}, {'usage': 2161115, 'timestamp': 1714357899626}, {'usage': 2188325, 'timestamp': 1714357900631}, {'usage': 2217716, 'timestamp': 1714357901636}, {'usage': 2238583, 'timestamp': 1714357902640}, {'usage': 2261878, 'timestamp': 1714357903901}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 61.57811260904044, involved_nodes: 1, current_cpu_usage_rate: 61.57811260904044, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:45] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 2123769, 'timestamp': 1714357895882}, {'usage': 2124096, 'timestamp': 1714357896887}, {'usage': 2124096, 'timestamp': 1714357897891}, {'usage': 2150411, 'timestamp': 1714357898896}, {'usage': 2185084, 'timestamp': 1714357899901}, {'usage': 2218221, 'timestamp': 1714357900905}, {'usage': 2244152, 'timestamp': 1714357901909}, {'usage': 2274871, 'timestamp': 1714357902914}, {'usage': 2291705, 'timestamp': 1714357904107}, {'usage': 2312585, 'timestamp': 1714357905165}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 65.78449905482042, involved_nodes: 1, current_cpu_usage_rate: 65.78449905482042, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:47] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1682576, 'timestamp': 1714357897890}, {'usage': 1690848, 'timestamp': 1714357898895}, {'usage': 1718176, 'timestamp': 1714357899899}, {'usage': 1747053, 'timestamp': 1714357900904}, {'usage': 1771583, 'timestamp': 1714357901908}, {'usage': 1798174, 'timestamp': 1714357902913}, {'usage': 1813685, 'timestamp': 1714357904052}, {'usage': 1831250, 'timestamp': 1714357905163}, {'usage': 1836270, 'timestamp': 1714357906220}, {'usage': 1842969, 'timestamp': 1714357907225}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1711554, 'timestamp': 1714357897957}, {'usage': 1737332, 'timestamp': 1714357898960}, {'usage': 1753031, 'timestamp': 1714357899962}, {'usage': 1757558, 'timestamp': 1714357900965}, {'usage': 1772035, 'timestamp': 1714357901968}, {'usage': 1789330, 'timestamp': 1714357902970}, {'usage': 1792878, 'timestamp': 1714357904091}, {'usage': 1801730, 'timestamp': 1714357905094}, {'usage': 1805441, 'timestamp': 1714357906098}, {'usage': 1805441, 'timestamp': 1714357907100}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 22.218905472636816, involved_nodes: 2, current_cpu_usage_rate: 11.109452736318408, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:54] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:54] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'post-storage-service', 'cpu_request': 30, 'usages': [{'usage': 2312585, 'timestamp': 1714357905165}, {'usage': 2321155, 'timestamp': 1714357906222}, {'usage': 2327057, 'timestamp': 1714357907226}, {'usage': 2328261, 'timestamp': 1714357908231}, {'usage': 2328261, 'timestamp': 1714357909235}, {'usage': 2328261, 'timestamp': 1714357910240}, {'usage': 2356913, 'timestamp': 1714357911244}, {'usage': 2387045, 'timestamp': 1714357912249}, {'usage': 2416299, 'timestamp': 1714357913255}, {'usage': 2451002, 'timestamp': 1714357914260}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: post-storage-service, usage_rate: 115.10116086235489, involved_nodes: 1, current_cpu_usage_rate: 115.10116086235489, target_cpu_utilization: 80
+ERROR:root:Scale out [post-storage-service] replicas: 2
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:31:55] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:31:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:55] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:57] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1842969, 'timestamp': 1714357907225}, {'usage': 1843329, 'timestamp': 1714357908229}, {'usage': 1843329, 'timestamp': 1714357909234}, {'usage': 1843878, 'timestamp': 1714357910239}, {'usage': 1874201, 'timestamp': 1714357911243}, {'usage': 1893756, 'timestamp': 1714357912247}, {'usage': 1911576, 'timestamp': 1714357913254}, {'usage': 1934057, 'timestamp': 1714357914259}, {'usage': 1966556, 'timestamp': 1714357915316}, {'usage': 1983821, 'timestamp': 1714357916423}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1805639, 'timestamp': 1714357908104}, {'usage': 1806141, 'timestamp': 1714357909107}, {'usage': 1806141, 'timestamp': 1714357910110}, {'usage': 1817600, 'timestamp': 1714357911112}, {'usage': 1841994, 'timestamp': 1714357912115}, {'usage': 1850540, 'timestamp': 1714357913118}, {'usage': 1877800, 'timestamp': 1714357914121}, {'usage': 1883398, 'timestamp': 1714357915123}, {'usage': 1893944, 'timestamp': 1714357916128}, {'usage': 1894521, 'timestamp': 1714357917130}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 53.90684755150945, involved_nodes: 2, current_cpu_usage_rate: 26.953423775754725, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:31:57] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2296848, 'timestamp': 1714357909264}, {'usage': 2302345, 'timestamp': 1714357910269}, {'usage': 2331939, 'timestamp': 1714357911273}, {'usage': 2363956, 'timestamp': 1714357912278}, {'usage': 2387490, 'timestamp': 1714357913283}, {'usage': 2416138, 'timestamp': 1714357914288}, {'usage': 2433072, 'timestamp': 1714357915293}, {'usage': 2448075, 'timestamp': 1714357916555}, {'usage': 2460067, 'timestamp': 1714357917560}, {'usage': 2467389, 'timestamp': 1714357918564}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 24.309428950863214, involved_nodes: 1, current_cpu_usage_rate: 24.309428950863214, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:31:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:31:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3180868, 'timestamp': 1714357909626}, {'usage': 3201223, 'timestamp': 1714357910630}, {'usage': 3228869, 'timestamp': 1714357911635}, {'usage': 3251398, 'timestamp': 1714357912639}, {'usage': 3280077, 'timestamp': 1714357913644}, {'usage': 3309505, 'timestamp': 1714357914649}, {'usage': 3343197, 'timestamp': 1714357915822}, {'usage': 3379280, 'timestamp': 1714357916995}, {'usage': 3413318, 'timestamp': 1714357918169}, {'usage': 3423614, 'timestamp': 1714357919365}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1098471, 'timestamp': 1714357910272}, {'usage': 1106813, 'timestamp': 1714357911276}, {'usage': 1126969, 'timestamp': 1714357912281}, {'usage': 1138781, 'timestamp': 1714357913286}, {'usage': 1151731, 'timestamp': 1714357914291}, {'usage': 1160475, 'timestamp': 1714357915554}, {'usage': 1167747, 'timestamp': 1714357916558}, {'usage': 1174229, 'timestamp': 1714357917563}, {'usage': 1176193, 'timestamp': 1714357918568}, {'usage': 1179337, 'timestamp': 1714357919573}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 86458, 'timestamp': 1714357919226}, {'usage': 86458, 'timestamp': 1714357920231}], 'metric_path': ''}
+ERROR:root:2
+ERROR:root:deployment: user-timeline-service, usage_rate: 39.12351287043045, involved_nodes: 3, current_cpu_usage_rate: 13.04117095681015, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:03] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:07] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:07] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2010811, 'timestamp': 1714357918485}, {'usage': 2014333, 'timestamp': 1714357919600}, {'usage': 2017363, 'timestamp': 1714357920605}, {'usage': 2017829, 'timestamp': 1714357921609}, {'usage': 2018566, 'timestamp': 1714357922613}, {'usage': 2052712, 'timestamp': 1714357923618}, {'usage': 2082615, 'timestamp': 1714357924622}, {'usage': 2111724, 'timestamp': 1714357925627}, {'usage': 2126275, 'timestamp': 1714357926632}, {'usage': 2155642, 'timestamp': 1714357927636}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 1902231, 'timestamp': 1714357919224}, {'usage': 1902231, 'timestamp': 1714357920229}, {'usage': 1902488, 'timestamp': 1714357921233}, {'usage': 1902488, 'timestamp': 1714357922237}, {'usage': 1906044, 'timestamp': 1714357923241}, {'usage': 1931983, 'timestamp': 1714357924244}, {'usage': 1951540, 'timestamp': 1714357925248}, {'usage': 1958131, 'timestamp': 1714357926252}, {'usage': 1966225, 'timestamp': 1714357927256}, {'usage': 1969131, 'timestamp': 1714357928260}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 107.14807436918991, involved_nodes: 2, current_cpu_usage_rate: 53.57403718459496, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:09] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3423614, 'timestamp': 1714357919365}, {'usage': 3431629, 'timestamp': 1714357920540}, {'usage': 3432352, 'timestamp': 1714357921544}, {'usage': 3432868, 'timestamp': 1714357922548}, {'usage': 3462799, 'timestamp': 1714357923552}, {'usage': 3493572, 'timestamp': 1714357924556}, {'usage': 3529719, 'timestamp': 1714357925657}, {'usage': 3555357, 'timestamp': 1714357926662}, {'usage': 3582092, 'timestamp': 1714357927669}, {'usage': 3612638, 'timestamp': 1714357928845}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1179337, 'timestamp': 1714357919573}, {'usage': 1181150, 'timestamp': 1714357920642}, {'usage': 1181351, 'timestamp': 1714357921647}, {'usage': 1181862, 'timestamp': 1714357922651}, {'usage': 1193278, 'timestamp': 1714357923657}, {'usage': 1204618, 'timestamp': 1714357924661}, {'usage': 1210274, 'timestamp': 1714357925666}, {'usage': 1218325, 'timestamp': 1714357926670}, {'usage': 1224321, 'timestamp': 1714357927930}, {'usage': 1230144, 'timestamp': 1714357928936}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 86458, 'timestamp': 1714357920231}, {'usage': 86458, 'timestamp': 1714357921235}, {'usage': 87565, 'timestamp': 1714357922239}, {'usage': 91942, 'timestamp': 1714357923243}, {'usage': 101880, 'timestamp': 1714357924247}, {'usage': 110456, 'timestamp': 1714357925251}, {'usage': 123128, 'timestamp': 1714357926255}, {'usage': 128389, 'timestamp': 1714357927259}, {'usage': 136260, 'timestamp': 1714357928263}, {'usage': 139453, 'timestamp': 1714357929267}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 116.47679686038039, involved_nodes: 3, current_cpu_usage_rate: 38.82559895346013, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:10] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:32:10] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2476806, 'timestamp': 1714357920639}, {'usage': 2477798, 'timestamp': 1714357921643}, {'usage': 2482200, 'timestamp': 1714357922648}, {'usage': 2515886, 'timestamp': 1714357923653}, {'usage': 2543301, 'timestamp': 1714357924658}, {'usage': 2568236, 'timestamp': 1714357925663}, {'usage': 2595469, 'timestamp': 1714357926667}, {'usage': 2612013, 'timestamp': 1714357927672}, {'usage': 2623566, 'timestamp': 1714357928932}, {'usage': 2636457, 'timestamp': 1714357929938}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 42.713717693836976, involved_nodes: 1, current_cpu_usage_rate: 42.713717693836976, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:11] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3432352, 'timestamp': 1714357921544}, {'usage': 3432868, 'timestamp': 1714357922548}, {'usage': 3462799, 'timestamp': 1714357923552}, {'usage': 3493572, 'timestamp': 1714357924556}, {'usage': 3529719, 'timestamp': 1714357925657}, {'usage': 3555357, 'timestamp': 1714357926662}, {'usage': 3582092, 'timestamp': 1714357927669}, {'usage': 3612638, 'timestamp': 1714357928845}, {'usage': 3644009, 'timestamp': 1714357930020}, {'usage': 3663074, 'timestamp': 1714357931195}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1181351, 'timestamp': 1714357921647}, {'usage': 1181862, 'timestamp': 1714357922651}, {'usage': 1193278, 'timestamp': 1714357923657}, {'usage': 1204618, 'timestamp': 1714357924661}, {'usage': 1210274, 'timestamp': 1714357925666}, {'usage': 1218325, 'timestamp': 1714357926670}, {'usage': 1224321, 'timestamp': 1714357927930}, {'usage': 1230144, 'timestamp': 1714357928936}, {'usage': 1232221, 'timestamp': 1714357929941}, {'usage': 1233202, 'timestamp': 1714357930946}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 87565, 'timestamp': 1714357922239}, {'usage': 91942, 'timestamp': 1714357923243}, {'usage': 101880, 'timestamp': 1714357924247}, {'usage': 110456, 'timestamp': 1714357925251}, {'usage': 123128, 'timestamp': 1714357926255}, {'usage': 128389, 'timestamp': 1714357927259}, {'usage': 136260, 'timestamp': 1714357928263}, {'usage': 139453, 'timestamp': 1714357929267}, {'usage': 139453, 'timestamp': 1714357930271}, {'usage': 140156, 'timestamp': 1714357931275}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 59.67283507021982, involved_nodes: 3, current_cpu_usage_rate: 19.890945023406605, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:12] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:32:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:18] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:19] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3644009, 'timestamp': 1714357930020}, {'usage': 3663074, 'timestamp': 1714357931195}, {'usage': 3671138, 'timestamp': 1714357932370}, {'usage': 3671138, 'timestamp': 1714357933376}, {'usage': 3671138, 'timestamp': 1714357934383}, {'usage': 3689358, 'timestamp': 1714357935388}, {'usage': 3716448, 'timestamp': 1714357936394}, {'usage': 3747124, 'timestamp': 1714357937400}, {'usage': 3774077, 'timestamp': 1714357938405}, {'usage': 3807414, 'timestamp': 1714357939411}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1232221, 'timestamp': 1714357929941}, {'usage': 1233202, 'timestamp': 1714357930946}, {'usage': 1234598, 'timestamp': 1714357931950}, {'usage': 1235832, 'timestamp': 1714357932955}, {'usage': 1236218, 'timestamp': 1714357933959}, {'usage': 1236218, 'timestamp': 1714357934964}, {'usage': 1247004, 'timestamp': 1714357936036}, {'usage': 1263488, 'timestamp': 1714357937041}, {'usage': 1270501, 'timestamp': 1714357938046}, {'usage': 1281947, 'timestamp': 1714357939050}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 139453, 'timestamp': 1714357930271}, {'usage': 140156, 'timestamp': 1714357931275}, {'usage': 141267, 'timestamp': 1714357932280}, {'usage': 141816, 'timestamp': 1714357933284}, {'usage': 141816, 'timestamp': 1714357934378}, {'usage': 147321, 'timestamp': 1714357935382}, {'usage': 164258, 'timestamp': 1714357936386}, {'usage': 172048, 'timestamp': 1714357937390}, {'usage': 180584, 'timestamp': 1714357938394}, {'usage': 184040, 'timestamp': 1714357939397}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 159.9474413049889, involved_nodes: 3, current_cpu_usage_rate: 53.31581376832963, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:20] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:20] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2641785, 'timestamp': 1714357930943}, {'usage': 2647817, 'timestamp': 1714357931947}, {'usage': 2649749, 'timestamp': 1714357932952}, {'usage': 2651699, 'timestamp': 1714357933956}, {'usage': 2655781, 'timestamp': 1714357934961}, {'usage': 2689038, 'timestamp': 1714357936033}, {'usage': 2717045, 'timestamp': 1714357937038}, {'usage': 2743703, 'timestamp': 1714357938042}, {'usage': 2767144, 'timestamp': 1714357939047}, {'usage': 2782744, 'timestamp': 1714357940052}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 51.741293532338304, involved_nodes: 1, current_cpu_usage_rate: 51.741293532338304, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3671138, 'timestamp': 1714357932370}, {'usage': 3671138, 'timestamp': 1714357933376}, {'usage': 3671138, 'timestamp': 1714357934383}, {'usage': 3689358, 'timestamp': 1714357935388}, {'usage': 3716448, 'timestamp': 1714357936394}, {'usage': 3747124, 'timestamp': 1714357937400}, {'usage': 3774077, 'timestamp': 1714357938405}, {'usage': 3807414, 'timestamp': 1714357939411}, {'usage': 3841645, 'timestamp': 1714357940586}, {'usage': 3862672, 'timestamp': 1714357941850}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1234598, 'timestamp': 1714357931950}, {'usage': 1235832, 'timestamp': 1714357932955}, {'usage': 1236218, 'timestamp': 1714357933959}, {'usage': 1236218, 'timestamp': 1714357934964}, {'usage': 1247004, 'timestamp': 1714357936036}, {'usage': 1263488, 'timestamp': 1714357937041}, {'usage': 1270501, 'timestamp': 1714357938046}, {'usage': 1281947, 'timestamp': 1714357939050}, {'usage': 1285996, 'timestamp': 1714357940313}, {'usage': 1292716, 'timestamp': 1714357941318}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 141267, 'timestamp': 1714357932280}, {'usage': 141816, 'timestamp': 1714357933284}, {'usage': 141816, 'timestamp': 1714357934378}, {'usage': 147321, 'timestamp': 1714357935382}, {'usage': 164258, 'timestamp': 1714357936386}, {'usage': 172048, 'timestamp': 1714357937390}, {'usage': 180584, 'timestamp': 1714357938394}, {'usage': 184040, 'timestamp': 1714357939397}, {'usage': 190759, 'timestamp': 1714357940402}, {'usage': 194333, 'timestamp': 1714357941406}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 89.60537643493662, involved_nodes: 3, current_cpu_usage_rate: 29.86845881164554, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:22] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3671138, 'timestamp': 1714357932370}, {'usage': 3671138, 'timestamp': 1714357933376}, {'usage': 3671138, 'timestamp': 1714357934383}, {'usage': 3689358, 'timestamp': 1714357935388}, {'usage': 3716448, 'timestamp': 1714357936394}, {'usage': 3747124, 'timestamp': 1714357937400}, {'usage': 3774077, 'timestamp': 1714357938405}, {'usage': 3807414, 'timestamp': 1714357939411}, {'usage': 3841645, 'timestamp': 1714357940586}, {'usage': 3862672, 'timestamp': 1714357941850}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1235832, 'timestamp': 1714357932955}, {'usage': 1236218, 'timestamp': 1714357933959}, {'usage': 1236218, 'timestamp': 1714357934964}, {'usage': 1247004, 'timestamp': 1714357936036}, {'usage': 1263488, 'timestamp': 1714357937041}, {'usage': 1270501, 'timestamp': 1714357938046}, {'usage': 1281947, 'timestamp': 1714357939050}, {'usage': 1285996, 'timestamp': 1714357940313}, {'usage': 1292716, 'timestamp': 1714357941318}, {'usage': 1296092, 'timestamp': 1714357942323}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 141816, 'timestamp': 1714357933284}, {'usage': 141816, 'timestamp': 1714357934378}, {'usage': 147321, 'timestamp': 1714357935382}, {'usage': 164258, 'timestamp': 1714357936386}, {'usage': 172048, 'timestamp': 1714357937390}, {'usage': 180584, 'timestamp': 1714357938394}, {'usage': 184040, 'timestamp': 1714357939397}, {'usage': 190759, 'timestamp': 1714357940402}, {'usage': 194333, 'timestamp': 1714357941406}, {'usage': 195319, 'timestamp': 1714357942410}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 69.92186834457831, involved_nodes: 3, current_cpu_usage_rate: 23.307289448192773, target_cpu_utilization: 80
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:32:25] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:32:30] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:31] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:32] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3862672, 'timestamp': 1714357941850}, {'usage': 3871848, 'timestamp': 1714357943058}, {'usage': 3878446, 'timestamp': 1714357944065}, {'usage': 3885585, 'timestamp': 1714357945071}, {'usage': 3885824, 'timestamp': 1714357946076}, {'usage': 3886631, 'timestamp': 1714357947083}, {'usage': 3925208, 'timestamp': 1714357948089}, {'usage': 3954075, 'timestamp': 1714357949096}, {'usage': 3983965, 'timestamp': 1714357950102}, {'usage': 4013511, 'timestamp': 1714357951108}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1296092, 'timestamp': 1714357942323}, {'usage': 1296092, 'timestamp': 1714357943328}, {'usage': 1296604, 'timestamp': 1714357944333}, {'usage': 1296984, 'timestamp': 1714357945337}, {'usage': 1297421, 'timestamp': 1714357946343}, {'usage': 1303333, 'timestamp': 1714357947348}, {'usage': 1314453, 'timestamp': 1714357948353}, {'usage': 1324626, 'timestamp': 1714357949358}, {'usage': 1333124, 'timestamp': 1714357950363}, {'usage': 1337734, 'timestamp': 1714357951861}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 195319, 'timestamp': 1714357942410}, {'usage': 196310, 'timestamp': 1714357943414}, {'usage': 196310, 'timestamp': 1714357944418}, {'usage': 196310, 'timestamp': 1714357945422}, {'usage': 196789, 'timestamp': 1714357946425}, {'usage': 208609, 'timestamp': 1714357947429}, {'usage': 215973, 'timestamp': 1714357948433}, {'usage': 231565, 'timestamp': 1714357949525}, {'usage': 241945, 'timestamp': 1714357950528}, {'usage': 253330, 'timestamp': 1714357951533}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 145.9185870106398, involved_nodes: 3, current_cpu_usage_rate: 48.639529003546606, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:32] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:33] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'home-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 2807054, 'timestamp': 1714357943325}, {'usage': 2811019, 'timestamp': 1714357944329}, {'usage': 2812267, 'timestamp': 1714357945334}, {'usage': 2814955, 'timestamp': 1714357946339}, {'usage': 2837004, 'timestamp': 1714357947344}, {'usage': 2861544, 'timestamp': 1714357948350}, {'usage': 2887246, 'timestamp': 1714357949355}, {'usage': 2915950, 'timestamp': 1714357950360}, {'usage': 2945308, 'timestamp': 1714357951429}, {'usage': 2980031, 'timestamp': 1714357952863}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: home-timeline-service, usage_rate: 80.71362157136215, involved_nodes: 1, current_cpu_usage_rate: 80.71362157136215, target_cpu_utilization: 80
+ERROR:root:Scale out [home-timeline-service] replicas: 2
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:34] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2336003, 'timestamp': 1714357944852}, {'usage': 2336003, 'timestamp': 1714357945857}, {'usage': 2336723, 'timestamp': 1714357946862}, {'usage': 2366155, 'timestamp': 1714357947866}, {'usage': 2397652, 'timestamp': 1714357948871}, {'usage': 2426348, 'timestamp': 1714357949961}, {'usage': 2454551, 'timestamp': 1714357950966}, {'usage': 2485041, 'timestamp': 1714357951971}, {'usage': 2505019, 'timestamp': 1714357953035}, {'usage': 2507457, 'timestamp': 1714357954092}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2086565, 'timestamp': 1714357944416}, {'usage': 2086565, 'timestamp': 1714357945419}, {'usage': 2087055, 'timestamp': 1714357946423}, {'usage': 2100843, 'timestamp': 1714357947427}, {'usage': 2130631, 'timestamp': 1714357948430}, {'usage': 2141227, 'timestamp': 1714357949522}, {'usage': 2150946, 'timestamp': 1714357950526}, {'usage': 2172619, 'timestamp': 1714357951530}, {'usage': 2180306, 'timestamp': 1714357952535}, {'usage': 2183582, 'timestamp': 1714357953540}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 18.5540980057141, involved_nodes: 2, current_cpu_usage_rate: 9.27704900285705, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:34] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 3885585, 'timestamp': 1714357945071}, {'usage': 3885824, 'timestamp': 1714357946076}, {'usage': 3886631, 'timestamp': 1714357947083}, {'usage': 3925208, 'timestamp': 1714357948089}, {'usage': 3954075, 'timestamp': 1714357949096}, {'usage': 3983965, 'timestamp': 1714357950102}, {'usage': 4013511, 'timestamp': 1714357951108}, {'usage': 4046327, 'timestamp': 1714357952283}, {'usage': 4079242, 'timestamp': 1714357953458}, {'usage': 4107624, 'timestamp': 1714357954635}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1296984, 'timestamp': 1714357945337}, {'usage': 1297421, 'timestamp': 1714357946343}, {'usage': 1303333, 'timestamp': 1714357947348}, {'usage': 1314453, 'timestamp': 1714357948353}, {'usage': 1324626, 'timestamp': 1714357949358}, {'usage': 1333124, 'timestamp': 1714357950363}, {'usage': 1337734, 'timestamp': 1714357951861}, {'usage': 1341872, 'timestamp': 1714357953122}, {'usage': 1344889, 'timestamp': 1714357954127}, {'usage': 1347119, 'timestamp': 1714357955132}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 196310, 'timestamp': 1714357945422}, {'usage': 196789, 'timestamp': 1714357946425}, {'usage': 208609, 'timestamp': 1714357947429}, {'usage': 215973, 'timestamp': 1714357948433}, {'usage': 231565, 'timestamp': 1714357949525}, {'usage': 241945, 'timestamp': 1714357950528}, {'usage': 253330, 'timestamp': 1714357951533}, {'usage': 258716, 'timestamp': 1714357952537}, {'usage': 261768, 'timestamp': 1714357953542}, {'usage': 263136, 'timestamp': 1714357954547}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 92.31316090180646, involved_nodes: 3, current_cpu_usage_rate: 30.771053633935484, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:32:40] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:43] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:43] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:44] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4107624, 'timestamp': 1714357954635}, {'usage': 4116847, 'timestamp': 1714357955811}, {'usage': 4120849, 'timestamp': 1714357956818}, {'usage': 4121436, 'timestamp': 1714357957916}, {'usage': 4121742, 'timestamp': 1714357958922}, {'usage': 4143569, 'timestamp': 1714357959929}, {'usage': 4172418, 'timestamp': 1714357960935}, {'usage': 4202016, 'timestamp': 1714357961941}, {'usage': 4233211, 'timestamp': 1714357962948}, {'usage': 4259921, 'timestamp': 1714357963955}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1347119, 'timestamp': 1714357955132}, {'usage': 1348228, 'timestamp': 1714357956137}, {'usage': 1348456, 'timestamp': 1714357957142}, {'usage': 1348651, 'timestamp': 1714357958146}, {'usage': 1349040, 'timestamp': 1714357959151}, {'usage': 1358476, 'timestamp': 1714357960156}, {'usage': 1369457, 'timestamp': 1714357961161}, {'usage': 1381595, 'timestamp': 1714357962166}, {'usage': 1393063, 'timestamp': 1714357963171}, {'usage': 1397883, 'timestamp': 1714357964175}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 263136, 'timestamp': 1714357954547}, {'usage': 263136, 'timestamp': 1714357955551}, {'usage': 263136, 'timestamp': 1714357956555}, {'usage': 263597, 'timestamp': 1714357957559}, {'usage': 264333, 'timestamp': 1714357958562}, {'usage': 273671, 'timestamp': 1714357959566}, {'usage': 282378, 'timestamp': 1714357960570}, {'usage': 296494, 'timestamp': 1714357961574}, {'usage': 316425, 'timestamp': 1714357962578}, {'usage': 326051, 'timestamp': 1714357963582}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 136.3759196909812, involved_nodes: 3, current_cpu_usage_rate: 45.45863989699373, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:45] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:32:45] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2512454, 'timestamp': 1714357956102}, {'usage': 2512454, 'timestamp': 1714357957106}, {'usage': 2512454, 'timestamp': 1714357958111}, {'usage': 2512741, 'timestamp': 1714357959115}, {'usage': 2543059, 'timestamp': 1714357960120}, {'usage': 2567299, 'timestamp': 1714357961124}, {'usage': 2597098, 'timestamp': 1714357962129}, {'usage': 2628306, 'timestamp': 1714357963135}, {'usage': 2657429, 'timestamp': 1714357964140}, {'usage': 2689524, 'timestamp': 1714357965286}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2188264, 'timestamp': 1714357955548}, {'usage': 2188264, 'timestamp': 1714357956552}, {'usage': 2188264, 'timestamp': 1714357957556}, {'usage': 2189090, 'timestamp': 1714357958560}, {'usage': 2196822, 'timestamp': 1714357959564}, {'usage': 2227790, 'timestamp': 1714357960567}, {'usage': 2256443, 'timestamp': 1714357961571}, {'usage': 2278665, 'timestamp': 1714357962575}, {'usage': 2294909, 'timestamp': 1714357963579}, {'usage': 2299985, 'timestamp': 1714357964710}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 108.31390620973576, involved_nodes: 2, current_cpu_usage_rate: 54.15695310486788, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:46] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:46] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4120849, 'timestamp': 1714357956818}, {'usage': 4121436, 'timestamp': 1714357957916}, {'usage': 4121742, 'timestamp': 1714357958922}, {'usage': 4143569, 'timestamp': 1714357959929}, {'usage': 4172418, 'timestamp': 1714357960935}, {'usage': 4202016, 'timestamp': 1714357961941}, {'usage': 4233211, 'timestamp': 1714357962948}, {'usage': 4259921, 'timestamp': 1714357963955}, {'usage': 4289581, 'timestamp': 1714357965000}, {'usage': 4318766, 'timestamp': 1714357966175}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1348456, 'timestamp': 1714357957142}, {'usage': 1348651, 'timestamp': 1714357958146}, {'usage': 1349040, 'timestamp': 1714357959151}, {'usage': 1358476, 'timestamp': 1714357960156}, {'usage': 1369457, 'timestamp': 1714357961161}, {'usage': 1381595, 'timestamp': 1714357962166}, {'usage': 1393063, 'timestamp': 1714357963171}, {'usage': 1397883, 'timestamp': 1714357964175}, {'usage': 1403885, 'timestamp': 1714357965180}, {'usage': 1408560, 'timestamp': 1714357966185}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 263136, 'timestamp': 1714357956555}, {'usage': 263597, 'timestamp': 1714357957559}, {'usage': 264333, 'timestamp': 1714357958562}, {'usage': 273671, 'timestamp': 1714357959566}, {'usage': 282378, 'timestamp': 1714357960570}, {'usage': 296494, 'timestamp': 1714357961574}, {'usage': 316425, 'timestamp': 1714357962578}, {'usage': 326051, 'timestamp': 1714357963582}, {'usage': 335296, 'timestamp': 1714357964712}, {'usage': 337065, 'timestamp': 1714357965717}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 104.16746056949296, involved_nodes: 3, current_cpu_usage_rate: 34.72248685649765, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:47] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:47] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2512454, 'timestamp': 1714357958111}, {'usage': 2512741, 'timestamp': 1714357959115}, {'usage': 2543059, 'timestamp': 1714357960120}, {'usage': 2567299, 'timestamp': 1714357961124}, {'usage': 2597098, 'timestamp': 1714357962129}, {'usage': 2628306, 'timestamp': 1714357963135}, {'usage': 2657429, 'timestamp': 1714357964140}, {'usage': 2689524, 'timestamp': 1714357965286}, {'usage': 2720283, 'timestamp': 1714357966347}, {'usage': 2741845, 'timestamp': 1714357967404}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2188264, 'timestamp': 1714357957556}, {'usage': 2189090, 'timestamp': 1714357958560}, {'usage': 2196822, 'timestamp': 1714357959564}, {'usage': 2227790, 'timestamp': 1714357960567}, {'usage': 2256443, 'timestamp': 1714357961571}, {'usage': 2278665, 'timestamp': 1714357962575}, {'usage': 2294909, 'timestamp': 1714357963579}, {'usage': 2299985, 'timestamp': 1714357964710}, {'usage': 2307088, 'timestamp': 1714357965714}, {'usage': 2309247, 'timestamp': 1714357966719}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 75.15833949144218, involved_nodes: 2, current_cpu_usage_rate: 37.57916974572109, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4121742, 'timestamp': 1714357958922}, {'usage': 4143569, 'timestamp': 1714357959929}, {'usage': 4172418, 'timestamp': 1714357960935}, {'usage': 4202016, 'timestamp': 1714357961941}, {'usage': 4233211, 'timestamp': 1714357962948}, {'usage': 4259921, 'timestamp': 1714357963955}, {'usage': 4289581, 'timestamp': 1714357965000}, {'usage': 4318766, 'timestamp': 1714357966175}, {'usage': 4332661, 'timestamp': 1714357967351}, {'usage': 4342122, 'timestamp': 1714357968526}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1349040, 'timestamp': 1714357959151}, {'usage': 1358476, 'timestamp': 1714357960156}, {'usage': 1369457, 'timestamp': 1714357961161}, {'usage': 1381595, 'timestamp': 1714357962166}, {'usage': 1393063, 'timestamp': 1714357963171}, {'usage': 1397883, 'timestamp': 1714357964175}, {'usage': 1403885, 'timestamp': 1714357965180}, {'usage': 1408560, 'timestamp': 1714357966185}, {'usage': 1413139, 'timestamp': 1714357967277}, {'usage': 1415245, 'timestamp': 1714357968282}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 273671, 'timestamp': 1714357959566}, {'usage': 282378, 'timestamp': 1714357960570}, {'usage': 296494, 'timestamp': 1714357961574}, {'usage': 316425, 'timestamp': 1714357962578}, {'usage': 326051, 'timestamp': 1714357963582}, {'usage': 335296, 'timestamp': 1714357964712}, {'usage': 337065, 'timestamp': 1714357965717}, {'usage': 339810, 'timestamp': 1714357966721}, {'usage': 342362, 'timestamp': 1714357967725}, {'usage': 343960, 'timestamp': 1714357968729}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 39.1302358260406, involved_nodes: 3, current_cpu_usage_rate: 13.043411942013533, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:32:49] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:55] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2720283, 'timestamp': 1714357966347}, {'usage': 2741845, 'timestamp': 1714357967404}, {'usage': 2749697, 'timestamp': 1714357968460}, {'usage': 2753670, 'timestamp': 1714357969465}, {'usage': 2753890, 'timestamp': 1714357970469}, {'usage': 2754354, 'timestamp': 1714357971473}, {'usage': 2781052, 'timestamp': 1714357972478}, {'usage': 2811553, 'timestamp': 1714357973483}, {'usage': 2842148, 'timestamp': 1714357974488}, {'usage': 2874642, 'timestamp': 1714357975493}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2309247, 'timestamp': 1714357966719}, {'usage': 2311436, 'timestamp': 1714357967723}, {'usage': 2313793, 'timestamp': 1714357968727}, {'usage': 2313793, 'timestamp': 1714357969731}, {'usage': 2313981, 'timestamp': 1714357970735}, {'usage': 2314674, 'timestamp': 1714357971739}, {'usage': 2345366, 'timestamp': 1714357972742}, {'usage': 2368569, 'timestamp': 1714357973746}, {'usage': 2378527, 'timestamp': 1714357974750}, {'usage': 2381435, 'timestamp': 1714357975754}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 117.429175503624, involved_nodes: 2, current_cpu_usage_rate: 58.714587751812, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:32:56] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:56] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:56] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2741845, 'timestamp': 1714357967404}, {'usage': 2749697, 'timestamp': 1714357968460}, {'usage': 2753670, 'timestamp': 1714357969465}, {'usage': 2753890, 'timestamp': 1714357970469}, {'usage': 2754354, 'timestamp': 1714357971473}, {'usage': 2781052, 'timestamp': 1714357972478}, {'usage': 2811553, 'timestamp': 1714357973483}, {'usage': 2842148, 'timestamp': 1714357974488}, {'usage': 2874642, 'timestamp': 1714357975493}, {'usage': 2902122, 'timestamp': 1714357976551}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2311436, 'timestamp': 1714357967723}, {'usage': 2313793, 'timestamp': 1714357968727}, {'usage': 2313793, 'timestamp': 1714357969731}, {'usage': 2313981, 'timestamp': 1714357970735}, {'usage': 2314674, 'timestamp': 1714357971739}, {'usage': 2345366, 'timestamp': 1714357972742}, {'usage': 2368569, 'timestamp': 1714357973746}, {'usage': 2378527, 'timestamp': 1714357974750}, {'usage': 2381435, 'timestamp': 1714357975754}, {'usage': 2383757, 'timestamp': 1714357976759}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 94.27994244279546, involved_nodes: 2, current_cpu_usage_rate: 47.13997122139773, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:57] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4342122, 'timestamp': 1714357968526}, {'usage': 4344005, 'timestamp': 1714357969532}, {'usage': 4344005, 'timestamp': 1714357970539}, {'usage': 4344253, 'timestamp': 1714357971545}, {'usage': 4376072, 'timestamp': 1714357972551}, {'usage': 4406435, 'timestamp': 1714357973649}, {'usage': 4435431, 'timestamp': 1714357974656}, {'usage': 4463188, 'timestamp': 1714357975663}, {'usage': 4487994, 'timestamp': 1714357976669}, {'usage': 4527119, 'timestamp': 1714357977878}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1415245, 'timestamp': 1714357968282}, {'usage': 1415788, 'timestamp': 1714357969287}, {'usage': 1415962, 'timestamp': 1714357970292}, {'usage': 1416301, 'timestamp': 1714357971296}, {'usage': 1422460, 'timestamp': 1714357972301}, {'usage': 1434651, 'timestamp': 1714357973307}, {'usage': 1444424, 'timestamp': 1714357974311}, {'usage': 1449258, 'timestamp': 1714357975316}, {'usage': 1453769, 'timestamp': 1714357976320}, {'usage': 1459125, 'timestamp': 1714357977325}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 343960, 'timestamp': 1714357968729}, {'usage': 344632, 'timestamp': 1714357969733}, {'usage': 344632, 'timestamp': 1714357970737}, {'usage': 345104, 'timestamp': 1714357971741}, {'usage': 357510, 'timestamp': 1714357972744}, {'usage': 382865, 'timestamp': 1714357973749}, {'usage': 402973, 'timestamp': 1714357974753}, {'usage': 413970, 'timestamp': 1714357975757}, {'usage': 423663, 'timestamp': 1714357976761}, {'usage': 432460, 'timestamp': 1714357977765}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 154.84253724539477, involved_nodes: 3, current_cpu_usage_rate: 51.614179081798255, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:58] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:58] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:58] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2753670, 'timestamp': 1714357969465}, {'usage': 2753890, 'timestamp': 1714357970469}, {'usage': 2754354, 'timestamp': 1714357971473}, {'usage': 2781052, 'timestamp': 1714357972478}, {'usage': 2811553, 'timestamp': 1714357973483}, {'usage': 2842148, 'timestamp': 1714357974488}, {'usage': 2874642, 'timestamp': 1714357975493}, {'usage': 2902122, 'timestamp': 1714357976551}, {'usage': 2934667, 'timestamp': 1714357977608}, {'usage': 2960432, 'timestamp': 1714357978665}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2313793, 'timestamp': 1714357969731}, {'usage': 2313981, 'timestamp': 1714357970735}, {'usage': 2314674, 'timestamp': 1714357971739}, {'usage': 2345366, 'timestamp': 1714357972742}, {'usage': 2368569, 'timestamp': 1714357973746}, {'usage': 2378527, 'timestamp': 1714357974750}, {'usage': 2381435, 'timestamp': 1714357975754}, {'usage': 2383757, 'timestamp': 1714357976759}, {'usage': 2386064, 'timestamp': 1714357977762}, {'usage': 2387512, 'timestamp': 1714357978767}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 86.05462438673865, involved_nodes: 2, current_cpu_usage_rate: 43.027312193369326, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:59] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:32:59] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:32:59] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4344005, 'timestamp': 1714357969532}, {'usage': 4344005, 'timestamp': 1714357970539}, {'usage': 4344253, 'timestamp': 1714357971545}, {'usage': 4376072, 'timestamp': 1714357972551}, {'usage': 4406435, 'timestamp': 1714357973649}, {'usage': 4435431, 'timestamp': 1714357974656}, {'usage': 4463188, 'timestamp': 1714357975663}, {'usage': 4487994, 'timestamp': 1714357976669}, {'usage': 4527119, 'timestamp': 1714357977878}, {'usage': 4560021, 'timestamp': 1714357979054}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1415962, 'timestamp': 1714357970292}, {'usage': 1416301, 'timestamp': 1714357971296}, {'usage': 1422460, 'timestamp': 1714357972301}, {'usage': 1434651, 'timestamp': 1714357973307}, {'usage': 1444424, 'timestamp': 1714357974311}, {'usage': 1449258, 'timestamp': 1714357975316}, {'usage': 1453769, 'timestamp': 1714357976320}, {'usage': 1459125, 'timestamp': 1714357977325}, {'usage': 1460160, 'timestamp': 1714357978330}, {'usage': 1465011, 'timestamp': 1714357979335}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 344632, 'timestamp': 1714357970737}, {'usage': 345104, 'timestamp': 1714357971741}, {'usage': 357510, 'timestamp': 1714357972744}, {'usage': 382865, 'timestamp': 1714357973749}, {'usage': 402973, 'timestamp': 1714357974753}, {'usage': 413970, 'timestamp': 1714357975757}, {'usage': 423663, 'timestamp': 1714357976761}, {'usage': 432460, 'timestamp': 1714357977765}, {'usage': 437794, 'timestamp': 1714357978769}, {'usage': 440417, 'timestamp': 1714357979863}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 117.34126742823335, involved_nodes: 3, current_cpu_usage_rate: 39.11375580941112, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:00] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:33:00] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2754354, 'timestamp': 1714357971473}, {'usage': 2781052, 'timestamp': 1714357972478}, {'usage': 2811553, 'timestamp': 1714357973483}, {'usage': 2842148, 'timestamp': 1714357974488}, {'usage': 2874642, 'timestamp': 1714357975493}, {'usage': 2902122, 'timestamp': 1714357976551}, {'usage': 2934667, 'timestamp': 1714357977608}, {'usage': 2960432, 'timestamp': 1714357978665}, {'usage': 2967789, 'timestamp': 1714357979721}, {'usage': 2974629, 'timestamp': 1714357980882}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2314674, 'timestamp': 1714357971739}, {'usage': 2345366, 'timestamp': 1714357972742}, {'usage': 2368569, 'timestamp': 1714357973746}, {'usage': 2378527, 'timestamp': 1714357974750}, {'usage': 2381435, 'timestamp': 1714357975754}, {'usage': 2383757, 'timestamp': 1714357976759}, {'usage': 2386064, 'timestamp': 1714357977762}, {'usage': 2387512, 'timestamp': 1714357978767}, {'usage': 2396235, 'timestamp': 1714357979861}, {'usage': 2398807, 'timestamp': 1714357980866}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 28.168922827721858, involved_nodes: 2, current_cpu_usage_rate: 14.084461413860929, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4344253, 'timestamp': 1714357971545}, {'usage': 4376072, 'timestamp': 1714357972551}, {'usage': 4406435, 'timestamp': 1714357973649}, {'usage': 4435431, 'timestamp': 1714357974656}, {'usage': 4463188, 'timestamp': 1714357975663}, {'usage': 4487994, 'timestamp': 1714357976669}, {'usage': 4527119, 'timestamp': 1714357977878}, {'usage': 4560021, 'timestamp': 1714357979054}, {'usage': 4583387, 'timestamp': 1714357980197}, {'usage': 4593371, 'timestamp': 1714357981372}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1422460, 'timestamp': 1714357972301}, {'usage': 1434651, 'timestamp': 1714357973307}, {'usage': 1444424, 'timestamp': 1714357974311}, {'usage': 1449258, 'timestamp': 1714357975316}, {'usage': 1453769, 'timestamp': 1714357976320}, {'usage': 1459125, 'timestamp': 1714357977325}, {'usage': 1460160, 'timestamp': 1714357978330}, {'usage': 1465011, 'timestamp': 1714357979335}, {'usage': 1465504, 'timestamp': 1714357980340}, {'usage': 1465996, 'timestamp': 1714357981346}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 357510, 'timestamp': 1714357972744}, {'usage': 382865, 'timestamp': 1714357973749}, {'usage': 402973, 'timestamp': 1714357974753}, {'usage': 413970, 'timestamp': 1714357975757}, {'usage': 423663, 'timestamp': 1714357976761}, {'usage': 432460, 'timestamp': 1714357977765}, {'usage': 437794, 'timestamp': 1714357978769}, {'usage': 440417, 'timestamp': 1714357979863}, {'usage': 441461, 'timestamp': 1714357980868}, {'usage': 441461, 'timestamp': 1714357981873}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 29.95362294319191, involved_nodes: 3, current_cpu_usage_rate: 9.98454098106397, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:33:04] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:08] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:08] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4560021, 'timestamp': 1714357979054}, {'usage': 4583387, 'timestamp': 1714357980197}, {'usage': 4593371, 'timestamp': 1714357981372}, {'usage': 4594716, 'timestamp': 1714357982378}, {'usage': 4594716, 'timestamp': 1714357983383}, {'usage': 4611941, 'timestamp': 1714357984390}, {'usage': 4639900, 'timestamp': 1714357985396}, {'usage': 4669196, 'timestamp': 1714357986402}, {'usage': 4697817, 'timestamp': 1714357987407}, {'usage': 4726728, 'timestamp': 1714357988414}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1465011, 'timestamp': 1714357979335}, {'usage': 1465504, 'timestamp': 1714357980340}, {'usage': 1465996, 'timestamp': 1714357981346}, {'usage': 1466146, 'timestamp': 1714357982424}, {'usage': 1466702, 'timestamp': 1714357983429}, {'usage': 1470096, 'timestamp': 1714357984433}, {'usage': 1483763, 'timestamp': 1714357985438}, {'usage': 1493900, 'timestamp': 1714357986443}, {'usage': 1499633, 'timestamp': 1714357987448}, {'usage': 1503772, 'timestamp': 1714357988452}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 440417, 'timestamp': 1714357979863}, {'usage': 441461, 'timestamp': 1714357980868}, {'usage': 441461, 'timestamp': 1714357981873}, {'usage': 441739, 'timestamp': 1714357982878}, {'usage': 442716, 'timestamp': 1714357983881}, {'usage': 455394, 'timestamp': 1714357984885}, {'usage': 469189, 'timestamp': 1714357985889}, {'usage': 482317, 'timestamp': 1714357986893}, {'usage': 488807, 'timestamp': 1714357987897}, {'usage': 497128, 'timestamp': 1714357988901}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 137.06796119065612, involved_nodes: 3, current_cpu_usage_rate: 45.68932039688537, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:09] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:10] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2974629, 'timestamp': 1714357980882}, {'usage': 2974629, 'timestamp': 1714357981887}, {'usage': 2974918, 'timestamp': 1714357982891}, {'usage': 2975193, 'timestamp': 1714357983896}, {'usage': 3000926, 'timestamp': 1714357984901}, {'usage': 3030172, 'timestamp': 1714357985905}, {'usage': 3056391, 'timestamp': 1714357986912}, {'usage': 3087406, 'timestamp': 1714357987916}, {'usage': 3113620, 'timestamp': 1714357988921}, {'usage': 3141147, 'timestamp': 1714357989982}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2398807, 'timestamp': 1714357980866}, {'usage': 2398807, 'timestamp': 1714357981870}, {'usage': 2399281, 'timestamp': 1714357982875}, {'usage': 2399975, 'timestamp': 1714357983879}, {'usage': 2421594, 'timestamp': 1714357984883}, {'usage': 2441692, 'timestamp': 1714357985887}, {'usage': 2449284, 'timestamp': 1714357986891}, {'usage': 2457735, 'timestamp': 1714357987894}, {'usage': 2467180, 'timestamp': 1714357988898}, {'usage': 2478772, 'timestamp': 1714357989903}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 124.92906813716527, involved_nodes: 2, current_cpu_usage_rate: 62.46453406858264, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:11] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:33:11] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4593371, 'timestamp': 1714357981372}, {'usage': 4594716, 'timestamp': 1714357982378}, {'usage': 4594716, 'timestamp': 1714357983383}, {'usage': 4611941, 'timestamp': 1714357984390}, {'usage': 4639900, 'timestamp': 1714357985396}, {'usage': 4669196, 'timestamp': 1714357986402}, {'usage': 4697817, 'timestamp': 1714357987407}, {'usage': 4726728, 'timestamp': 1714357988414}, {'usage': 4761847, 'timestamp': 1714357989686}, {'usage': 4796162, 'timestamp': 1714357990861}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1465996, 'timestamp': 1714357981346}, {'usage': 1466146, 'timestamp': 1714357982424}, {'usage': 1466702, 'timestamp': 1714357983429}, {'usage': 1470096, 'timestamp': 1714357984433}, {'usage': 1483763, 'timestamp': 1714357985438}, {'usage': 1493900, 'timestamp': 1714357986443}, {'usage': 1499633, 'timestamp': 1714357987448}, {'usage': 1503772, 'timestamp': 1714357988452}, {'usage': 1506537, 'timestamp': 1714357989458}, {'usage': 1507795, 'timestamp': 1714357990463}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 441461, 'timestamp': 1714357981873}, {'usage': 441739, 'timestamp': 1714357982878}, {'usage': 442716, 'timestamp': 1714357983881}, {'usage': 455394, 'timestamp': 1714357984885}, {'usage': 469189, 'timestamp': 1714357985889}, {'usage': 482317, 'timestamp': 1714357986893}, {'usage': 488807, 'timestamp': 1714357987897}, {'usage': 497128, 'timestamp': 1714357988901}, {'usage': 506718, 'timestamp': 1714357989905}, {'usage': 511086, 'timestamp': 1714357990910}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 116.0075508979923, involved_nodes: 3, current_cpu_usage_rate: 38.6691836326641, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:12] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2974918, 'timestamp': 1714357982891}, {'usage': 2975193, 'timestamp': 1714357983896}, {'usage': 3000926, 'timestamp': 1714357984901}, {'usage': 3030172, 'timestamp': 1714357985905}, {'usage': 3056391, 'timestamp': 1714357986912}, {'usage': 3087406, 'timestamp': 1714357987916}, {'usage': 3113620, 'timestamp': 1714357988921}, {'usage': 3141147, 'timestamp': 1714357989982}, {'usage': 3164630, 'timestamp': 1714357991037}, {'usage': 3171790, 'timestamp': 1714357992094}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2399281, 'timestamp': 1714357982875}, {'usage': 2399975, 'timestamp': 1714357983879}, {'usage': 2421594, 'timestamp': 1714357984883}, {'usage': 2441692, 'timestamp': 1714357985887}, {'usage': 2449284, 'timestamp': 1714357986891}, {'usage': 2457735, 'timestamp': 1714357987894}, {'usage': 2467180, 'timestamp': 1714357988898}, {'usage': 2478772, 'timestamp': 1714357989903}, {'usage': 2481540, 'timestamp': 1714357990908}, {'usage': 2486676, 'timestamp': 1714357991912}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 39.63142070632638, involved_nodes: 2, current_cpu_usage_rate: 19.81571035316319, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:13] "GET /api/v1/hpas HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4594716, 'timestamp': 1714357983383}, {'usage': 4611941, 'timestamp': 1714357984390}, {'usage': 4639900, 'timestamp': 1714357985396}, {'usage': 4669196, 'timestamp': 1714357986402}, {'usage': 4697817, 'timestamp': 1714357987407}, {'usage': 4726728, 'timestamp': 1714357988414}, {'usage': 4761847, 'timestamp': 1714357989686}, {'usage': 4796162, 'timestamp': 1714357990861}, {'usage': 4807614, 'timestamp': 1714357992039}, {'usage': 4813249, 'timestamp': 1714357993214}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1470096, 'timestamp': 1714357984433}, {'usage': 1483763, 'timestamp': 1714357985438}, {'usage': 1493900, 'timestamp': 1714357986443}, {'usage': 1499633, 'timestamp': 1714357987448}, {'usage': 1503772, 'timestamp': 1714357988452}, {'usage': 1506537, 'timestamp': 1714357989458}, {'usage': 1507795, 'timestamp': 1714357990463}, {'usage': 1510170, 'timestamp': 1714357991468}, {'usage': 1511722, 'timestamp': 1714357992472}, {'usage': 1511722, 'timestamp': 1714357993477}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 442716, 'timestamp': 1714357983881}, {'usage': 455394, 'timestamp': 1714357984885}, {'usage': 469189, 'timestamp': 1714357985889}, {'usage': 482317, 'timestamp': 1714357986893}, {'usage': 488807, 'timestamp': 1714357987897}, {'usage': 497128, 'timestamp': 1714357988901}, {'usage': 506718, 'timestamp': 1714357989905}, {'usage': 511086, 'timestamp': 1714357990910}, {'usage': 512779, 'timestamp': 1714357991914}, {'usage': 513823, 'timestamp': 1714357992918}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 19.45195106100421, involved_nodes: 3, current_cpu_usage_rate: 6.483983687001403, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:14] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:33:15] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:33:20] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:21] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:21] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 3171790, 'timestamp': 1714357992094}, {'usage': 3171790, 'timestamp': 1714357993099}, {'usage': 3175273, 'timestamp': 1714357994105}, {'usage': 3175463, 'timestamp': 1714357995110}, {'usage': 3175657, 'timestamp': 1714357996196}, {'usage': 3199877, 'timestamp': 1714357997201}, {'usage': 3228350, 'timestamp': 1714357998205}, {'usage': 3257658, 'timestamp': 1714357999209}, {'usage': 3287365, 'timestamp': 1714358000214}, {'usage': 3313536, 'timestamp': 1714358001220}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2486676, 'timestamp': 1714357991912}, {'usage': 2489348, 'timestamp': 1714357992916}, {'usage': 2489348, 'timestamp': 1714357993920}, {'usage': 2489566, 'timestamp': 1714357995012}, {'usage': 2490256, 'timestamp': 1714357996017}, {'usage': 2508122, 'timestamp': 1714357997021}, {'usage': 2531674, 'timestamp': 1714357998024}, {'usage': 2551086, 'timestamp': 1714357999029}, {'usage': 2564645, 'timestamp': 1714358000033}, {'usage': 2564830, 'timestamp': 1714358001036}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 87.33119065599755, involved_nodes: 2, current_cpu_usage_rate: 43.66559532799877, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:22] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:22] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4813249, 'timestamp': 1714357993214}, {'usage': 4813835, 'timestamp': 1714357994221}, {'usage': 4814099, 'timestamp': 1714357995228}, {'usage': 4815228, 'timestamp': 1714357996233}, {'usage': 4844492, 'timestamp': 1714357997240}, {'usage': 4875103, 'timestamp': 1714357998246}, {'usage': 4903906, 'timestamp': 1714357999253}, {'usage': 4930155, 'timestamp': 1714358000260}, {'usage': 4960422, 'timestamp': 1714358001266}, {'usage': 4997908, 'timestamp': 1714358002442}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1511722, 'timestamp': 1714357993477}, {'usage': 1511722, 'timestamp': 1714357994482}, {'usage': 1511907, 'timestamp': 1714357995486}, {'usage': 1512887, 'timestamp': 1714357996491}, {'usage': 1523495, 'timestamp': 1714357997561}, {'usage': 1538889, 'timestamp': 1714357998567}, {'usage': 1545063, 'timestamp': 1714357999571}, {'usage': 1553388, 'timestamp': 1714358000576}, {'usage': 1555216, 'timestamp': 1714358001581}, {'usage': 1555622, 'timestamp': 1714358002586}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 513823, 'timestamp': 1714357992918}, {'usage': 513823, 'timestamp': 1714357993923}, {'usage': 514260, 'timestamp': 1714357995014}, {'usage': 515410, 'timestamp': 1714357996019}, {'usage': 522873, 'timestamp': 1714357997023}, {'usage': 546488, 'timestamp': 1714357998027}, {'usage': 558674, 'timestamp': 1714357999031}, {'usage': 565786, 'timestamp': 1714358000035}, {'usage': 571221, 'timestamp': 1714358001039}, {'usage': 578840, 'timestamp': 1714358002043}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 132.89491952655078, involved_nodes: 3, current_cpu_usage_rate: 44.29830650885026, target_cpu_utilization: 80
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:23] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:23] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 3175273, 'timestamp': 1714357994105}, {'usage': 3175463, 'timestamp': 1714357995110}, {'usage': 3175657, 'timestamp': 1714357996196}, {'usage': 3199877, 'timestamp': 1714357997201}, {'usage': 3228350, 'timestamp': 1714357998205}, {'usage': 3257658, 'timestamp': 1714357999209}, {'usage': 3287365, 'timestamp': 1714358000214}, {'usage': 3313536, 'timestamp': 1714358001220}, {'usage': 3342341, 'timestamp': 1714358002277}, {'usage': 3367060, 'timestamp': 1714358003334}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2489348, 'timestamp': 1714357993920}, {'usage': 2489566, 'timestamp': 1714357995012}, {'usage': 2490256, 'timestamp': 1714357996017}, {'usage': 2508122, 'timestamp': 1714357997021}, {'usage': 2531674, 'timestamp': 1714357998024}, {'usage': 2551086, 'timestamp': 1714357999029}, {'usage': 2564645, 'timestamp': 1714358000033}, {'usage': 2564830, 'timestamp': 1714358001036}, {'usage': 2570686, 'timestamp': 1714358002041}, {'usage': 2574147, 'timestamp': 1714358003045}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 89.44403087743635, involved_nodes: 2, current_cpu_usage_rate: 44.722015438718174, target_cpu_utilization: 80
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4814099, 'timestamp': 1714357995228}, {'usage': 4815228, 'timestamp': 1714357996233}, {'usage': 4844492, 'timestamp': 1714357997240}, {'usage': 4875103, 'timestamp': 1714357998246}, {'usage': 4903906, 'timestamp': 1714357999253}, {'usage': 4930155, 'timestamp': 1714358000260}, {'usage': 4960422, 'timestamp': 1714358001266}, {'usage': 4997908, 'timestamp': 1714358002442}, {'usage': 5027297, 'timestamp': 1714358003618}, {'usage': 5045449, 'timestamp': 1714358004830}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1511907, 'timestamp': 1714357995486}, {'usage': 1512887, 'timestamp': 1714357996491}, {'usage': 1523495, 'timestamp': 1714357997561}, {'usage': 1538889, 'timestamp': 1714357998567}, {'usage': 1545063, 'timestamp': 1714357999571}, {'usage': 1553388, 'timestamp': 1714358000576}, {'usage': 1555216, 'timestamp': 1714358001581}, {'usage': 1555622, 'timestamp': 1714358002586}, {'usage': 1557251, 'timestamp': 1714358003590}, {'usage': 1557752, 'timestamp': 1714358004595}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 514260, 'timestamp': 1714357995014}, {'usage': 515410, 'timestamp': 1714357996019}, {'usage': 522873, 'timestamp': 1714357997023}, {'usage': 546488, 'timestamp': 1714357998027}, {'usage': 558674, 'timestamp': 1714357999031}, {'usage': 565786, 'timestamp': 1714358000035}, {'usage': 571221, 'timestamp': 1714358001039}, {'usage': 578840, 'timestamp': 1714358002043}, {'usage': 584928, 'timestamp': 1714358003047}, {'usage': 588387, 'timestamp': 1714358004051}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 63.0687475865384, involved_nodes: 3, current_cpu_usage_rate: 21.022915862179467, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:24] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:upstream-agent-4sfkf
+ERROR:root:10.244.2.219
+ERROR:root:upstream-agent-6gn7p
+ERROR:root:10.244.5.104
+ERROR:root:upstream-agent-cn84f
+ERROR:root:10.244.3.217
+ERROR:root:upstream-agent-ht9qf
+ERROR:root:10.244.4.23
+ERROR:root:upstream-agent-n2pbq
+ERROR:root:10.244.1.123
+ERROR:root:[{'name': 'upstream-agent-4sfkf', 'pod_ip': '10.244.2.219', 'host_ip': '10.150.0.3'}, {'name': 'upstream-agent-6gn7p', 'pod_ip': '10.244.5.104', 'host_ip': '10.206.0.2'}, {'name': 'upstream-agent-cn84f', 'pod_ip': '10.244.3.217', 'host_ip': '10.202.0.2'}, {'name': 'upstream-agent-ht9qf', 'pod_ip': '10.244.4.23', 'host_ip': '10.128.0.5'}, {'name': 'upstream-agent-n2pbq', 'pod_ip': '10.244.1.123', 'host_ip': '10.142.0.3'}]
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 4814099, 'timestamp': 1714357995228}, {'usage': 4815228, 'timestamp': 1714357996233}, {'usage': 4844492, 'timestamp': 1714357997240}, {'usage': 4875103, 'timestamp': 1714357998246}, {'usage': 4903906, 'timestamp': 1714357999253}, {'usage': 4930155, 'timestamp': 1714358000260}, {'usage': 4960422, 'timestamp': 1714358001266}, {'usage': 4997908, 'timestamp': 1714358002442}, {'usage': 5027297, 'timestamp': 1714358003618}, {'usage': 5045449, 'timestamp': 1714358004830}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1512887, 'timestamp': 1714357996491}, {'usage': 1523495, 'timestamp': 1714357997561}, {'usage': 1538889, 'timestamp': 1714357998567}, {'usage': 1545063, 'timestamp': 1714357999571}, {'usage': 1553388, 'timestamp': 1714358000576}, {'usage': 1555216, 'timestamp': 1714358001581}, {'usage': 1555622, 'timestamp': 1714358002586}, {'usage': 1557251, 'timestamp': 1714358003590}, {'usage': 1557752, 'timestamp': 1714358004595}, {'usage': 1557752, 'timestamp': 1714358005600}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 515410, 'timestamp': 1714357996019}, {'usage': 522873, 'timestamp': 1714357997023}, {'usage': 546488, 'timestamp': 1714357998027}, {'usage': 558674, 'timestamp': 1714357999031}, {'usage': 565786, 'timestamp': 1714358000035}, {'usage': 571221, 'timestamp': 1714358001039}, {'usage': 578840, 'timestamp': 1714358002043}, {'usage': 584928, 'timestamp': 1714358003047}, {'usage': 588387, 'timestamp': 1714358004051}, {'usage': 589617, 'timestamp': 1714358005055}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 54.00665763787534, involved_nodes: 3, current_cpu_usage_rate: 18.002219212625114, target_cpu_utilization: 80
+INFO:werkzeug:10.244.3.217 - - [29/Apr/2024 02:33:26] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:28] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:29] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.1.123 - - [29/Apr/2024 02:33:31] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:33] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:33] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 5027297, 'timestamp': 1714358003618}, {'usage': 5045449, 'timestamp': 1714358004830}, {'usage': 5054274, 'timestamp': 1714358006094}, {'usage': 5054536, 'timestamp': 1714358007100}, {'usage': 5055367, 'timestamp': 1714358008106}, {'usage': 5072655, 'timestamp': 1714358009112}, {'usage': 5101283, 'timestamp': 1714358010119}, {'usage': 5128135, 'timestamp': 1714358011126}, {'usage': 5153215, 'timestamp': 1714358012132}, {'usage': 5184526, 'timestamp': 1714358013137}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1557752, 'timestamp': 1714358004595}, {'usage': 1557752, 'timestamp': 1714358005600}, {'usage': 1557931, 'timestamp': 1714358006605}, {'usage': 1558986, 'timestamp': 1714358007611}, {'usage': 1559556, 'timestamp': 1714358008615}, {'usage': 1571169, 'timestamp': 1714358009620}, {'usage': 1586893, 'timestamp': 1714358010625}, {'usage': 1598565, 'timestamp': 1714358011629}, {'usage': 1605895, 'timestamp': 1714358012698}, {'usage': 1610216, 'timestamp': 1714358013703}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 588387, 'timestamp': 1714358004051}, {'usage': 589617, 'timestamp': 1714358005055}, {'usage': 589617, 'timestamp': 1714358006059}, {'usage': 590105, 'timestamp': 1714358007063}, {'usage': 591803, 'timestamp': 1714358008067}, {'usage': 602063, 'timestamp': 1714358009071}, {'usage': 619700, 'timestamp': 1714358010163}, {'usage': 632136, 'timestamp': 1714358011167}, {'usage': 642585, 'timestamp': 1714358012171}, {'usage': 652605, 'timestamp': 1714358013174}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 151.48252092809466, involved_nodes: 3, current_cpu_usage_rate: 50.49417364269822, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:34] "POST /api/v1/notify HTTP/1.1" 200 -
+INFO:werkzeug:10.244.2.219 - - [29/Apr/2024 02:33:34] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 3388610, 'timestamp': 1714358005395}, {'usage': 3388610, 'timestamp': 1714358006399}, {'usage': 3388911, 'timestamp': 1714358007404}, {'usage': 3389616, 'timestamp': 1714358008409}, {'usage': 3413493, 'timestamp': 1714358009415}, {'usage': 3443154, 'timestamp': 1714358010419}, {'usage': 3469404, 'timestamp': 1714358011513}, {'usage': 3499188, 'timestamp': 1714358012517}, {'usage': 3532109, 'timestamp': 1714358013522}, {'usage': 3554708, 'timestamp': 1714358014579}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'compose-post-service', 'cpu_request': 30, 'usages': [{'usage': 2581212, 'timestamp': 1714358005053}, {'usage': 2581212, 'timestamp': 1714358006057}, {'usage': 2581212, 'timestamp': 1714358007061}, {'usage': 2581454, 'timestamp': 1714358008064}, {'usage': 2592091, 'timestamp': 1714358009068}, {'usage': 2626118, 'timestamp': 1714358010160}, {'usage': 2656206, 'timestamp': 1714358011164}, {'usage': 2674088, 'timestamp': 1714358012168}, {'usage': 2679731, 'timestamp': 1714358013172}, {'usage': 2691415, 'timestamp': 1714358014176}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: compose-post-service, usage_rate: 110.05923954764356, involved_nodes: 2, current_cpu_usage_rate: 55.02961977382178, target_cpu_utilization: 80
+INFO:werkzeug:10.244.5.104 - - [29/Apr/2024 02:33:35] "GET /api/v1/hpas HTTP/1.1" 200 -
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:35] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 5054274, 'timestamp': 1714358006094}, {'usage': 5054536, 'timestamp': 1714358007100}, {'usage': 5055367, 'timestamp': 1714358008106}, {'usage': 5072655, 'timestamp': 1714358009112}, {'usage': 5101283, 'timestamp': 1714358010119}, {'usage': 5128135, 'timestamp': 1714358011126}, {'usage': 5153215, 'timestamp': 1714358012132}, {'usage': 5184526, 'timestamp': 1714358013137}, {'usage': 5222336, 'timestamp': 1714358014313}, {'usage': 5254132, 'timestamp': 1714358015528}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1557931, 'timestamp': 1714358006605}, {'usage': 1558986, 'timestamp': 1714358007611}, {'usage': 1559556, 'timestamp': 1714358008615}, {'usage': 1571169, 'timestamp': 1714358009620}, {'usage': 1586893, 'timestamp': 1714358010625}, {'usage': 1598565, 'timestamp': 1714358011629}, {'usage': 1605895, 'timestamp': 1714358012698}, {'usage': 1610216, 'timestamp': 1714358013703}, {'usage': 1614103, 'timestamp': 1714358014708}, {'usage': 1616472, 'timestamp': 1714358015713}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 590105, 'timestamp': 1714358007063}, {'usage': 591803, 'timestamp': 1714358008067}, {'usage': 602063, 'timestamp': 1714358009071}, {'usage': 619700, 'timestamp': 1714358010163}, {'usage': 632136, 'timestamp': 1714358011167}, {'usage': 642585, 'timestamp': 1714358012171}, {'usage': 652605, 'timestamp': 1714358013174}, {'usage': 659040, 'timestamp': 1714358014179}, {'usage': 662602, 'timestamp': 1714358015183}, {'usage': 666207, 'timestamp': 1714358016188}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 107.04608644022683, involved_nodes: 3, current_cpu_usage_rate: 35.68202881340894, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:36] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 5054536, 'timestamp': 1714358007100}, {'usage': 5055367, 'timestamp': 1714358008106}, {'usage': 5072655, 'timestamp': 1714358009112}, {'usage': 5101283, 'timestamp': 1714358010119}, {'usage': 5128135, 'timestamp': 1714358011126}, {'usage': 5153215, 'timestamp': 1714358012132}, {'usage': 5184526, 'timestamp': 1714358013137}, {'usage': 5222336, 'timestamp': 1714358014313}, {'usage': 5254132, 'timestamp': 1714358015528}, {'usage': 5283846, 'timestamp': 1714358016703}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1558986, 'timestamp': 1714358007611}, {'usage': 1559556, 'timestamp': 1714358008615}, {'usage': 1571169, 'timestamp': 1714358009620}, {'usage': 1586893, 'timestamp': 1714358010625}, {'usage': 1598565, 'timestamp': 1714358011629}, {'usage': 1605895, 'timestamp': 1714358012698}, {'usage': 1610216, 'timestamp': 1714358013703}, {'usage': 1614103, 'timestamp': 1714358014708}, {'usage': 1616472, 'timestamp': 1714358015713}, {'usage': 1619872, 'timestamp': 1714358016718}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 591803, 'timestamp': 1714358008067}, {'usage': 602063, 'timestamp': 1714358009071}, {'usage': 619700, 'timestamp': 1714358010163}, {'usage': 632136, 'timestamp': 1714358011167}, {'usage': 642585, 'timestamp': 1714358012171}, {'usage': 652605, 'timestamp': 1714358013174}, {'usage': 659040, 'timestamp': 1714358014179}, {'usage': 662602, 'timestamp': 1714358015183}, {'usage': 666207, 'timestamp': 1714358016188}, {'usage': 668841, 'timestamp': 1714358017192}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 104.31700397169305, involved_nodes: 3, current_cpu_usage_rate: 34.77233465723102, target_cpu_utilization: 80
+INFO:werkzeug:10.244.4.23 - - [29/Apr/2024 02:33:38] "POST /api/v1/notify HTTP/1.1" 200 -
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 5055367, 'timestamp': 1714358008106}, {'usage': 5072655, 'timestamp': 1714358009112}, {'usage': 5101283, 'timestamp': 1714358010119}, {'usage': 5128135, 'timestamp': 1714358011126}, {'usage': 5153215, 'timestamp': 1714358012132}, {'usage': 5184526, 'timestamp': 1714358013137}, {'usage': 5222336, 'timestamp': 1714358014313}, {'usage': 5254132, 'timestamp': 1714358015528}, {'usage': 5283846, 'timestamp': 1714358016703}, {'usage': 5295803, 'timestamp': 1714358017879}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 1559556, 'timestamp': 1714358008615}, {'usage': 1571169, 'timestamp': 1714358009620}, {'usage': 1586893, 'timestamp': 1714358010625}, {'usage': 1598565, 'timestamp': 1714358011629}, {'usage': 1605895, 'timestamp': 1714358012698}, {'usage': 1610216, 'timestamp': 1714358013703}, {'usage': 1614103, 'timestamp': 1714358014708}, {'usage': 1616472, 'timestamp': 1714358015713}, {'usage': 1619872, 'timestamp': 1714358016718}, {'usage': 1622376, 'timestamp': 1714358017722}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:{'container_name': 'user-timeline-service', 'cpu_request': 30, 'usages': [{'usage': 602063, 'timestamp': 1714358009071}, {'usage': 619700, 'timestamp': 1714358010163}, {'usage': 632136, 'timestamp': 1714358011167}, {'usage': 642585, 'timestamp': 1714358012171}, {'usage': 652605, 'timestamp': 1714358013174}, {'usage': 659040, 'timestamp': 1714358014179}, {'usage': 662602, 'timestamp': 1714358015183}, {'usage': 666207, 'timestamp': 1714358016188}, {'usage': 668841, 'timestamp': 1714358017192}, {'usage': 670730, 'timestamp': 1714358018196}], 'metric_path': ''}
+ERROR:root:10
+ERROR:root:deployment: user-timeline-service, usage_rate: 48.476716715902825, involved_nodes: 3, current_cpu_usage_rate: 16.15890557196761, target_cpu_utilization: 80

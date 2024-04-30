@@ -1,0 +1,1497 @@
+[Result] Fri Apr 26 17:26:54 UTC 2024k
+[Ratio]
+Current Pod Status
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          2m55s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          2m55s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          2m55s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          2m55s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          2m55s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          2m55s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          2m55s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          2m55s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          2m55s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          2m55s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          2m55s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          2m54s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          2m54s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          2m54s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          2m54s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          2m54s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          2m54s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          2m54s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          2m54s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          2m53s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          2m53s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          2m53s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          2m53s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          2m52s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          2m52s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          2m52s
+ 
+[Test 1] Fri Apr 26 17:26:54 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          2m55s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          2m55s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          2m55s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          2m55s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          2m55s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          2m55s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          2m55s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          2m55s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          2m55s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          2m55s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          2m55s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          2m55s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          2m54s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          2m54s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          2m54s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          2m54s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          2m54s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          2m54s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          2m54s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          2m54s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          2m53s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          2m53s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          2m53s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          2m53s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          2m52s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          2m52s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          2m52s
+ 
+[Test 2] Fri Apr 26 17:26:56 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          2m57s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          2m57s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          2m57s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          2m57s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          2m57s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          2m57s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          2m57s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          2m57s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          2m57s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          2m57s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          2m57s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          2m57s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          2m57s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          2m56s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          2m56s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          2m56s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          2m56s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          2m56s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          2m56s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          2m56s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          2m56s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          2m55s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          2m55s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          2m55s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          2m55s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          2m54s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          2m54s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          2m54s
+ 
+[Test 3] Fri Apr 26 17:26:58 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          2m59s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          2m59s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          2m59s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          2m59s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          2m59s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          2m59s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          2m59s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          2m59s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          2m58s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          2m58s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          2m58s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          2m58s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          2m57s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          2m57s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          2m57s
+ 
+[Test 4] Fri Apr 26 17:27:01 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m2s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m2s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m2s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m2s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m2s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m2s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m2s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m2s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m2s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m2s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m2s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m2s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m2s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m1s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m1s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m1s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m1s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m1s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m1s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m1s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m1s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          2m59s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          2m59s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          2m59s
+ 
+[Test 5] Fri Apr 26 17:27:03 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m4s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m4s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m4s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m4s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m4s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m4s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m4s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m4s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m4s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m4s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m4s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m4s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m4s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m3s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m3s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m3s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m3s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m3s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m3s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m3s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m3s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m2s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m2s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m2s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m2s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m1s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m1s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m1s
+ 
+[Test 6] Fri Apr 26 17:27:05 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m6s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m6s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m6s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m6s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m6s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m6s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m6s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m6s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m6s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m6s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m6s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m6s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m6s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m5s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m5s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m5s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m5s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m5s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m5s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m5s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m5s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m4s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m4s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m4s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m4s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m3s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m3s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m3s
+ 
+[Test 7] Fri Apr 26 17:27:07 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m8s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m8s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m8s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m8s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m8s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m8s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m8s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m8s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m8s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m8s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m8s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m8s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m8s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m7s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m7s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m7s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m7s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m7s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m7s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m7s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m7s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m6s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m6s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m6s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m6s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m5s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m5s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m5s
+ 
+[Test 8] Fri Apr 26 17:27:09 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m10s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m10s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m10s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m10s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m10s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m10s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m10s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m10s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m10s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m10s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m10s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m10s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m10s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m9s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m9s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m9s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m9s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m9s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m9s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m9s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m9s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m8s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m8s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m8s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m8s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m7s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m7s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m7s
+ 
+[Test 9] Fri Apr 26 17:27:11 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m13s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m13s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m13s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m13s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m13s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m13s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m13s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m13s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m13s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m13s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m13s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m13s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m13s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m12s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m12s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m12s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m12s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m12s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m12s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m12s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m12s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m11s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m11s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m11s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m11s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m10s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m10s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m10s
+ 
+[Test 10] Fri Apr 26 17:27:14 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m15s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m15s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m15s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m15s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m15s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m15s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m15s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m15s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m15s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m15s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m15s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m15s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m15s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m14s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m14s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m14s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m14s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m14s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m14s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m14s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m14s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m13s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m13s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m13s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m13s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m12s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m12s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m12s
+ 
+[Test 11] Fri Apr 26 17:27:16 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m17s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m17s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m17s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m17s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m17s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m17s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m17s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m17s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m17s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m17s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m17s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m17s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m17s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m16s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m16s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m16s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m16s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m16s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m16s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m16s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m16s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m15s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m15s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m15s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m15s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m14s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m14s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m14s
+ 
+[Test 12] Fri Apr 26 17:27:18 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m19s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m19s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m19s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m19s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m19s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m19s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m19s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m19s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m19s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m19s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m19s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m19s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m19s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m18s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m18s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m18s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m18s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m18s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m18s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m18s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m18s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m17s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m17s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m17s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m17s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m16s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m16s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m16s
+ 
+[Test 13] Fri Apr 26 17:27:20 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m21s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m21s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m21s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m21s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m21s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m21s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m21s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m21s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m21s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m21s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m21s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m21s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m21s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m20s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m20s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m20s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m20s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m20s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m20s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m20s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m20s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m19s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m19s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m19s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m19s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m18s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m18s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m18s
+ 
+[Test 14] Fri Apr 26 17:27:22 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m23s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m23s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m23s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m23s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m23s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m23s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m23s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m23s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m23s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m23s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m23s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m23s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m23s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m22s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m22s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m22s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m22s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m22s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m22s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m22s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m22s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m21s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m21s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m21s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m21s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m20s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m20s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m20s
+ 
+[Test 15] Fri Apr 26 17:27:24 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m26s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m26s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m26s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m26s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m26s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m26s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m26s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m26s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m26s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m26s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m26s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m26s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m26s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m25s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m25s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m25s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m25s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m25s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m25s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m25s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m25s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m24s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m24s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m24s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m24s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m23s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m23s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m23s
+ 
+[Test 16] Fri Apr 26 17:27:27 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m28s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m28s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m28s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m28s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m28s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m28s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m28s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m28s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m28s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m28s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m28s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m28s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m28s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m27s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m27s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m27s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m27s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m27s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m27s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m27s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m27s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m26s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m26s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m26s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m26s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m25s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m25s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m25s
+ 
+[Test 17] Fri Apr 26 17:27:29 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m30s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m30s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m30s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m30s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m30s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m30s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m30s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m30s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m30s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m30s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m30s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m30s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m30s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m29s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m29s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m29s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m29s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m29s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m29s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m29s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m29s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m28s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m28s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m28s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m28s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m27s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m27s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m27s
+ 
+[Test 18] Fri Apr 26 17:27:31 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m32s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m32s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m32s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m32s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m32s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m32s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m32s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m32s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m32s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m32s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m32s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m32s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m32s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m31s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m31s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m31s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m31s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m31s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m31s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m31s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m31s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m30s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m30s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m30s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m30s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m29s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m29s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m29s
+ 
+[Test 19] Fri Apr 26 17:27:33 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m34s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m34s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m34s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m34s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m34s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m34s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m34s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m34s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m34s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m34s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m34s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m34s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m34s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m33s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m33s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m33s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m33s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m33s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m33s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m33s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m33s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m32s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m32s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m32s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m32s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m31s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m31s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m31s
+ 
+[Test 20] Fri Apr 26 17:27:35 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m36s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m36s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m36s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m36s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m36s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m36s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m36s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m36s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m36s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m36s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m36s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m36s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m36s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m35s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m35s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m35s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m35s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m35s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m35s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m35s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m35s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m34s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m34s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m34s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m34s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m33s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m33s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m33s
+ 
+[Test 21] Fri Apr 26 17:27:37 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m39s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m39s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m39s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m39s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m39s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m39s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m39s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m39s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m39s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m39s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m39s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m39s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m39s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m38s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m38s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m38s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m38s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m38s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m38s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m38s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m38s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m37s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m37s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m37s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m37s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m36s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m36s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m36s
+ 
+[Test 22] Fri Apr 26 17:27:40 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m41s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m41s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m41s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m41s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m41s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m41s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m41s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m41s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m41s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m41s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m41s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m41s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m41s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m40s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m40s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m40s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m40s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m40s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m40s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m40s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m40s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m39s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m39s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m39s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m39s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m38s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m38s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m38s
+ 
+[Test 23] Fri Apr 26 17:27:42 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m43s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m43s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m43s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m43s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m43s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m43s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m43s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m43s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m43s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m43s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m43s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m43s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m43s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m42s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m42s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m42s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m42s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m42s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m42s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m42s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m42s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m41s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m41s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m41s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m41s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m40s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m40s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m40s
+ 
+[Test 24] Fri Apr 26 17:27:44 UTC 2024
+Usage: wrk <options> <url>                                       
+  Options:                                                       
+    -c, --connections <N>  Connections to keep open              
+    -D, --dist        <S>  fixed, exp, norm, zipf                
+    -P                     Print each request's latency          
+    -p                     Print 99th latency every 0.2s to file 
+                           under the current working directory   
+    -d, --duration    <T>  Duration of test                      
+    -t, --threads     <N>  Number of threads to use              
+                                                                 
+    -s, --script      <S>  Load Lua script file                  
+    -H, --header      <H>  Add header to request                 
+    -L, --latency          Print latency statistics              
+    -S, --separate         Print statistics on different url     
+    -T, --timeout     <T>  Socket/request timeout [unit:s]       
+    -B, --batch_latency    Measure latency of whole              
+                           batches of pipelined ops              
+                           (as opposed to each op)               
+    -r, --requests         Show the number of sent requests      
+    -v, --version          Print version details                 
+    -R, --rate        <T>  work rate (throughput)                
+                           in requests/sec (total)               
+                           [Required Parameter]                  
+                                                                 
+                                                                 
+  Numeric arguments may include a SI unit (1k, 1M, 1G)           
+  Time arguments may include a time unit (2s, 2m, 2h)            
+///////////////////////////////////////////
+///////////////////////////////////////////
+///////////////////////////////////////////
+NAME                                     READY   STATUS              RESTARTS   AGE
+compose-post-service-54bc98f64b-zqxdj    0/1     ContainerCreating   0          3m45s
+home-timeline-service-f6df59756-8tjxf    0/1     ContainerCreating   0          3m45s
+jaeger-744f6b7df7-hbb9t                  0/1     ContainerCreating   0          3m45s
+media-frontend-59b6b7d96b-f4tlz          0/1     Init:0/1            0          3m45s
+media-memcached-74df6744db-g86m6         0/1     ContainerCreating   0          3m45s
+media-mongodb-7c9d794f8f-whqb9           0/1     ContainerCreating   0          3m45s
+media-service-64dfb64d94-8qms4           0/1     ContainerCreating   0          3m45s
+nginx-thrift-6d9d7c98df-5jj49            0/1     Init:0/1            0          3m45s
+nginx-thrift-6d9d7c98df-95bhw            0/1     Init:0/1            0          3m45s
+nginx-thrift-6d9d7c98df-mstwz            0/1     Init:0/1            0          3m45s
+post-storage-memcached-c98d5d99d-vv67r   0/1     ContainerCreating   0          3m45s
+post-storage-mongodb-867b76d74f-6wjng    0/1     ContainerCreating   0          3m45s
+post-storage-service-66558bb7f7-5qc45    0/1     ContainerCreating   0          3m45s
+social-graph-mongodb-69859bd677-znwfb    0/1     ContainerCreating   0          3m44s
+social-graph-redis-59bc4b57bd-cffls      0/1     ContainerCreating   0          3m44s
+social-graph-service-7cd867cd79-2hb9b    0/1     ContainerCreating   0          3m44s
+text-service-64f4fcd547-pv4ct            0/1     ContainerCreating   0          3m44s
+unique-id-service-6f947969d6-nkjqv       0/1     ContainerCreating   0          3m44s
+url-shorten-memcached-7f78dbd7b4-pm49z   0/1     ContainerCreating   0          3m44s
+url-shorten-mongodb-699d465fdb-vxhsl     0/1     ContainerCreating   0          3m44s
+url-shorten-service-85fbbffcbb-gqlc5     0/1     ContainerCreating   0          3m44s
+user-memcached-d6f8954b4-45ztg           0/1     ContainerCreating   0          3m43s
+user-mention-service-74755598c7-x9ldm    0/1     ContainerCreating   0          3m43s
+user-mongodb-6ddd645944-88lsk            0/1     ContainerCreating   0          3m43s
+user-service-776b5c74ff-6mwpd            0/1     ContainerCreating   0          3m43s
+user-timeline-mongodb-5c945fcd8b-t2rxc   0/1     ContainerCreating   0          3m42s
+user-timeline-redis-7f767bdff5-d5w9j     0/1     ContainerCreating   0          3m42s
+user-timeline-service-7cd65d7ffb-4dhzn   0/1     ContainerCreating   0          3m42s
+Test End Fri Apr 26 17:27:46 UTC 2024
